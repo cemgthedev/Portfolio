@@ -1,6 +1,6 @@
 export interface Education {
-    university: string,
-    course: string,
+    institution: string,
+    course?: string,
     period: string
 }
 
@@ -25,6 +25,7 @@ export interface Project {
 
 export interface Contact {
     imageUrl: string,
+    title: string,
     siteUrl: string
 }
 
