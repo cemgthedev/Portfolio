@@ -1,7 +1,7 @@
 import { Profile } from "./Profile";
 
 export const MyProfile: Profile = {
-    imageUrl: '',
+    imageUrl: '/ImageProfile.svg',
     bio: `
         <p>
             Olá, me chamo Carlos Eduardo de Moura Gomes
@@ -25,47 +25,47 @@ export const MyProfile: Profile = {
     ],
     stack: [
         {
-            imageUrl: '',
+            imageUrl: '/icons/Figma.svg',
             label: 'Figma'
         },
         {
-            imageUrl: '',
+            imageUrl: '/icons/HTML5.svg',
             label: 'HTML'
         },
         {
-            imageUrl: '',
+            imageUrl: '/icons/CSS3.svg',
             label: 'CSS'
         },
         {
-            imageUrl: '',
+            imageUrl: '/icons/Express.svg',
             label: 'Express'
         },
         {
-            imageUrl: '',
+            imageUrl: '/icons/Tailwindcss.svg',
             label: 'Tailwindcss'
         },
         {
-            imageUrl: '',
+            imageUrl: '/icons/React.svg',
             label: 'React'
         },
         {
-            imageUrl: '',
+            imageUrl: '/icons/Python.svg',
             label: 'Python'
         },
         {
-            imageUrl: '',
+            imageUrl: '/icons/JavaScript.svg',
             label: 'JavaScript'
         },
         {
-            imageUrl: '',
+            imageUrl: '/icons/TypeScript.svg',
             label: 'TypeScript'
         },
         {
-            imageUrl: '',
+            imageUrl: '/icons/Node.svg',
             label: 'Node'
         },
         {
-            imageUrl: '',
+            imageUrl: '/icons/Git.svg',
             label: 'Git'
         }
     ],
@@ -102,22 +102,22 @@ export const MyProfile: Profile = {
     ],
     contacts: [
         {
-            imageUrl: '',
+            imageUrl: '/icons/InstagramLogo.svg',
             title: 'instagram',
             siteUrl: 'https://www.instagram.com/_carlos_eduardo_mg/'
         },
         {
-            imageUrl: '',
+            imageUrl: '/icons/LinkedinLogo.svg',
             title: 'linkedin',
             siteUrl: 'https://www.linkedin.com/in/carlos-eduardo-moura-gomes-bb0ab7250/'
         },
         {
-            imageUrl: '',
+            imageUrl: '/icons/GithubLogo.svg',
             title: 'github',
             siteUrl: 'https://github.com/cemgthedev'
         },
         {
-            imageUrl: '',
+            imageUrl: '/icons/Envelope.svg',
             title: 'email',
             siteUrl: 'mailto:cemg.the.dev@gmail.com'
         },
