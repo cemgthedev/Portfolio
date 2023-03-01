@@ -11,7 +11,7 @@ export interface CardProps {
 export function Card({color, margin, className, children}: CardProps) {
     return (
         <div
-            className={clsx('flex flex-col gap-4 items-center',
+            className={clsx('flex flex-col items-center gap-4 p-4',
                 {
                     'bg-white': color === 'ligth',
                     'bg-neutral-900': color === 'dark'
