@@ -31,7 +31,7 @@ export interface Contact {
 
 export interface Profile {
     imageUrl: string,
-    bio: string,
+    bio: string[],
     educational: Education[],
     stack: Technology[],
     skills: Skill[],

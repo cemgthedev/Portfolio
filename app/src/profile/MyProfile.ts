@@ -2,20 +2,14 @@ import { Profile } from "./Profile";
 
 export const MyProfile: Profile = {
     imageUrl: '/ImageProfile.svg',
-    bio: `
-        <p>
-            Olá, me chamo Carlos Eduardo de Moura Gomes
-        </p>
-        <p>
-            Atualmente minha experiência está fundamentada apenas em projetos pessoais
-            nos quais busco aplicar todos os meus conhecimentos.
-        </p>
-        <p>
-            Planejo dominar inicialmente tecnologias relacionadas a Front End e UI/UX Design
-            e futuramente tecnologias relacionadas a Back End. Devido a rotina da faculdade 
-            busco apenas vagas de estágio remoto com carga horária semanal de até 40 horas.
-        </p>
-    `,
+    bio: [
+        `Olá, me chamo Carlos Eduardo de Moura Gomes.`,
+        `Atualmente minha experiência está fundamentada apenas em projetos pessoais
+        nos quais busco aplicar todos os meus conhecimentos.`,
+        `Planejo dominar inicialmente tecnologias relacionadas a Front End e UI/UX Design
+        e futuramente tecnologias relacionadas a Back End. Devido a rotina da faculdade 
+        busco apenas vagas de estágio remoto com carga horária semanal de até 40 horas.`
+    ],
     educational: [
         {
             institution: 'Universidade Federal do Ceará - Campus de Quixadá',

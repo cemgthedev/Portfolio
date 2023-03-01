@@ -5,6 +5,7 @@ import { MyProfile } from './profile/MyProfile';
 import { Header } from './components/Header';
 import { Card } from './components/Card';
 import { Label } from './components/Label';
+import { Text } from './components/Text';
 
 const options = [
   {
@@ -53,11 +54,20 @@ export function App() {
           style='dark'
         >
           <div
-            className='w-48 relative flex flex-col items-center'
+            className='w-64 relative flex flex-col items-center ring-2 ring-red-500'
           >
-            <img className='absolute top-4' src={MyProfile.imageUrl} alt="" />
+            <img className='absolute bottom-0' src={MyProfile.imageUrl} alt="" />
             <img
               src="/animations/Blob.svg" alt="" />
+          </div>
+          <div className='text-white'>
+            {
+              MyProfile.bio.map(paragraph => (
+                <Text>
+                  { paragraph }
+                </Text>
+              ))
+            }
           </div>
         </Card>
       </div>
