@@ -10,7 +10,16 @@ export interface HeaderProps {
 export function Header({children, className}: HeaderProps) {
     return (
         <header
-            className={clsx('w-full flex gap-2 justify-center items-center',
+            className={clsx(`bg-neutral-900 
+                           text-white 
+                            w-full 
+                            flex 
+                            gap-2 
+                            justify-center 
+                            items-center 
+                            border-b-2 
+                            border-b-white
+                            sticky`,
                 className
             )}
         >

@@ -3,13 +3,13 @@ import { ReactNode } from 'react';
 
 import '../../styles/global.css';
 
-export interface HeadingProps {
+export interface TextProps {
     size?: 'lg' | 'md' | 'sm',
     children: ReactNode,
     className?: string
 }
 
-export function Heading({size = 'md', children, className}: HeadingProps) {
+export function Text({size = 'md', children, className}: TextProps) {
     return (
         <h1
             className={clsx(

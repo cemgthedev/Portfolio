@@ -4,16 +4,25 @@ import { ReactNode } from 'react';
 import '../../styles/global.css';
 
 export interface LabelProps {
+    link?: boolean,
+    href?: string,
     size?: 'lg' | 'md' | 'sm',
     children: ReactNode,
     className?: string
 }
 
-export function Label({size = 'md', children, className}: LabelProps) {
+export function Label({link = false, href, size = 'md', children, className}: LabelProps) {
+    const Component = link ? 'a' : 'h1';
+
     return (
-        <h1
+        <Component
+            href={ href }
             className={clsx(
-                'w-full text-left font-semibold',
+                'font-semibold',
+                {
+                    'w-full text-left': Component === 'h1',
+                    'p-4 text-center hover:text-sky-500': Component === 'a'
+                },
                 {
                     'text-[20px]': size === 'lg',
                     'text-[16px]': size === 'md',
@@ -22,6 +31,6 @@ export function Label({size = 'md', children, className}: LabelProps) {
             }
         >
             {children}
-        </h1>
+        </Component>
     );
 }

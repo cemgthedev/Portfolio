@@ -2,19 +2,19 @@ import clsx from 'clsx';
 import { ReactNode } from "react";
 
 export interface CardProps {
-    color?: 'ligth' | 'dark',
+    style?: 'ligth' | 'dark',
     margin?: boolean,
     className?: string,
     children: ReactNode,
 }
 
-export function Card({color, margin, className, children}: CardProps) {
+export function Card({style, margin = false, className, children}: CardProps) {
     return (
         <div
-            className={clsx('flex flex-col items-center gap-4 p-4',
+            className={clsx('flex flex-col justify-center gap-4 p-4 h-fit',
                 {
-                    'bg-white': color === 'ligth',
-                    'bg-neutral-900': color === 'dark'
+                    'bg-white': style === 'ligth',
+                    'bg-neutral-900': style === 'dark'
                 },
                 {
                     'm-0': margin === false,
