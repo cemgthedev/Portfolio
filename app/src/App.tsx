@@ -38,7 +38,7 @@ const options = [
 
 export function App() {
   return (
-    <body className='fixed top-0 w-screen h-screen overflow-auto scrollbar-hide'>
+    <body className='fixed top-0 w-screen h-screen overflow-auto scroll-smooth scrollbar-hide'>
       <Header>
           {
             options.map(option => (
@@ -52,6 +52,7 @@ export function App() {
           }    
         </Header>
         <Card
+          id='home'
           style='dark'
         >
           <div
@@ -89,6 +90,90 @@ export function App() {
             </div>
           ))
         }
+      </Card>
+      <Card
+        column
+        margin
+        style='dark'
+        className='text-white shadow-sm shadow-black'
+      >
+        <Heading>Stack</Heading>
+        <HorizontalListing
+        >
+          {
+            MyProfile.stack.map(item => (
+              <figure
+                className='relative min-w-[96px] w-24 flex flex-col gap-1 items-center'
+              >
+                <img
+                  className='w-12 h-12 absolute top-1'
+                src={ item.imageUrl } alt="" />
+                <img
+                  className='w-14 h-14 opacity-0 hover:opacity-20'
+                src={ item.imageUrl } alt="" />
+                <figcaption
+                  className='hover:text-cyan-500'
+                >{ item.label }</figcaption>
+              </figure>
+            ))
+          }
+        </HorizontalListing>
+      </Card>
+      <Card
+        column
+        margin
+        style='dark'
+        className='text-white shadow-sm shadow-black'
+      >
+        <Heading>Stack</Heading>
+        <HorizontalListing
+        >
+          {
+            MyProfile.stack.map(item => (
+              <figure
+                className='relative min-w-[96px] w-24 flex flex-col gap-1 items-center'
+              >
+                <img
+                  className='w-12 h-12 absolute top-1'
+                src={ item.imageUrl } alt="" />
+                <img
+                  className='w-14 h-14 opacity-0 hover:opacity-20'
+                src={ item.imageUrl } alt="" />
+                <figcaption
+                  className='hover:text-cyan-500'
+                >{ item.label }</figcaption>
+              </figure>
+            ))
+          }
+        </HorizontalListing>
+      </Card>
+      <Card
+        column
+        margin
+        style='dark'
+        className='text-white shadow-sm shadow-black'
+      >
+        <Heading>Stack</Heading>
+        <HorizontalListing
+        >
+          {
+            MyProfile.stack.map(item => (
+              <figure
+                className='relative min-w-[96px] w-24 flex flex-col gap-1 items-center'
+              >
+                <img
+                  className='w-12 h-12 absolute top-1'
+                src={ item.imageUrl } alt="" />
+                <img
+                  className='w-14 h-14 opacity-0 hover:opacity-20'
+                src={ item.imageUrl } alt="" />
+                <figcaption
+                  className='hover:text-cyan-500'
+                >{ item.label }</figcaption>
+              </figure>
+            ))
+          }
+        </HorizontalListing>
       </Card>
       <Card
         column
