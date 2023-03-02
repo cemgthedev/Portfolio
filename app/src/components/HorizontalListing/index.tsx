@@ -9,7 +9,7 @@ export interface HorizontalListingProps {
 export function HorizontalListing({children, className}: HorizontalListingProps) {
     return (
         <div
-            className={clsx('flex items-center gap-4',
+            className={clsx('p-4 w-full flex gap-4 overflow-x-auto select-none',
                 className
             )}
         >

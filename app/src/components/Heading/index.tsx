@@ -9,15 +9,15 @@ export interface HeadingProps {
     className?: string
 }
 
-export function Heading({size = 'lg', children, className}: HeadingProps) {
+export function Heading({size = 'md', children, className}: HeadingProps) {
     return (
         <h1
             className={clsx(
                 'w-full text-left font-bold',
                 {
-                    'text-2xl': size === 'lg',
-                    'text-xl': size === 'md',
-                    'text-lg': size === 'sm'
+                    'text-3xl': size === 'lg',
+                    'text-2xl': size === 'md',
+                    'text-xl': size === 'sm'
                 }, className)
             }
         >

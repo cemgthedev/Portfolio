@@ -21,7 +21,7 @@ export function Label({link = false, href, size = 'md', children, className}: La
                 'font-semibold',
                 {
                     'w-full text-left': Component === 'h1',
-                    'p-4 text-center hover:text-sky-500': Component === 'a'
+                    'p-4 text-center hover:text-cyan-500': Component === 'a'
                 },
                 {
                     'text-[20px]': size === 'lg',

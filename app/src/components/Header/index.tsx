@@ -19,7 +19,9 @@ export function Header({children, className}: HeaderProps) {
                             items-center 
                             border-b-2 
                             border-b-white
-                            sticky`,
+                            sticky
+                            top-0
+                            z-[999]`,
                 className
             )}
         >

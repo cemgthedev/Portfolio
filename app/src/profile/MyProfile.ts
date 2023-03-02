@@ -15,7 +15,7 @@ export const MyProfile: Profile = {
             institution: 'Universidade Federal do Ceará - Campus de Quixadá',
             course: 'Ciência da Computação',
             period: 'Mar/2019 até o momento (3 anos e 11 meses)'
-        }
+        },
     ],
     stack: [
         {
