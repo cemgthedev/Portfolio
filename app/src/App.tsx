@@ -40,43 +40,43 @@ export function App() {
   return (
     <body className='fixed top-0 w-screen h-screen overflow-auto scroll-smooth scrollbar-hide'>
       <Header>
-          {
-            options.map(option => (
-              <Label
-                link
-                href={ option.href }
-              >
-                { option.label }
-              </Label>
-            ))
-          }    
-        </Header>
-        <Card
-          id='home'
-          style='dark'
+        {
+          options.map(option => (
+            <Label
+              link
+              href={ option.href }
+            >
+              { option.label }
+            </Label>
+          ))
+        }    
+      </Header>
+
+      <Card
+        id='home'
+        style='dark'
+      >
+        <div
+          className='w-64 relative flex flex-col items-center'
         >
-          <div
-            className='w-64 relative flex flex-col items-center'
-          >
-            <img className='absolute bottom-0' src={MyProfile.imageUrl} alt="" />
-            <img
-              src="/animations/Blob.svg" alt="" />
-          </div>
-          <div className='text-white'>
-            {
-              MyProfile.bio.map(paragraph => (
-                <Text>
-                  { paragraph }
-                </Text>
-              ))
-            }
-          </div>
-        </Card>
+          <img className='absolute bottom-0' src={MyProfile.imageUrl} alt="" />
+          <img
+            src="/animations/Blob.svg" alt="" />
+        </div>
+        <div className='text-white'>
+          {
+            MyProfile.bio.map(paragraph => (
+              <Text>
+                { paragraph }
+              </Text>
+            ))
+          }
+        </div>
+      </Card>
      
       <Card
         id='formacao'
         column
-        marginTop
       >
         <Heading>Formação</Heading>
         {
@@ -91,6 +91,7 @@ export function App() {
           ))
         }
       </Card>
+
       <Card
         column
         margin
@@ -119,90 +120,7 @@ export function App() {
           }
         </HorizontalListing>
       </Card>
-      <Card
-        column
-        margin
-        style='dark'
-        className='text-white shadow-sm shadow-black'
-      >
-        <Heading>Stack</Heading>
-        <HorizontalListing
-        >
-          {
-            MyProfile.stack.map(item => (
-              <figure
-                className='relative min-w-[96px] w-24 flex flex-col gap-1 items-center'
-              >
-                <img
-                  className='w-12 h-12 absolute top-1'
-                src={ item.imageUrl } alt="" />
-                <img
-                  className='w-14 h-14 opacity-0 hover:opacity-20'
-                src={ item.imageUrl } alt="" />
-                <figcaption
-                  className='hover:text-cyan-500'
-                >{ item.label }</figcaption>
-              </figure>
-            ))
-          }
-        </HorizontalListing>
-      </Card>
-      <Card
-        column
-        margin
-        style='dark'
-        className='text-white shadow-sm shadow-black'
-      >
-        <Heading>Stack</Heading>
-        <HorizontalListing
-        >
-          {
-            MyProfile.stack.map(item => (
-              <figure
-                className='relative min-w-[96px] w-24 flex flex-col gap-1 items-center'
-              >
-                <img
-                  className='w-12 h-12 absolute top-1'
-                src={ item.imageUrl } alt="" />
-                <img
-                  className='w-14 h-14 opacity-0 hover:opacity-20'
-                src={ item.imageUrl } alt="" />
-                <figcaption
-                  className='hover:text-cyan-500'
-                >{ item.label }</figcaption>
-              </figure>
-            ))
-          }
-        </HorizontalListing>
-      </Card>
-      <Card
-        column
-        margin
-        style='dark'
-        className='text-white shadow-sm shadow-black'
-      >
-        <Heading>Stack</Heading>
-        <HorizontalListing
-        >
-          {
-            MyProfile.stack.map(item => (
-              <figure
-                className='relative min-w-[96px] w-24 flex flex-col gap-1 items-center'
-              >
-                <img
-                  className='w-12 h-12 absolute top-1'
-                src={ item.imageUrl } alt="" />
-                <img
-                  className='w-14 h-14 opacity-0 hover:opacity-20'
-                src={ item.imageUrl } alt="" />
-                <figcaption
-                  className='hover:text-cyan-500'
-                >{ item.label }</figcaption>
-              </figure>
-            ))
-          }
-        </HorizontalListing>
-      </Card>
+
     </body>
   );
 }

@@ -5,13 +5,12 @@ export interface CardProps {
     id?: string,
     style?: 'ligth' | 'dark',
     margin?: boolean,
-    marginTop?: boolean,
     column?: boolean,
     className?: string,
     children: ReactNode,
 }
 
-export function Card({id, style, column = false, margin = false, marginTop, className, children}: CardProps) {
+export function Card({id, style, column = false, margin = false, className, children}: CardProps) {
     return (
         <div
             id = { id }
@@ -26,10 +25,6 @@ export function Card({id, style, column = false, margin = false, marginTop, clas
                 {
                     'm-0': margin === false,
                     'm-4': margin === true
-                },
-                {
-                    'mt-0': marginTop === false,
-                    'mt-4': marginTop === true
                 },
                 className)
             }
