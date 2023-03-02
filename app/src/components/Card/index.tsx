@@ -14,7 +14,7 @@ export function Card({id, style, column = false, margin = false, className, chil
     return (
         <div
             id = { id }
-            className={clsx('flex justify-center items-center gap-4 p-4 h-fit',
+            className={clsx('flex gap-4 p-4 h-fit mobile:max-sm:flex-col',
                 {
                     'bg-white': style === 'ligth',
                     'bg-neutral-900': style === 'dark'
