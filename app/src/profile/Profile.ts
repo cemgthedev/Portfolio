@@ -10,8 +10,8 @@ export interface Technology {
 }
 
 export interface Skill {
-    label: string,
-    level: string
+    imageUrl: string,
+    label: string
 }
 
 export interface Project {

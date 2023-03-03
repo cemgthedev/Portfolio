@@ -65,20 +65,20 @@ export const MyProfile: Profile = {
     ],
     skills: [
         {
-            label: 'Comunicação',
-            level: 'Intermediário'
+            imageUrl: '',
+            label: 'Comunicação'
         },
         {
-            label: 'Organização',
-            level: 'Avançado'
+            imageUrl: '',
+            label: 'Organização'
         },
         {
-            label: 'Criatividade',
-            level: 'Avançado'
+            imageUrl: '',
+            label: 'Criatividade'
         },
         {
-            label: 'Autodidatismo',
-            level: 'Avançado'
+            imageUrl: '',
+            label: 'Autodidatismo'
         }
     ],
     projects: [

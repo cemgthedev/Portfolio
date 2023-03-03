@@ -8,7 +8,8 @@ import { Label } from './components/Label';
 import { Text } from './components/Text';
 import { Heading } from './components/Heading';
 import { HorizontalListing } from './components/HorizontalListing';
-import { Range } from './components/Range';
+import { useState } from 'react';
+import { Profile } from './profile/Profile';
 
 const options = [
   {
@@ -38,6 +39,8 @@ const options = [
 ]
 
 export function App() {
+  const [profile, setProfile] = useState(MyProfile as Profile);
+
   return (
     <div className='fixed top-0 w-screen h-screen overflow-auto scroll-smooth scrollbar-hide'>
       <Header>
@@ -62,13 +65,13 @@ export function App() {
         <div
           className='w-[190px] min-w-[190px] relative flex flex-col items-center'
         >
-          <img className='absolute bottom-0' src={MyProfile.imageUrl} alt="" />
+          <img className='absolute bottom-0' src={profile.imageUrl} alt="" />
           <img
             src="/animations/Blob.svg" alt="" />
         </div>
         <div className='text-white'>
           {
-            MyProfile.bio.map(paragraph => (
+            profile.bio.map(paragraph => (
               <Text key={paragraph}>
                 { paragraph }
               </Text>
@@ -83,7 +86,7 @@ export function App() {
       >
         <Heading>Formação</Heading>
         {
-          MyProfile.educational.map(item => (
+          profile.educational.map(item => (
             <div
               key={item.institution}
               className='w-full flex flex-col gap-1'
@@ -106,7 +109,7 @@ export function App() {
         <HorizontalListing
         >
           {
-            MyProfile.stack.map(item => (
+            profile.stack.map(item => (
               <figure
                 key={item.imageUrl}
                 className='relative min-w-[96px] w-24 flex flex-col gap-1 items-center'
@@ -131,24 +134,7 @@ export function App() {
         column
       >
         <Heading>Habilidades</Heading>
-        {
-          MyProfile.skills.map(item => (
-            <Card
-            key={item.label}
-            margin='horizontal'
-            >
-              <label
-                className=' font-medium text-[20px] flex items-end w-48 h-14'
-              >{ item.label }</label>
-              <div
-                className='flex flex-col gap-1 w-full'
-              >
-                <Label>{ item.level }</Label>
-                <Range level={ item.level } />
-              </div>
-            </Card>
-          ))
-        }
+        
       </Card>
 
       <Card
