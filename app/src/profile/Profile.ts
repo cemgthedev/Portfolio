@@ -11,8 +11,7 @@ export interface Technology {
 
 export interface Skill {
     label: string,
-    level: string,
-    percentageRange: number
+    level: string
 }
 
 export interface Project {

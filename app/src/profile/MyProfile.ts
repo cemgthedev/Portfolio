@@ -66,23 +66,19 @@ export const MyProfile: Profile = {
     skills: [
         {
             label: 'Comunicação',
-            level: 'Intermediário',
-            percentageRange: 50
+            level: 'Intermediário'
         },
         {
             label: 'Organização',
-            level: 'Avançado',
-            percentageRange: 100
+            level: 'Avançado'
         },
         {
             label: 'Criatividade',
-            level: 'Avançado',
-            percentageRange: 100
+            level: 'Avançado'
         },
         {
             label: 'Autodidatismo',
-            level: 'Avançado',
-            percentageRange: 100
+            level: 'Avançado'
         }
     ],
     projects: [

@@ -57,7 +57,7 @@ export function App() {
       <Card
         id='home'
         style='dark'
-        className='text-white shadow-sm shadow-black items-center'
+        className='items-center'
       >
         <div
           className='w-[190px] min-w-[190px] relative flex flex-col items-center'
@@ -99,9 +99,8 @@ export function App() {
       <Card
         id='stack'
         column
-        margin
+        margin='all'
         style='dark'
-        className='text-white shadow-sm shadow-black'
       >
         <Heading>Stack</Heading>
         <HorizontalListing
@@ -136,6 +135,7 @@ export function App() {
           MyProfile.skills.map(item => (
             <Card
             key={item.label}
+            margin='horizontal'
             >
               <label
                 className=' font-medium text-[20px] flex items-end w-48 h-14'
@@ -144,7 +144,7 @@ export function App() {
                 className='flex flex-col gap-1 w-full'
               >
                 <Label>{ item.level }</Label>
-                <Range percentageRange={ item.percentageRange } />
+                <Range level={ item.level } />
               </div>
             </Card>
           ))
@@ -153,9 +153,8 @@ export function App() {
 
       <Card
         id='projetos'
-        margin
+        margin='all'
         style='dark'
-        className='text-white shadow-sm shadow-black'
       >
         <Heading>Projetos</Heading>
       </Card>
