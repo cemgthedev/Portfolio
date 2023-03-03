@@ -8,6 +8,7 @@ import { Label } from './components/Label';
 import { Text } from './components/Text';
 import { Heading } from './components/Heading';
 import { HorizontalListing } from './components/HorizontalListing';
+import { Range } from './components/Range';
 
 const options = [
   {
@@ -38,11 +39,12 @@ const options = [
 
 export function App() {
   return (
-    <body className='fixed top-0 w-screen h-screen overflow-auto scroll-smooth scrollbar-hide'>
+    <div className='fixed top-0 w-screen h-screen overflow-auto scroll-smooth scrollbar-hide'>
       <Header>
         {
           options.map(option => (
             <Label
+              key={option.href}
               link
               href={ option.href }
             >
@@ -55,7 +57,7 @@ export function App() {
       <Card
         id='home'
         style='dark'
-        className='items-center'
+        className='text-white shadow-sm shadow-black items-center'
       >
         <div
           className='w-[190px] min-w-[190px] relative flex flex-col items-center'
@@ -67,7 +69,7 @@ export function App() {
         <div className='text-white'>
           {
             MyProfile.bio.map(paragraph => (
-              <Text>
+              <Text key={paragraph}>
                 { paragraph }
               </Text>
             ))
@@ -83,6 +85,7 @@ export function App() {
         {
           MyProfile.educational.map(item => (
             <div
+              key={item.institution}
               className='w-full flex flex-col gap-1'
             >
               <Label size='lg'>{ item.institution }</Label>
@@ -106,6 +109,7 @@ export function App() {
           {
             MyProfile.stack.map(item => (
               <figure
+                key={item.imageUrl}
                 className='relative min-w-[96px] w-24 flex flex-col gap-1 items-center'
               >
                 <img
@@ -131,24 +135,30 @@ export function App() {
         {
           MyProfile.skills.map(item => (
             <Card
+            key={item.label}
             >
               <label
-                className=' font-medium text-[20px] flex items-end w-48 h-12'
+                className=' font-medium text-[20px] flex items-end w-48 h-14'
               >{ item.label }</label>
               <div
                 className='flex flex-col gap-1 w-full'
               >
                 <Label>{ item.level }</Label>
-                <input 
-                  type="range" 
-                  value={ item.percentageRange } 
-                  className="w-full h-[24px]"
-                />
+                <Range percentageRange={ item.percentageRange } />
               </div>
             </Card>
           ))
         }
       </Card>
-    </body>
+
+      <Card
+        id='projetos'
+        margin
+        style='dark'
+        className='text-white shadow-sm shadow-black'
+      >
+        <Heading>Projetos</Heading>
+      </Card>
+    </div>
   );
 }
