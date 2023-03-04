@@ -70,6 +70,7 @@ export function App() {
       <Card
         id='home'
         style='dark'
+        padding='all'
         className='items-center'
       >
         <div
@@ -93,12 +94,13 @@ export function App() {
       <Card
         id='projetos'
         style='ligth'
+        padding='all'
       >
         <Heading>Projetos</Heading>
       </Card>
 
       <Card
-        className='items-center justify-center h-32'
+        className='items-center justify-center p-12'
         style='dark'
       >
         <Heading>Saiba Mais</Heading>
@@ -107,6 +109,7 @@ export function App() {
       <Card
         id='formacao'
         column
+        padding='all'
       >
         <Heading>Formação</Heading>
         {
@@ -127,6 +130,7 @@ export function App() {
         id='stack'
         column
         margin='all'
+        padding='all'
         style='dark'
       >
         <Heading>Stack</Heading>
@@ -136,17 +140,15 @@ export function App() {
             profile.stack.map(item => (
               <figure
                 key={item.imageUrl}
-                className='relative min-w-[96px] w-24 flex flex-col gap-1 items-center'
+                className='relative min-w-[96px] w-24 h-fit flex flex-col gap-2 items-center p-4'
               >
                 <img
-                  className='w-12 h-12 absolute top-1'
+                  className='w-12 h-12 blur-md'
                 src={ item.imageUrl } alt="" />
                 <img
-                  className='w-14 h-14 opacity-0 hover:opacity-20'
+                  className='w-12 h-12 absolute top-4 opacity-75'
                 src={ item.imageUrl } alt="" />
-                <figcaption
-                  className='hover:text-cyan-500'
-                >{ item.label }</figcaption>
+                <figcaption>{ item.label }</figcaption>
               </figure>
             ))
           }
@@ -156,6 +158,7 @@ export function App() {
       <Card
         id='certificados'
         column
+        padding='all'
       >
         <Heading>Certificados</Heading>
       </Card>
@@ -164,14 +167,38 @@ export function App() {
         id='habilidades'
         column
         margin='all'
+        padding='all'
         style='dark'
       >
         <Heading>Habilidades</Heading>
+        <HorizontalListing>
+          {
+            profile.skills.map(item => (
+              <div
+                className='bg-gradient-to-b
+                           from-white/30
+                           via-white/40
+                           to-white/60
+                           shadow-md
+                           shadow-white/25
+                           flex 
+                           items-center
+                           justify-center
+                           w-48
+                           h-48
+                           rounded-full'
+              >
+                <Text size='lg'>{item.label}</Text>
+              </div>
+            ))
+          }
+        </HorizontalListing>
       </Card>
 
       <Card
         id='feedback'
         column
+        padding='all'
         className='items-center justify-center'
       >
         <Heading
@@ -211,6 +238,37 @@ export function App() {
           >
             Enviar
           </Button>
+        </Card>
+      </Card>
+
+      <Card
+        column
+        padding='all'
+        margin='all'
+        className='items-center 
+                   justify-center
+                   text-white
+                   bg-gradient-to-br
+                     
+                  from-cyan-500/30
+                  via-cyan-700/50
+                  to-cyan-900/70
+                     rounded-md
+                      shadow-md
+                      shadow-neutral-900/70'
+      >
+        <Heading>
+          Agradecimentos
+        </Heading>
+        <Card
+          padding='all'
+          className='items-center 
+                     justify-center'
+        >
+          <Text
+            className='text-white'
+          >Se você chegou até aqui obrigado pela atenção</Text>
+          <img src="/ImageProfile.svg" alt="" />
         </Card>
       </Card>
 

@@ -5,16 +5,17 @@ export interface CardProps {
     id?: string,
     style?: 'ligth' | 'dark',
     margin?: string,
+    padding?: string,
     column?: boolean,
     className?: string,
     children: ReactNode,
 }
 
-export function Card({id, style, column = false, margin = 'none', className, children}: CardProps) {
+export function Card({id, style, column = false, margin = 'none', padding = 'none', className, children}: CardProps) {
     return (
         <div
             id = { id }
-            className={clsx('w-full flex gap-4 p-4 h-fit mobile:max-sm:flex-col',
+            className={clsx('flex gap-4 h-fit mobile:max-sm:flex-col',
                 {
                     'bg-white text-neutral-900': style === 'ligth',
                     'bg-neutral-900 text-white shadow-sm shadow-black': style === 'dark'
@@ -27,6 +28,12 @@ export function Card({id, style, column = false, margin = 'none', className, chi
                     'm-4': margin === 'all',
                     'ml-4 mr-4': margin === 'horizontal',
                     'mt-4 mb-4': margin === 'vertical'
+                },
+                {
+                    'p-0': padding === 'none',
+                    'p-4': padding === 'all',
+                    'pl-4 pr-4': padding === 'horizontal',
+                    'pt-4 pb-4': padding === 'vertical'
                 },
                 className)
             }
