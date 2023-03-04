@@ -76,8 +76,12 @@ export function App() {
         <div
           className='w-[190px] min-w-[190px] relative flex flex-col items-center'
         >
-          <img className='absolute top-12' src={profile.imageUrl} alt="" />
+          <img className='absolute top-12 z-[3]' src={profile.imageUrl} alt="" />
           <img
+            className='opacity-60 z-[2]'
+            src="/animations/Blob.svg" alt="" />
+          <img
+            className='blur-[6px] absolute z-[1]'
             src="/animations/Blob.svg" alt="" />
         </div>
         <div className='text-white'>
