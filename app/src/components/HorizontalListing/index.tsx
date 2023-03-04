@@ -9,7 +9,7 @@ export interface HorizontalListingProps {
 export function HorizontalListing({children, className}: HorizontalListingProps) {
     return (
         <div
-            className={clsx('p-4 w-full flex gap-4 overflow-x-auto select-none scrollbar-hide',
+            className={clsx('p-4 flex gap-4 overflow-x-auto select-none scrollbar-hide',
                 className
             )}
         >

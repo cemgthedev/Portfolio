@@ -1,5 +1,6 @@
 import './styles/global.css'
 
+import { Profile } from './profile/Profile';
 import { MyProfile } from './profile/MyProfile';
 
 import { Header } from './components/Header';
@@ -7,14 +8,19 @@ import { Card } from './components/Card';
 import { Label } from './components/Label';
 import { Text } from './components/Text';
 import { Heading } from './components/Heading';
+import { Button } from './components/Button';
 import { HorizontalListing } from './components/HorizontalListing';
+
 import { useState } from 'react';
-import { Profile } from './profile/Profile';
 
 const options = [
   {
     href: '#home',
     label: 'Home'
+  },
+  {
+    href: '#projetos',
+    label: 'Projetos'
   },
   {
     href: '#formacao',
@@ -25,12 +31,16 @@ const options = [
     label: 'Stack'
   },
   {
+    href: '#certificados',
+    label: 'Certificados'
+  },
+  {
     href: '#habilidades',
     label: 'Habilidades'
   },
   {
-    href: '#projetos',
-    label: 'Projetos'
+    href: '#feedback',
+    label: 'Feedback'
   },
   {
     href: '#contatos',
@@ -65,7 +75,7 @@ export function App() {
         <div
           className='w-[190px] min-w-[190px] relative flex flex-col items-center'
         >
-          <img className='absolute bottom-0' src={profile.imageUrl} alt="" />
+          <img className='absolute top-12' src={profile.imageUrl} alt="" />
           <img
             src="/animations/Blob.svg" alt="" />
         </div>
@@ -78,6 +88,20 @@ export function App() {
             ))
           }
         </div>
+      </Card>
+
+      <Card
+        id='projetos'
+        style='ligth'
+      >
+        <Heading>Projetos</Heading>
+      </Card>
+
+      <Card
+        className='items-center justify-center h-32'
+        style='dark'
+      >
+        <Heading>Saiba Mais</Heading>
       </Card>
      
       <Card
@@ -130,20 +154,66 @@ export function App() {
       </Card>
 
       <Card
-        id='habilidades'
+        id='certificados'
         column
       >
-        <Heading>Habilidades</Heading>
-        
+        <Heading>Certificados</Heading>
       </Card>
 
       <Card
-        id='projetos'
+        id='habilidades'
+        column
         margin='all'
         style='dark'
       >
-        <Heading>Projetos</Heading>
+        <Heading>Habilidades</Heading>
       </Card>
+
+      <Card
+        id='feedback'
+        column
+        className='items-center justify-center'
+      >
+        <Heading
+          className='w-full text-left'
+        >
+          Feedback
+        </Heading>
+        <Card
+          column
+          className='w-4/5'
+        >
+          <textarea 
+            className='ring-2 
+                     ring-neutral-900 
+                     text-neutral-900
+                     rounded-md 
+                     p-4 
+                     w-full 
+                     h-24 
+                     min-h-[128px] 
+                     max-h-[96px]
+                     scrollbar-hide
+                     resize-none
+                     focus:outline-none
+                     focus:ring-cyan-500
+                     hover:shadow-md
+                     hover:shadow-black' 
+            placeholder='Me envie seu feedback 😉'
+            cols={30} 
+            rows={5}>  
+          </textarea>
+          <Button
+            className='bg-cyan-500 
+                    hover:bg-cyan-300
+                    text-white
+                    rounded-md'
+          >
+            Enviar
+          </Button>
+        </Card>
+      </Card>
+
     </div>
   );
 }

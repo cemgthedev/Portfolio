@@ -14,7 +14,6 @@ export function Header({children, className}: HeaderProps) {
                            text-white 
                             w-full 
                             flex 
-                            gap-2 
                             justify-center 
                             items-center 
                             border-b-2 

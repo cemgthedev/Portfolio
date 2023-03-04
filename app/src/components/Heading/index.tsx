@@ -13,7 +13,7 @@ export function Heading({size = 'md', children, className}: HeadingProps) {
     return (
         <h1
             className={clsx(
-                'w-full text-left font-bold',
+                'font-bold',
                 {
                     'text-3xl': size === 'lg',
                     'text-2xl': size === 'md',
