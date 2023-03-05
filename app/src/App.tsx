@@ -139,11 +139,13 @@ export function App() {
       >
         <Heading>Stack</Heading>
         <HorizontalListing
+          idBox='stackBox'
+          idScroll='stackScroll'
         >
           {
             profile.stack.map(item => (
               <figure
-                key={item.imageUrl}
+                key={item.label}
                 className='relative min-w-[96px] w-24 h-fit flex flex-col gap-2 items-center p-4'
               >
                 <img
@@ -175,10 +177,14 @@ export function App() {
         style='dark'
       >
         <Heading>Habilidades</Heading>
-        <HorizontalListing>
+        <HorizontalListing
+          idBox='habilidadesBox'
+          idScroll='habilidadesScroll'
+        >
           {
             profile.skills.map(item => (
               <div
+                key={item.label}
                 className='bg-gradient-to-b
                            from-white/30
                            via-white/40
@@ -188,8 +194,8 @@ export function App() {
                            flex 
                            items-center
                            justify-center
-                           w-48
-                           h-48
+                           h-[200px]
+                           min-w-[200px]
                            rounded-full'
               >
                 <Text size='lg'>{item.label}</Text>
