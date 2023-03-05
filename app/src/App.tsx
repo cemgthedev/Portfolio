@@ -282,6 +282,44 @@ export function App() {
         </Card>
       </Card>
 
+      <Card
+        column
+        padding='all'
+        style='dark'
+        className='items-center'
+      >
+        <Card
+          className='w-full items-center justify-center'
+        >
+          <hr className='bg-white h-[2px] w-full'/>
+          <Card
+            className='w-fit items-center justify-center'
+          >
+            {
+              profile.contacts.map(item => (
+                <a href={item.siteUrl}
+                  className="flex
+                            items-center
+                            justify-center
+                            w-[36px] 
+                            h-[36px]
+                            rounded-md
+                            bg-gradient-to-t
+                            to-white/30
+                            via-white/40
+                            from-white/60
+                            "
+                >
+                  <img src={item.imageUrl} alt="" className='opacity-80' />
+                </a>
+              ))
+            }
+          </Card>
+          <hr className='bg-white h-[2px] w-full'/>
+        </Card>
+        <Heading>Portifólio</Heading>
+      </Card>
+
     </div>
   );
 }
