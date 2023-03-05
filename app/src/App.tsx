@@ -308,6 +308,14 @@ export function App() {
                             to-white/30
                             via-white/40
                             from-white/60
+                            shadow-md
+                           shadow-white/25
+
+                           hover:to-cyan-200/40
+                            hover:via-cyan-300/80
+                            hover:from-cyan-500
+                            hover:shadow-cyan-500
+
                             "
                 >
                   <img src={item.imageUrl} alt="" className='opacity-80' />
@@ -317,7 +325,12 @@ export function App() {
           </Card>
           <hr className='bg-white h-[2px] w-full'/>
         </Card>
-        <Heading>Portifólio</Heading>
+        <Heading>{ profile.portifolioName }</Heading>
+        <Text
+          className='italic'
+        >
+          "{ profile.portifolioLema }"
+        </Text>
       </Card>
 
     </div>

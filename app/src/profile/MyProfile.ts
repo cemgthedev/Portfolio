@@ -2,6 +2,8 @@ import { Profile } from "./Profile";
 
 export const MyProfile: Profile = {
     imageUrl: '/ImageProfile.svg',
+    portifolioName: 'Portifólio',
+    portifolioLema: 'No Pain No Gain',
     bio: [
         `Olá, me chamo Carlos Eduardo de Moura Gomes.`,
         `Atualmente minha experiência está fundamentada apenas em projetos pessoais
