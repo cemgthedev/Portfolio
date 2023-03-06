@@ -12,6 +12,7 @@ import { Button } from './components/Button';
 import { HorizontalListing } from './components/HorizontalListing';
 
 import { useState } from 'react';
+import nextId from 'react-id-generator';
 
 const options = [
   {
@@ -57,7 +58,7 @@ export function App() {
         {
           options.map(option => (
             <Label
-              key={option.href}
+              key={nextId()}
               link
               href={ option.href }
             >
@@ -87,7 +88,7 @@ export function App() {
         <div className='text-white'>
           {
             profile.bio.map(paragraph => (
-              <Text key={paragraph}>
+              <Text key={nextId()}>
                 { paragraph }
               </Text>
             ))
@@ -119,7 +120,7 @@ export function App() {
         {
           profile.educational.map(item => (
             <div
-              key={item.institution}
+              key={nextId()}
               className='w-full flex flex-col gap-1'
             >
               <Label size='lg'>{ item.institution }</Label>
@@ -145,7 +146,7 @@ export function App() {
           {
             profile.stack.map(item => (
               <figure
-                key={item.label}
+                key={nextId()}
                 className='relative min-w-[96px] w-24 h-fit flex flex-col gap-2 items-center p-4'
               >
                 <img
@@ -184,7 +185,7 @@ export function App() {
           {
             profile.skills.map(item => (
               <div
-                key={item.label}
+                key={nextId()}
                 className='bg-gradient-to-b
                            from-white/30
                            via-white/40
@@ -297,7 +298,9 @@ export function App() {
           >
             {
               profile.contacts.map(item => (
-                <a href={item.siteUrl}
+                <a 
+                  key = {nextId()}
+                  href={item.siteUrl}
                   className="flex
                             items-center
                             justify-center
@@ -309,9 +312,8 @@ export function App() {
                             via-white/40
                             from-white/60
                             shadow-md
-                           shadow-white/25
-
-                           hover:to-cyan-200/40
+                            shadow-white/25
+                            hover:to-cyan-200/40
                             hover:via-cyan-300/80
                             hover:from-cyan-500
                             hover:shadow-cyan-500
