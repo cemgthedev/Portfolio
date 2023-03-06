@@ -11,6 +11,9 @@ import { Heading } from './components/Heading';
 import { Button } from './components/Button';
 import { HorizontalListing } from './components/HorizontalListing';
 
+import emailjs from '@emailjs/browser';
+import { EmailJsIds } from './EmailJsIds';
+
 import { useState } from 'react';
 import nextId from 'react-id-generator';
 
@@ -51,6 +54,19 @@ const options = [
 
 export function App() {
   const [profile, setProfile] = useState(MyProfile as Profile);
+
+  function sendMessage(e: any) {
+    e.preventDefault();
+
+    emailjs.sendForm(EmailJsIds.YOUR_SERVICE_ID, EmailJsIds.YOUR_TEMPLATE_ID, e.target, EmailJsIds.YOUR_PUBLIC_KEY)
+      .then(() => {
+        window.alert('Obrigado pelo seu feedback 😉')
+      }, () => {
+        window.alert('Não foi possível enviar feedback. Contate diretamente 😉');
+    });
+
+    e.target.reset();
+  }
 
   return (
     <div className='fixed top-0 w-screen h-screen overflow-auto scroll-smooth scrollbar-hide'>
@@ -221,34 +237,40 @@ export function App() {
           column
           className='w-4/5'
         >
-          <textarea 
-            className='ring-2 
-                     ring-neutral-900 
-                     text-neutral-900
-                     rounded-md 
-                     p-4 
-                     w-full 
-                     h-24 
-                     min-h-[128px] 
-                     max-h-[96px]
-                     scrollbar-hide
-                     resize-none
-                     focus:outline-none
-                     focus:ring-cyan-500
-                     hover:shadow-md
-                     hover:shadow-black' 
-            placeholder='Me envie seu feedback 😉'
-            cols={30} 
-            rows={5}>  
-          </textarea>
-          <Button
-            className='bg-cyan-500 
-                    hover:bg-cyan-300
-                    text-white
-                    rounded-md'
+          <form
+            onSubmit={sendMessage}
           >
-            Enviar
-          </Button>
+            <textarea 
+              name="message"
+              className='ring-2 
+                      ring-neutral-900 
+                      text-neutral-900
+                      rounded-md 
+                      p-4 
+                      w-full 
+                      h-24 
+                      min-h-[128px] 
+                      max-h-[96px]
+                      scrollbar-hide
+                      resize-none
+                      focus:outline-none
+                      focus:ring-cyan-500
+                      hover:shadow-md
+                      hover:shadow-black' 
+              placeholder='Me envie seu feedback 😉'
+              cols={30} 
+              rows={5}>  
+            </textarea>
+            <Button
+              onSubmit
+              className='bg-cyan-500 
+                      hover:bg-cyan-300
+                      text-white
+                      rounded-md'
+            >
+              Enviar
+            </Button>
+          </form>
         </Card>
       </Card>
 
