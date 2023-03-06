@@ -150,7 +150,7 @@ export function App() {
                 className='relative min-w-[96px] w-24 h-fit flex flex-col gap-2 items-center p-4'
               >
                 <img
-                  className='w-12 h-12 blur-md'
+                  className='w-12 h-12 blur-md animate-pulse'
                 src={ item.imageUrl } alt="" />
                 <img
                   className='w-12 h-12 absolute top-4 opacity-75'

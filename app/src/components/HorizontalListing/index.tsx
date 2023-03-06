@@ -13,7 +13,6 @@ export interface HorizontalListingProps {
 export function HorizontalListing({idBox, idScroll, children, className}: HorizontalListingProps) {
     const [percentage, setPercentage] = useState(0);
     
-
     async function updateProgressBar() {
       try{
           const box = await document.querySelector(`#${idBox}`);
