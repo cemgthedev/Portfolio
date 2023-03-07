@@ -15,7 +15,7 @@ export function Button({children, className, onSubmit = false}: ButtonProps) {
         <button
           type={typeName}
           className={clsx(
-            'w-full flex items-center justify-center p-2',
+            'transition w-full flex items-center justify-center p-2',
             className
           )}
         >

@@ -1,7 +1,7 @@
 import { Profile } from "./Profile";
 
 export const MyProfile: Profile = {
-    imageUrl: '/ImageProfile.svg',
+    imageUrl: '/profile/ImageProfile.svg',
     portifolioName: 'Portifólio',
     portifolioLema: 'No Pain No Gain',
     bio: [
@@ -12,6 +12,15 @@ export const MyProfile: Profile = {
         e futuramente tecnologias relacionadas a Back End. Devido a rotina da faculdade 
         busco apenas vagas de estágio remoto com carga horária semanal de até 40 horas.`
     ],
+    projects: [
+        {
+            imageUrl: '',
+            label: 'GitHub Stalker',
+            githubProjectUrl: 'https://github.com/cemgthedev/GitHub-Stalker',
+            siteProjectUrl: 'https://github-stalker-gray.vercel.app/',
+            description: 'Uma aplicação web para você "stalkear" usuários do github'
+        }
+    ],
     educational: [
         {
             institution: 'Universidade Federal do Ceará - Campus de Quixadá',
@@ -21,48 +30,96 @@ export const MyProfile: Profile = {
     ],
     stack: [
         {
-            imageUrl: '/icons/Figma.svg',
+            imageUrl: '/profile/stack/Figma.svg',
             label: 'Figma'
         },
         {
-            imageUrl: '/icons/HTML5.svg',
+            imageUrl: '/profile/stack/HTML5.svg',
             label: 'HTML'
         },
         {
-            imageUrl: '/icons/CSS3.svg',
+            imageUrl: '/profile/stack/CSS3.svg',
             label: 'CSS'
         },
         {
-            imageUrl: '/icons/Express.svg',
+            imageUrl: '/profile/stack/Express.svg',
             label: 'Express'
         },
         {
-            imageUrl: '/icons/Tailwindcss.svg',
+            imageUrl: '/profile/stack/Tailwindcss.svg',
             label: 'Tailwindcss'
         },
         {
-            imageUrl: '/icons/React.svg',
+            imageUrl: '/profile/stack/React.svg',
             label: 'React'
         },
         {
-            imageUrl: '/icons/Python.svg',
+            imageUrl: '/profile/stack/Python.svg',
             label: 'Python'
         },
         {
-            imageUrl: '/icons/JavaScript.svg',
+            imageUrl: '/profile/stack/JavaScript.svg',
             label: 'JavaScript'
         },
         {
-            imageUrl: '/icons/TypeScript.svg',
+            imageUrl: '/profile/stack/TypeScript.svg',
             label: 'TypeScript'
         },
         {
-            imageUrl: '/icons/Node.svg',
+            imageUrl: '/profile/stack/Node.svg',
             label: 'Node'
         },
         {
-            imageUrl: '/icons/Git.svg',
+            imageUrl: '/profile/stack/Git.svg',
             label: 'Git'
+        }
+    ],
+    certificates: [
+        {
+            imageUrl: '/profile/certificates/html-basico-fundacao-bradesco.png',
+            institution: 'Fundação Bradesco',
+            trail: 'Crie um Site Simples',
+            label: 'HTML Básico'
+        },
+        {
+            imageUrl: '/profile/certificates/html-avancado-fundacao-bradesco.png',
+            institution: 'Fundação Bradesco',
+            trail: 'Crie um Site Simples',
+            label: 'HTML Avançado'
+        },
+        {
+            imageUrl: '/profile/certificates/inovando-com-css-fundacao-bradesco.png',
+            institution: 'Fundação Bradesco',
+            trail: 'Crie um Site Simples',
+            label: 'Inovando com CSS'
+        },
+        {
+            imageUrl: '/profile/certificates/html-e-css-na-pratica-fundacao-bradesco.png',
+            institution: 'Fundação Bradesco',
+            trail: 'Crie um Site Simples',
+            label: 'HTML e CSS na Prática'
+        },
+        {
+            imageUrl: '/profile/certificates/introducao-ao-javascript-fundacao-bradesco.png',
+            institution: 'Fundação Bradesco',
+            trail: 'Crie um Site Simples',
+            label: 'Introdução ao JavaScript'
+        },
+        {
+            imageUrl: '/profile/certificates/crie-um-site-simples-fundacao-bradesco.png',
+            institution: 'Fundação Bradesco',
+            trail: 'Crie um Site Simples',
+            label: 'Crie um Site Simples com HTML, CSS e JavaScript'
+        },
+        {
+            imageUrl: '/profile/certificates/trilha-conectar-do-discover-rocketseat.png',
+            institution: 'Rocketseat',
+            trail: 'Conectar',
+        },
+        {
+            imageUrl: '/profile/certificates/trilha-fundamentar-do-discover-rocketseat.png',
+            institution: 'Rocketseat',
+            trail: 'Fundamentar',
         }
     ],
     skills: [
@@ -81,15 +138,6 @@ export const MyProfile: Profile = {
         {
             imageUrl: '',
             label: 'Autodidatismo'
-        }
-    ],
-    projects: [
-        {
-            imageUrl: '',
-            label: 'GitHub Stalker',
-            githubProjectUrl: 'https://github.com/cemgthedev/GitHub-Stalker',
-            siteProjectUrl: 'https://github-stalker-gray.vercel.app/',
-            description: 'Uma aplicação web para você "stalkear" usuários do github'
         }
     ],
     contacts: [

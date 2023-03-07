@@ -253,6 +253,7 @@ export function App() {
                       max-h-[96px]
                       scrollbar-hide
                       resize-none
+                      transition
                       focus:outline-none
                       focus:ring-cyan-500
                       hover:shadow-md
@@ -282,13 +283,12 @@ export function App() {
                    justify-center
                    text-white
                    bg-gradient-to-br
-                     
-                  from-cyan-500/30
-                  via-cyan-700/50
-                  to-cyan-900/70
-                     rounded-md
-                      shadow-md
-                      shadow-neutral-900/70'
+                 from-cyan-500/30
+                 via-cyan-700/50
+                 to-cyan-900/70
+                   rounded-md
+                   shadow-md
+                 shadow-neutral-900/70'
       >
         <Heading>
           Agradecimentos
@@ -323,6 +323,7 @@ export function App() {
                 <a 
                   key = {nextId()}
                   href={item.siteUrl}
+                  target='_blank'
                   className="flex
                             items-center
                             justify-center

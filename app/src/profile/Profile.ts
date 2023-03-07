@@ -1,3 +1,11 @@
+export interface Project {
+    imageUrl: string,
+    label: string,
+    githubProjectUrl: string,
+    siteProjectUrl: string,
+    description: string
+}
+
 export interface Education {
     institution: string,
     course?: string,
@@ -9,17 +17,16 @@ export interface Technology {
     label: string
 }
 
+export interface Certificate {
+    imageUrl: string,
+    institution: string,
+    trail?: string,
+    label?: string
+}
+
 export interface Skill {
     imageUrl: string,
     label: string
-}
-
-export interface Project {
-    imageUrl: string,
-    label: string,
-    githubProjectUrl: string,
-    siteProjectUrl: string,
-    description: string
 }
 
 export interface Contact {
@@ -33,9 +40,10 @@ export interface Profile {
     bio: string[],
     portifolioName: string,
     portifolioLema:string,
+    projects: Project[],
     educational: Education[],
     stack: Technology[],
+    certificates: Certificate[],
     skills: Skill[],
-    projects: Project[],
     contacts: Contact[]
 }
