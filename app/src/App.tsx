@@ -10,6 +10,7 @@ import { Text } from './components/Text';
 import { Heading } from './components/Heading';
 import { Button } from './components/Button';
 import { HorizontalListing } from './components/HorizontalListing';
+import { Carousel } from './components/Carousel';
 
 import emailjs from '@emailjs/browser';
 import { EmailJsIds } from './EmailJsIds';
@@ -184,6 +185,46 @@ export function App() {
         padding='all'
       >
         <Heading>Certificados</Heading>
+        <Carousel
+          numberOfChildren = {profile.certificates.length}
+        >
+          {
+            profile.certificates.map(item => (
+              <figure 
+                key={nextId()}
+                id={nextId()}
+                className="p-2
+                           flex 
+                           flex-col 
+                           gap-1 
+                           items-center 
+                           justify-center 
+                           rounded-md
+                           flex-none
+                           w-fit
+                           h-fit
+                           text-white
+                           bg-gradient-to-br
+                         from-cyan-500/30
+                         via-cyan-700/50
+                         to-cyan-900/70
+                         shadow-md
+                       shadow-neutral-900/70"
+              >
+                <img src={item.imageUrl} alt="..."/>
+                <Label size='lg'>Instituição: { item.institution }</Label>
+                {
+                  item.trail &&
+                  <Label>Trilha: { item.trail }</Label>
+                }
+                {
+                  item.label &&
+                  <Label size='sm'>Curso: { item.label }</Label>
+                }
+              </figure>
+            ))
+          }
+        </Carousel>
       </Card>
 
       <Card
@@ -301,7 +342,7 @@ export function App() {
           <Text
             className='text-white'
           >Se você chegou até aqui obrigado pela atenção</Text>
-          <img src="/ImageProfile.svg" alt="" />
+          <img src="/profile/ImageProfile.svg" alt="" />
         </Card>
       </Card>
 
