@@ -3,13 +3,15 @@ import { ReactNode } from "react";
 
 
 export interface HeaderProps {
+    id?: string,
     children:ReactNode,
     className?:string
 }
 
-export function Header({children, className}: HeaderProps) {
+export function Header({id, children, className}: HeaderProps) {
     return (
         <header
+            id = { id }
             className={clsx(`bg-neutral-900 
                            text-white 
                             w-full 
@@ -18,9 +20,7 @@ export function Header({children, className}: HeaderProps) {
                             items-center 
                             border-b-2 
                             border-b-white
-                            sticky
-                            top-0
-                            z-[999]`,
+                            sticky`,
                 className
             )}
         >

@@ -20,10 +20,6 @@ import nextId from 'react-id-generator';
 
 const options = [
   {
-    href: '#home',
-    label: 'Home'
-  },
-  {
     href: '#projetos',
     label: 'Projetos'
   },
@@ -71,7 +67,9 @@ export function App() {
 
   return (
     <div className='fixed top-0 w-screen h-screen overflow-auto scroll-smooth scrollbar-hide'>
-      <Header>
+      <Header
+        id='top'
+      >
         {
           options.map(option => (
             <Label
@@ -86,7 +84,6 @@ export function App() {
       </Header>
 
       <Card
-        id='home'
         style='dark'
         padding='all'
         className='items-center'
@@ -347,17 +344,18 @@ export function App() {
       </Card>
 
       <Card
+        id='contatos'
         column
         padding='all'
         style='dark'
-        className='items-center'
+        className='items-center h-full'
       >
         <Card
           className='w-full items-center justify-center'
         >
           <hr className='bg-white h-[2px] w-full'/>
-          <Card
-            className='w-fit items-center justify-center'
+          <div
+            className='w-fit flex items-center justify-center gap-4'
           >
             {
               profile.contacts.map(item => (
@@ -388,7 +386,7 @@ export function App() {
                 </a>
               ))
             }
-          </Card>
+          </div>
           <hr className='bg-white h-[2px] w-full'/>
         </Card>
         <Heading>{ profile.portifolioName }</Heading>
@@ -397,6 +395,11 @@ export function App() {
         >
           "{ profile.portifolioLema }"
         </Text>
+        <Label
+          href="#top"
+          link
+          size="lg"
+        >Home</Label>
       </Card>
 
     </div>

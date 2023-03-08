@@ -10,18 +10,19 @@ export interface CarouselProps {
 }
 
 export function Carousel({ children, numberOfChildren }: CarouselProps) {
-  const [scrollBox, setScrollBox] = useState({} as Element);
   const [scrollCarousel, setScrollCarousel] = useState({} as Element);
-  const [position, setPosition] = useState(0);
-
-  window.onresize = () => {console.log("Ok")}
+  const [position, setPosition] = useState(1);
   
   useEffect(() => {
     async function getScroll() {
       try {
-        const scrollBox = await document.querySelector("#scrollBox");
         const scrollCarousel = await document.querySelector("#scrollCarousel");
         if(scrollCarousel) {
+          const resizeObserver = new ResizeObserver((e) => {
+            e[0].target.scrollLeft = 0;
+            setPosition(1);
+          });
+          resizeObserver.observe(scrollCarousel);
           setScrollCarousel(scrollCarousel);
         }
       } catch(e) {
@@ -30,16 +31,26 @@ export function Carousel({ children, numberOfChildren }: CarouselProps) {
     }
 
     getScroll();
-  }, [scroll])
+  }, [])
 
-  function scrollToPrevious() {
+  function scrollToPrevious(e: any) {
+    e.preventDefault();
+
     scrollCarousel.scrollLeft -= (scrollCarousel.scrollWidth / numberOfChildren);
+    if(position > 1) {
+      setPosition(prevState => prevState - 1);
+    }
     console.log(scrollCarousel.scrollLeft, scrollCarousel.scrollWidth);
   }
 
-  function scrollToNext() {
+  function scrollToNext(e: any) {
+    e.preventDefault();
+
     scrollCarousel.scrollLeft += (scrollCarousel.scrollWidth / numberOfChildren);
-    console.log(scrollCarousel.scrollLeft, scrollCarousel.scrollWidth);
+    if(position < numberOfChildren) {
+      setPosition(prevState => prevState + 1);
+    }
+    console.log(scrollCarousel.scrollHeight,scrollCarousel.scrollLeft, scrollCarousel.scrollWidth);
   }
 
   return (
@@ -53,10 +64,11 @@ export function Carousel({ children, numberOfChildren }: CarouselProps) {
                      gap-4
                      items-center
                      justify-center
+                     relative
                      "
         >
             <button
-              onClick={scrollToPrevious}
+              onClick={e => scrollToPrevious(e)}
               className="w-[32px] 
                          h-[32px] 
                          text-2xl
@@ -79,12 +91,12 @@ export function Carousel({ children, numberOfChildren }: CarouselProps) {
             >{'<'}</button>
             <div
               id='scrollCarousel'
-              className="flex py-8 w-fit h-fit overflow-hidden scroll-smooth"
+              className="flex py-8 w-fit h-fit overflow-hidden"
             >
                 { children }
             </div>
             <button
-              onClick={scrollToNext}
+              onClick={e => scrollToNext(e)}
               className="w-[32px] 
               h-[32px] 
               text-2xl
@@ -105,6 +117,24 @@ export function Carousel({ children, numberOfChildren }: CarouselProps) {
                active:animate-ping
               "
             >{'>'}</button>
+            <div
+              className="absolute 
+                         bottom-[-16px]
+                         w-fit
+                         h-[32px]
+                         px-2
+                         flex
+                         items-center
+                         justify-center
+                         rounded-md
+                         text-white
+                         bg-gradient-to-b
+                         from-yellow-400/60
+                         via-red-600/80
+                         to-neutral-800"
+            >
+              { position }/{numberOfChildren}
+            </div>
         </div>
     );
 }

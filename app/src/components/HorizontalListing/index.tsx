@@ -12,7 +12,7 @@ export interface HorizontalListingProps {
 
 export function HorizontalListing({idBox, idScroll, children, className}: HorizontalListingProps) {
     const [percentage, setPercentage] = useState(0);
-    
+
     async function updateProgressBar() {
       try{
           const box = await document.querySelector(`#${idBox}`);
@@ -30,7 +30,7 @@ export function HorizontalListing({idBox, idScroll, children, className}: Horizo
     return (
         <div
           id={idBox}
-          className='flex flex-col'
+          className='flex flex-col w-full'
         >
             <div
                 onScroll={() => updateProgressBar()}
