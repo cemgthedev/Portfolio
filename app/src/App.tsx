@@ -20,6 +20,10 @@ import nextId from 'react-id-generator';
 
 const options = [
   {
+    href: "#home",
+    label: 'Home'
+  },
+  {
     href: '#projetos',
     label: 'Projetos'
   },
@@ -67,9 +71,7 @@ export function App() {
 
   return (
     <div className='fixed top-0 w-screen h-screen overflow-auto scroll-smooth scrollbar-hide'>
-      <Header
-        id='top'
-      >
+      <Header>
         {
           options.map(option => (
             <Label
@@ -84,6 +86,7 @@ export function App() {
       </Header>
 
       <Card
+        id='home'
         style='dark'
         padding='all'
         className='items-center'
@@ -113,13 +116,14 @@ export function App() {
       <Card
         id='projetos'
         style='ligth'
-        padding='all'
+        margin='all'
         column
       >
         <Heading>Projetos</Heading>
         {
           profile.projects.map(item => (
             <Card
+              key={nextId()}
               column
               padding='all'
               className='items-center justify-center w-fit m-auto rounded-md bg-neutral-100 ring-1 ring-black hover:shadow-sm hover:shadow-black'
@@ -166,7 +170,7 @@ export function App() {
       <Card
         id='formacao'
         column
-        padding='all'
+        margin='all'
       >
         <Heading>Formação</Heading>
         {
@@ -217,7 +221,7 @@ export function App() {
       <Card
         id='certificados'
         column
-        padding='all'
+        margin='all'
       >
         <Heading>Certificados</Heading>
         <Carousel
@@ -242,9 +246,7 @@ export function App() {
                            bg-gradient-to-br
                          from-cyan-500/30
                          via-cyan-700/50
-                         to-cyan-900/70
-                         shadow-md
-                       shadow-neutral-900/70"
+                         to-cyan-900/70"
               >
                 <img src={item.imageUrl} alt="..."/>
                 <figcaption
@@ -323,7 +325,7 @@ export function App() {
       <Card
         id='feedback'
         column
-        padding='all'
+        margin='all'
         className='items-center justify-center'
       >
         <Heading
@@ -333,7 +335,7 @@ export function App() {
         </Heading>
         <Card
           column
-          className='w-4/5'
+          className='w-[80vw]'
         >
           <form
             onSubmit={sendMessage}
@@ -456,11 +458,6 @@ export function App() {
         >
           "{ profile.portifolioLema }"
         </Text>
-        <Label
-          href="#top"
-          link
-          size="lg"
-        >Home</Label>
       </Card>
 
     </div>
