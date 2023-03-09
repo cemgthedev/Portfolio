@@ -14,7 +14,7 @@ export const MyProfile: Profile = {
     ],
     projects: [
         {
-            imageUrl: '',
+            imageUrl: '/profile/projects/github-stalker.png',
             label: 'GitHub Stalker',
             githubProjectUrl: 'https://github.com/cemgthedev/GitHub-Stalker',
             siteProjectUrl: 'https://github-stalker-gray.vercel.app/',

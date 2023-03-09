@@ -114,8 +114,46 @@ export function App() {
         id='projetos'
         style='ligth'
         padding='all'
+        column
       >
         <Heading>Projetos</Heading>
+        {
+          profile.projects.map(item => (
+            <Card
+              column
+              padding='all'
+              className='items-center justify-center w-fit m-auto rounded-md bg-neutral-100 ring-1 ring-black hover:shadow-sm hover:shadow-black'
+            >
+              <Heading size='sm'>{ item.label }</Heading>
+              <figure
+                className='flex flex-col gap-4 h-fit w-fit'
+              >
+                <img src={item.imageUrl} alt="" />
+                <figcaption>
+                  <Label>{ item.description }</Label>
+                </figcaption>
+              </figure>
+              <div
+                className='flex gap-4 w-full'
+              >
+                <a 
+                  href={ item.githubProjectUrl }
+                  target='_blank'
+                  className="bg-violet-700 text-white flex-1 p-2 flex items-center justify-center hover:bg-violet-500"
+                >
+                  Código Fonte
+                </a>
+                <a 
+                  href={ item.siteProjectUrl }
+                  target='_blank'
+                  className="bg-cyan-700 text-white flex-1 p-2 flex items-center justify-center hover:bg-cyan-500"
+                >
+                  Visite o Site
+                </a>
+              </div>
+            </Card>
+          ))
+        }
       </Card>
 
       <Card
@@ -209,6 +247,9 @@ export function App() {
                        shadow-neutral-900/70"
               >
                 <img src={item.imageUrl} alt="..."/>
+                <figcaption
+                  className='flex flex-col w-full'
+                >
                 <Label size='lg'>Instituição: { item.institution }</Label>
                 {
                   item.trail &&
@@ -218,6 +259,25 @@ export function App() {
                   item.label &&
                   <Label size='sm'>Curso: { item.label }</Label>
                 }
+                <a 
+                  href={item.imageUrl} 
+                  target='_blank'
+                  className="flex-1 
+                             p-2 
+                             flex 
+                             items-center 
+                             justify-center
+                             bg-gradient-to-b
+                          from-neutral-500/20
+                          via-neutral-700/30
+                          to-black/40
+                          hover:from-violet-500/20
+                          hover:via-violet-700/30
+                          hover:to-black/40"
+                >
+                  Vizualizar Certificado
+                </a>
+                </figcaption>
               </figure>
             ))
           }
@@ -279,6 +339,7 @@ export function App() {
             onSubmit={sendMessage}
           >
             <textarea 
+              required
               name="message"
               className='ring-2 
                       ring-neutral-900 

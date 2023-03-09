@@ -126,12 +126,12 @@ export function Carousel({ children, numberOfChildren }: CarouselProps) {
                          flex
                          items-center
                          justify-center
-                         rounded-md
+                         rounded-lg
                          text-white
                          bg-gradient-to-b
-                         from-yellow-400/60
-                         via-red-600/80
-                         to-neutral-800"
+                         from-cyan-500/30
+                       via-cyan-700/50
+                       to-cyan-900/70"
             >
               { position }/{numberOfChildren}
             </div>
