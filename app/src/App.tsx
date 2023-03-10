@@ -97,10 +97,10 @@ export function App() {
           <img className='absolute top-12 z-[3]' src={profile.imageUrl} alt="" />
           <img
             className='opacity-60 z-[2]'
-            src="/animations/Blob.svg" alt="" />
+            src="/profile/banner/Blob.svg" alt="" />
           <img
             className='blur-[6px] absolute z-[1]'
-            src="/animations/Blob.svg" alt="" />
+            src="/profile/banner/Blob.svg" alt="" />
         </div>
         <div className='text-white'>
           {
@@ -232,25 +232,23 @@ export function App() {
               <figure 
                 key={nextId()}
                 id={nextId()}
-                className="p-2
+                className="carousel-item
                            flex 
                            flex-col 
-                           gap-1 
                            items-center 
-                           justify-center 
-                           rounded-md
+                           justify-between 
                            flex-none
-                           w-fit
-                           h-fit
+                           w-full
+                           h-full
                            text-white
                            bg-gradient-to-br
                          from-cyan-500/30
                          via-cyan-700/50
                          to-cyan-900/70"
               >
-                <img src={item.imageUrl} alt="..."/>
+                <img className='p-2' src={item.imageUrl} alt="..."/>
                 <figcaption
-                  className='flex flex-col w-full'
+                  className='flex flex-col w-full p-2'
                 >
                 <Label size='lg'>Instituição: { item.institution }</Label>
                 {
@@ -300,7 +298,7 @@ export function App() {
         >
           {
             profile.skills.map(item => (
-              <div
+              <figure
                 key={nextId()}
                 className='bg-gradient-to-b
                            from-white/30
@@ -313,10 +311,27 @@ export function App() {
                            justify-center
                            h-[200px]
                            min-w-[200px]
-                           rounded-full'
+                           rounded-full
+                           relative
+                           overflow-hidden
+                           '
               >
-                <Text size='lg'>{item.label}</Text>
-              </div>
+                <img 
+                  src={item.imageUrl} 
+                  alt="" 
+                  className="absolute bottom-0 z-[1] blur-sm"  
+                />
+                <img 
+                  src={item.imageUrl} 
+                  alt="" 
+                  className="absolute bottom-0 z-[2]"  
+                />
+                <figcaption
+                  className='z-[3]'
+                >
+                  <Text size='lg'>{item.label}</Text>
+                </figcaption>
+              </figure>
             ))
           }
         </HorizontalListing>

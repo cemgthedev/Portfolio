@@ -11,18 +11,12 @@ export interface CarouselProps {
 
 export function Carousel({ children, numberOfChildren }: CarouselProps) {
   const [scrollCarousel, setScrollCarousel] = useState({} as Element);
-  const [position, setPosition] = useState(1);
   
   useEffect(() => {
     async function getScroll() {
       try {
         const scrollCarousel = await document.querySelector("#scrollCarousel");
         if(scrollCarousel) {
-          const resizeObserver = new ResizeObserver((e) => {
-            e[0].target.scrollLeft = 0;
-            setPosition(1);
-          });
-          resizeObserver.observe(scrollCarousel);
           setScrollCarousel(scrollCarousel);
         }
       } catch(e) {
@@ -37,9 +31,6 @@ export function Carousel({ children, numberOfChildren }: CarouselProps) {
     e.preventDefault();
 
     scrollCarousel.scrollLeft -= (scrollCarousel.scrollWidth / numberOfChildren);
-    if(position > 1) {
-      setPosition(prevState => prevState - 1);
-    }
     console.log(scrollCarousel.scrollLeft, scrollCarousel.scrollWidth);
   }
 
@@ -47,94 +38,58 @@ export function Carousel({ children, numberOfChildren }: CarouselProps) {
     e.preventDefault();
 
     scrollCarousel.scrollLeft += (scrollCarousel.scrollWidth / numberOfChildren);
-    if(position < numberOfChildren) {
-      setPosition(prevState => prevState + 1);
-    }
     console.log(scrollCarousel.scrollHeight,scrollCarousel.scrollLeft, scrollCarousel.scrollWidth);
   }
 
   return (
-        <div
-          id="scrollBox"
-          className="h-full
-                     w-[600px]
-                     mobile:max-sm:w-full
-                     m-auto
-                     flex
-                     gap-4
-                     items-center
-                     justify-center
-                     relative
-                     "
-        >
-            <button
-              onClick={e => scrollToPrevious(e)}
-              className="w-[32px] 
-                         h-[32px] 
-                         text-2xl
-                         flex
-                         items-center
-                         justify-center
-                         rounded-full
-                         p-4
-                         text-white
-                          bg-gradient-to-br
-                          from-neutral-400/40
-                          via-neutral-600/60
-                          to-black/80
-                          transition
-                          hover:from-cyan-500/30
-                         hover:via-cyan-700/50
-                         hover:to-cyan-900/70
-                         active:animate-ping
-                         "
-            >{'<'}</button>
-            <div
-              id='scrollCarousel'
-              className="flex py-8 w-fit h-fit overflow-hidden"
-            >
-                { children }
-            </div>
-            <button
-              onClick={e => scrollToNext(e)}
-              className="w-[32px] 
-              h-[32px] 
-              text-2xl
-              flex
-              items-center
-              justify-center
-              rounded-full
-              p-4
-              text-white
-               bg-gradient-to-bl
-               from-neutral-400/40
-               via-neutral-600/60
-               to-black/80
-               transition
-               hover:from-cyan-500/30
-              hover:via-cyan-700/50
-              hover:to-cyan-900/70
-               active:animate-ping
-              "
-            >{'>'}</button>
-            <div
-              className="absolute 
-                         bottom-[-16px]
-                         w-fit
-                         h-[32px]
-                         px-2
-                         flex
-                         items-center
-                         justify-center
-                         rounded-lg
-                         text-white
-                         bg-gradient-to-b
-                         from-cyan-500/30
-                       via-cyan-700/50
-                       to-cyan-900/70"
-            >
-              { position }/{numberOfChildren}
-            </div>
-        </div>
+    <div
+      className="m-auto w-[80vw] flex items-center relative"
+    >
+      <button onClick={scrollToPrevious}
+        className="w-[32px] 
+                  h-[32px] 
+                  p-4 
+                  flex 
+                  items-center 
+                  justify-center 
+                  rounded-full 
+                  absolute 
+                  left-2
+                  active:animate-ping
+                   text-white/60
+                   bg-gradient-to-b
+                  from-neutral-500/20
+                  via-neutral-700/30
+                  to-black/40
+                   hover:from-violet-500/20
+                  hover:via-violet-700/30
+                  hover:to-black/40
+                  "
+      >{'<'}</button>
+      <div id="scrollCarousel" className="carousel flex">
+        { children }
+      </div>
+      <button onClick={scrollToNext}
+        className="w-[32px] 
+                   h-[32px] 
+                   p-4 
+                   flex 
+                   items-center 
+                   justify-center 
+                   rounded-full 
+                   absolute 
+                   right-2
+                   active:animate-ping
+                   text-white/60
+                   bg-gradient-to-b
+                  from-neutral-500/20
+                  via-neutral-700/30
+                  to-black/40
+                   hover:from-violet-500/20
+                  hover:via-violet-700/30
+                  hover:to-black/40
+                   "
+      >{'>'}</button>
+    </div>
     );
 }

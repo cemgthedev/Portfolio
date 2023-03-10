@@ -124,19 +124,19 @@ export const MyProfile: Profile = {
     ],
     skills: [
         {
-            imageUrl: '',
+            imageUrl: '/profile/habilities/Wave-1.svg',
             label: 'Comunicação'
         },
         {
-            imageUrl: '',
+            imageUrl: '/profile/habilities/Wave-2.svg',
             label: 'Organização'
         },
         {
-            imageUrl: '',
+            imageUrl: '/profile/habilities/Wave-3.svg',
             label: 'Criatividade'
         },
         {
-            imageUrl: '',
+            imageUrl: '/profile/habilities/Wave-4.svg',
             label: 'Autodidatismo'
         }
     ],

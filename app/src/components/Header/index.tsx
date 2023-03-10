@@ -28,8 +28,8 @@ export function Header({id, children, className}: HeaderProps) {
                             sticky
                             top-0
                             z-[999]
-                            mobile:max-sm:w-fit
-                            mobile:max-sm:justify-end`,
+                            mobile:min-h-[48px]
+                            mobile:max-sm:w-screen`,
                             {
                                 'mobile:max-sm:fixed mobile:max-sm:right-0': toggleActive === true
                             },
@@ -49,10 +49,11 @@ export function Header({id, children, className}: HeaderProps) {
                   onClick={toggleMenu}
                   id='menu'
                   className={clsx(
-                    `flex 
+                    `m-auto 
+                    flex 
                     items-center
                     justify-center
-                    w-screen
+                    w-fit
                     mobile:max-sm:flex-col
                     mobile:max-sm:h-screen`,
                     {
@@ -66,8 +67,7 @@ export function Header({id, children, className}: HeaderProps) {
                 <button
                   onClick={toggleMenu}
                   className={clsx(
-                    `hidden mobile:max-sm:block hover:bg-cyan-500 min-h-[32px] min-w-[32px]
-                     `
+                    `hidden mobile:max-sm:block hover:bg-cyan-500 min-h-[32px] min-w-[32px]`
                   )}
                 >
                     <img src="/icons/List.svg" alt="Menu" />
