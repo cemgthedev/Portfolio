@@ -7,21 +7,25 @@ export interface CardProps {
     margin?: string,
     padding?: string,
     column?: boolean,
+    wrap?: boolean,
     className?: string,
     children: ReactNode,
 }
 
-export function Card({id, style, column = false, margin = 'none', padding = 'none', className, children}: CardProps) {
+export function Card({id, style, column = false, margin = 'none', wrap = false, padding = 'none', className, children}: CardProps) {
     return (
         <div
             id = { id }
-            className={clsx('select-none flex gap-4 mobile:max-sm:flex-col md:max-lg:flex-col',
+            className={clsx('select-none flex gap-4',
                 {
                     'bg-white text-neutral-900': style === 'ligth',
                     'bg-neutral-900 text-white shadow-sm shadow-black': style === 'dark'
                 },
                 {
                     'flex-col': column === true
+                },
+                {
+                    'flex-wrap': wrap === true
                 },
                 {
                     'm-0': margin === 'none',

@@ -89,17 +89,18 @@ export function App() {
         id='home'
         style='dark'
         padding='all'
-        className='items-center'
+        column
+        className='items-center justify-start h-screen'
       >
         <div
-          className='w-[190px] min-w-[190px] relative flex flex-col items-center'
+          className='w-[300px] relative flex flex-col items-center'
         >
-          <img className='absolute top-12 z-[3]' src={profile.imageUrl} alt="" />
+          <img className='absolute bottom-0 z-[3]' src={profile.imageUrl} alt="" />
           <img
             className='opacity-60 z-[2]'
             src="/profile/banner/Blob.svg" alt="" />
           <img
-            className='blur-[6px] absolute z-[1]'
+            className='blur-[6px] absolute top-0 z-[1]'
             src="/profile/banner/Blob.svg" alt="" />
         </div>
         <div className='text-white'>
@@ -161,7 +162,7 @@ export function App() {
       </Card>
 
       <Card
-        className='items-center justify-center p-12'
+        className='items-center justify-center h-screen'
         style='dark'
       >
         <Heading>Saiba Mais</Heading>
@@ -171,6 +172,7 @@ export function App() {
         id='formacao'
         column
         margin='all'
+        className='h-screen'
       >
         <Heading>Formação</Heading>
         {
@@ -190,14 +192,14 @@ export function App() {
       <Card
         id='stack'
         column
-        margin='all'
         padding='all'
         style='dark'
+        className='h-screen items-center justify-center'
       >
         <Heading>Stack</Heading>
-        <HorizontalListing
-          idBox='stackBox'
-          idScroll='stackScroll'
+        <Card
+          wrap
+          className='items-center justify-center'
         >
           {
             profile.stack.map(item => (
@@ -215,13 +217,14 @@ export function App() {
               </figure>
             ))
           }
-        </HorizontalListing>
+        </Card>
       </Card>
 
       <Card
         id='certificados'
         column
         margin='all'
+        className='h-screen'
       >
         <Heading>Certificados</Heading>
         <Carousel
@@ -287,14 +290,15 @@ export function App() {
       <Card
         id='habilidades'
         column
-        margin='all'
         padding='all'
         style='dark'
+        className='h-screen items-center justify-center'
       >
         <Heading>Habilidades</Heading>
-        <HorizontalListing
-          idBox='habilidadesBox'
-          idScroll='habilidadesScroll'
+        <Card
+        id='stack'
+        wrap
+        className='items-center justify-center'
         >
           {
             profile.skills.map(item => (
@@ -310,7 +314,7 @@ export function App() {
                            items-center
                            justify-center
                            h-[200px]
-                           min-w-[200px]
+                           w-[200px]
                            rounded-full
                            relative
                            overflow-hidden
@@ -334,14 +338,14 @@ export function App() {
               </figure>
             ))
           }
-        </HorizontalListing>
+        </Card>
       </Card>
 
       <Card
         id='feedback'
         column
         margin='all'
-        className='items-center justify-center'
+        className='h-screen items-center justify-center'
       >
         <Heading
           className='w-full text-left'
@@ -394,23 +398,19 @@ export function App() {
       <Card
         column
         padding='all'
-        margin='all'
-        className='items-center 
+        className='h-screen
+                   items-center 
                    justify-center
                    text-white
                    bg-gradient-to-br
                  from-cyan-500/30
                  via-cyan-700/50
-                 to-cyan-900/70
-                   rounded-md
-                   shadow-md
-                 shadow-neutral-900/70'
+                 to-cyan-900/70'
       >
         <Heading>
           Agradecimentos
         </Heading>
         <Card
-          padding='all'
           className='items-center 
                      justify-center'
         >
@@ -426,12 +426,12 @@ export function App() {
         column
         padding='all'
         style='dark'
-        className='items-center h-full'
+        className='h-screen items-center justify-center'
       >
         <Card
           className='w-full items-center justify-center'
         >
-          <hr className='bg-white h-[2px] w-full'/>
+          <hr className='bg-white h-[2px] flex-1'/>
           <div
             className='w-fit flex items-center justify-center gap-4'
           >
@@ -465,7 +465,7 @@ export function App() {
               ))
             }
           </div>
-          <hr className='bg-white h-[2px] w-full'/>
+          <hr className='bg-white h-[2px] flex-1'/>
         </Card>
         <Heading>{ profile.portifolioName }</Heading>
         <Text

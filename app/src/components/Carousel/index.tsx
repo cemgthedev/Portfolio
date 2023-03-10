@@ -43,7 +43,7 @@ export function Carousel({ children, numberOfChildren }: CarouselProps) {
 
   return (
     <div
-      className="m-auto w-[80vw] flex items-center relative"
+      className="m-auto w-[80vw] h-full flex items-center relative"
     >
       <button onClick={scrollToPrevious}
         className="w-[32px] 
