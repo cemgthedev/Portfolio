@@ -1,9 +1,9 @@
 import { Profile } from "./Profile";
 
 export const MyProfile: Profile = {
-    imageUrl: '/profile/ImageProfile.svg',
+    imageUrl: '/assets/profile/ImageProfile.svg',
     portifolioName: 'Portifólio',
-    portifolioLema: 'No Pain No Gain',
+    portifolioLema: 'Copyright (c) 2022 Carlos Eduardo de Moura Gomes',
     bio: [
         `Olá, me chamo Carlos Eduardo de Moura Gomes.`,
         `Atualmente minha experiência está fundamentada apenas em projetos pessoais
@@ -14,7 +14,7 @@ export const MyProfile: Profile = {
     ],
     projects: [
         {
-            imageUrl: '/profile/projects/github-stalker.png',
+            imageUrl: '/assets/profile/projects/github-stalker.png',
             label: 'GitHub Stalker',
             githubProjectUrl: 'https://github.com/cemgthedev/GitHub-Stalker',
             siteProjectUrl: 'https://github-stalker-gray.vercel.app/',
@@ -30,134 +30,134 @@ export const MyProfile: Profile = {
     ],
     stack: [
         {
-            imageUrl: '/profile/stack/Figma.svg',
+            imageUrl: '/assets/profile/stack/Figma.svg',
             label: 'Figma'
         },
         {
-            imageUrl: '/profile/stack/HTML5.svg',
+            imageUrl: '/assets/profile/stack/HTML5.svg',
             label: 'HTML'
         },
         {
-            imageUrl: '/profile/stack/CSS3.svg',
+            imageUrl: '/assets/profile/stack/CSS3.svg',
             label: 'CSS'
         },
         {
-            imageUrl: '/profile/stack/Express.svg',
+            imageUrl: '/assets/profile/stack/Express.svg',
             label: 'Express'
         },
         {
-            imageUrl: '/profile/stack/Tailwindcss.svg',
+            imageUrl: '/assets/profile/stack/Tailwindcss.svg',
             label: 'Tailwindcss'
         },
         {
-            imageUrl: '/profile/stack/React.svg',
+            imageUrl: '/assets/profile/stack/React.svg',
             label: 'React'
         },
         {
-            imageUrl: '/profile/stack/Python.svg',
+            imageUrl: '/assets/profile/stack/Python.svg',
             label: 'Python'
         },
         {
-            imageUrl: '/profile/stack/JavaScript.svg',
+            imageUrl: '/assets/profile/stack/JavaScript.svg',
             label: 'JavaScript'
         },
         {
-            imageUrl: '/profile/stack/TypeScript.svg',
+            imageUrl: '/assets/profile/stack/TypeScript.svg',
             label: 'TypeScript'
         },
         {
-            imageUrl: '/profile/stack/Node.svg',
+            imageUrl: '/assets/profile/stack/Node.svg',
             label: 'Node'
         },
         {
-            imageUrl: '/profile/stack/Git.svg',
+            imageUrl: '/assets/profile/stack/Git.svg',
             label: 'Git'
         }
     ],
     certificates: [
         {
-            imageUrl: '/profile/certificates/html-basico-fundacao-bradesco.png',
+            imageUrl: '/assets/profile/certificates/html-basico-fundacao-bradesco.png',
             institution: 'Fundação Bradesco',
             trail: 'Crie um Site Simples',
             label: 'HTML Básico'
         },
         {
-            imageUrl: '/profile/certificates/html-avancado-fundacao-bradesco.png',
+            imageUrl: '/assets/profile/certificates/html-avancado-fundacao-bradesco.png',
             institution: 'Fundação Bradesco',
             trail: 'Crie um Site Simples',
             label: 'HTML Avançado'
         },
         {
-            imageUrl: '/profile/certificates/inovando-com-css-fundacao-bradesco.png',
+            imageUrl: '/assets/profile/certificates/inovando-com-css-fundacao-bradesco.png',
             institution: 'Fundação Bradesco',
             trail: 'Crie um Site Simples',
             label: 'Inovando com CSS'
         },
         {
-            imageUrl: '/profile/certificates/html-e-css-na-pratica-fundacao-bradesco.png',
+            imageUrl: '/assets/profile/certificates/html-e-css-na-pratica-fundacao-bradesco.png',
             institution: 'Fundação Bradesco',
             trail: 'Crie um Site Simples',
             label: 'HTML e CSS na Prática'
         },
         {
-            imageUrl: '/profile/certificates/introducao-ao-javascript-fundacao-bradesco.png',
+            imageUrl: '/assets/profile/certificates/introducao-ao-javascript-fundacao-bradesco.png',
             institution: 'Fundação Bradesco',
             trail: 'Crie um Site Simples',
             label: 'Introdução ao JavaScript'
         },
         {
-            imageUrl: '/profile/certificates/crie-um-site-simples-fundacao-bradesco.png',
+            imageUrl: '/assets/profile/certificates/crie-um-site-simples-fundacao-bradesco.png',
             institution: 'Fundação Bradesco',
             trail: 'Crie um Site Simples',
             label: 'Crie um Site Simples com HTML, CSS e JavaScript'
         },
         {
-            imageUrl: '/profile/certificates/trilha-conectar-do-discover-rocketseat.png',
+            imageUrl: '/assets/profile/certificates/trilha-conectar-do-discover-rocketseat.png',
             institution: 'Rocketseat',
             trail: 'Conectar',
         },
         {
-            imageUrl: '/profile/certificates/trilha-fundamentar-do-discover-rocketseat.png',
+            imageUrl: '/assets/profile/certificates/trilha-fundamentar-do-discover-rocketseat.png',
             institution: 'Rocketseat',
             trail: 'Fundamentar',
         }
     ],
     skills: [
         {
-            imageUrl: '/profile/habilities/Wave-1.svg',
+            imageUrl: '/assets/profile/habilities/Wave-1.svg',
             label: 'Comunicação'
         },
         {
-            imageUrl: '/profile/habilities/Wave-2.svg',
+            imageUrl: '/assets/profile/habilities/Wave-2.svg',
             label: 'Organização'
         },
         {
-            imageUrl: '/profile/habilities/Wave-3.svg',
+            imageUrl: '/assets/profile/habilities/Wave-3.svg',
             label: 'Criatividade'
         },
         {
-            imageUrl: '/profile/habilities/Wave-4.svg',
+            imageUrl: '/assets/profile/habilities/Wave-4.svg',
             label: 'Autodidatismo'
         }
     ],
     contacts: [
         {
-            imageUrl: '/icons/InstagramLogo.svg',
+            imageUrl: '/assets/icons/InstagramLogo.svg',
             title: 'instagram',
             siteUrl: 'https://www.instagram.com/_carlos_eduardo_mg/'
         },
         {
-            imageUrl: '/icons/LinkedinLogo.svg',
+            imageUrl: '/assets/icons/LinkedinLogo.svg',
             title: 'linkedin',
             siteUrl: 'https://www.linkedin.com/in/carlos-eduardo-moura-gomes-bb0ab7250/'
         },
         {
-            imageUrl: '/icons/GithubLogo.svg',
+            imageUrl: '/assets/icons/GithubLogo.svg',
             title: 'github',
             siteUrl: 'https://github.com/cemgthedev'
         },
         {
-            imageUrl: '/icons/Envelope.svg',
+            imageUrl: '/assets/icons/Envelope.svg',
             title: 'email',
             siteUrl: 'mailto:cemg.the.dev@gmail.com'
         },
