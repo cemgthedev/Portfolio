@@ -1,14 +1,9 @@
 import { Profile } from "./Profile";
 
 export const MyProfile: Profile = {
-    imageUrl: '/assets/profile/ImageProfile.svg',
+    imageUrl: '/assets/profile/banner/ImageProfile.svg',
     portifolioName: 'Portifólio',
     portifolioLema: 'Copyright (c) 2022 Carlos Eduardo de Moura Gomes',
-    salutation: [
-        'Eu sou ',
-        'Desenvolvedor Front End',
-        'Universitário'
-    ],
     bio: [
         `Olá, me chamo Carlos Eduardo de Moura Gomes.`,
         `Atualmente minha experiência está fundamentada apenas em projetos pessoais
@@ -19,7 +14,7 @@ export const MyProfile: Profile = {
     ],
     projects: [
         {
-            imageUrl: '/assets/profile/projects/github-stalker.png',
+            imageUrl: '../../assets/profile/projects/github-stalker.png',
             label: 'GitHub Stalker',
             githubProjectUrl: 'https://github.com/cemgthedev/GitHub-Stalker',
             siteProjectUrl: 'https://github-stalker-gray.vercel.app/',

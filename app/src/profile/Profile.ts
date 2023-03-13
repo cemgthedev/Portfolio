@@ -37,7 +37,6 @@ export interface Contact {
 
 export interface Profile {
     imageUrl: string,
-    salutation: string[],
     bio: string[],
     portifolioName: string,
     portifolioLema:string,

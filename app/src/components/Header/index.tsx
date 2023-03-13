@@ -99,8 +99,8 @@ export function Header() {
                             '
                         >
                             { modalOpen ? 
-                                <img src="/assets/icons/Vector.svg" alt="Menu"  /> : 
-                                <img src="/assets/icons/List.svg" alt="Fechar"  /> }
+                                <img src="../../assets/icons/Vector.svg" alt="Menu"  /> : 
+                                <img src="../../assets/icons/List.svg" alt="Fechar"  /> }
                         </Menu.Button>
                         <Menu.Items
                         className='h-screen w-[90vw] flex flex-col gap-2 pt-16 items-center'
