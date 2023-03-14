@@ -41,9 +41,12 @@ export function Header() {
     return (
         <header
             className='
+                font-inter
+                font-semibold
                 w-screen
                 sticky
                 top-0
+                z-[999]
             '
         >
             <nav
@@ -71,6 +74,8 @@ export function Header() {
                                 href={link.href}
                                 className='
                                     p-2
+                                    transition
+                                    hover:text-cyan-500
                                 '
                             >
                                 { link.label }
@@ -91,11 +96,7 @@ export function Header() {
                                 p-1 
                                 rounded-sm 
                                 transition 
-                                hover:bg-cyan-500
-                                bg-gradient-to-b
-                                from-neutral-200/40
-                                via-neutral-400/60
-                                to-neutral-600/80
+                                hover:stroke-cyan-500
                             '
                         >
                             { modalOpen ? 

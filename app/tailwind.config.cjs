@@ -5,12 +5,10 @@ module.exports = {
   ],
   theme: {
     extend: {
-      fontSize: {
-        lg: '20px',
-        md: '16px',
-        sm: '12px'
+      fontFamily: {
+        inter: ['Inter', 'sans']
       }
-    },
+    }
   },
   plugins: [
     require('tailwind-scrollbar-hide')

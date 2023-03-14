@@ -2,25 +2,28 @@ import { TypeAnimation } from 'react-type-animation';
 
 import './styles/global.css'
 
+import { Profile } from './profile/Profile';
 import { MyProfile } from './profile/MyProfile';
 
 import { Header } from './components/Header';
 import { Banner } from './components/Banner';
-import { useEffect, useState } from 'react';
-import { Profile } from './profile/Profile';
-import nextId from 'react-id-generator';
+import { Card } from './components/Card';
+
+import { useState } from 'react';
 
 export function App() {
   const [profile, setProfile] = useState(MyProfile as Profile)
 
   return (
     <div 
-      className='fixed top-0 w-screen h-screen bg-gradient-to-r from-indigo-600 via-violet-600 to-purple-600 scrollbar-hide'
+      className='fixed top-0 w-screen h-screen bg-gradient-to-r from-indigo-600 via-violet-600 to-purple-600 overflow-auto scroll-smooth scrollbar-hide select-none'
     >
       <Header/>
-      <Banner>
+      <Banner
+          id="home"
+      >
         <div
-            className='flex flex-col items-center text-2xl'
+            className='font-inter text-2xl font-semibold flex flex-col items-center'
         >
           <span>
             Eu sou&nbsp;
@@ -40,8 +43,10 @@ export function App() {
         </div>
         <div
             className='
-                w-[260px]
-                h-[260px]
+                flex
+                justify-center
+                min-w-[250px]
+                min-h-[250px]
                 relative
             '
         >
@@ -63,11 +68,10 @@ export function App() {
         </div>
         <figcaption
             className='
+                font-inter
+                text-md
                 w-[80vw]
-                flex
-                flex-col
-                items-center
-                justify-center
+                text-center
             '
         >
           {
@@ -77,6 +81,111 @@ export function App() {
           }
         </figcaption>
       </Banner>
+      <Card
+          id="projetos"
+          className='
+              flex
+              flex-col
+              items-center
+              justify-start
+          '
+      >
+        <h1
+            className="font-inter text-xl font-semibold text-white"
+        >
+          Projetos
+        </h1>
+      </Card>
+      <Card
+          id="formacao"
+          className='
+              flex
+              flex-col
+              items-center
+              justify-start
+          '
+      >
+        <h1
+            className="font-inter text-xl font-semibold text-white"
+        >
+          Formação
+        </h1>
+      </Card>
+      <Card
+          id="stack"
+          className='
+              flex
+              flex-col
+              items-center
+              justify-center
+          '
+      >
+        <h1
+            className="font-inter text-xl font-semibold text-white"
+        >
+          Stack
+        </h1>
+      </Card>
+      <Card
+          id="certificados"
+          className='
+              flex
+              flex-col
+              items-center
+              justify-start
+          '
+      >
+        <h1
+            className="font-inter text-xl font-semibold text-white"
+        >
+          Certificados
+        </h1>
+      </Card>
+      <Card
+          id="habilidades"
+          className='
+              flex
+              flex-col
+              items-center
+              justify-center
+          '
+      >
+        <h1
+            className="font-inter text-xl font-semibold text-white"
+        >
+          Habilidades
+        </h1>
+      </Card>
+      <Card
+          id="feedback"
+          className='
+              flex
+              flex-col
+              items-center
+              justify-center
+          '
+      >
+        <form 
+            action=""
+            className='ring-2 ring-white px-8 py-4 rounded-md flex flex-col items-center'    
+        >
+          <label htmlFor="textarea"
+              className='
+                  font-inter
+                  text-xl
+                  text-white
+              '
+          >
+              Feedback
+          </label>
+          <textarea 
+              name="message" 
+              id="textarea" 
+              required 
+              className='bg-white/0 resize-none ring-2 ring-white'
+          />
+        </form>
+      </Card>
     </div>
   );
 }
