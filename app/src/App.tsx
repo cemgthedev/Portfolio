@@ -11,6 +11,7 @@ import { Card } from './components/Card';
 import { List } from './components/List';
 
 import { useState } from 'react';
+import nextId from 'react-id-generator';
 
 export function App() {
   const [profile, setProfile] = useState(MyProfile as Profile)
@@ -119,13 +120,58 @@ export function App() {
               flex-col
               items-center
               justify-center
+              bg-neutral-900
+              text-white
           '
       >
         <h1
-            className="font-inter text-xl font-semibold text-white"
+            className="font-inter text-xl font-semibold"
         >
           Stack
         </h1>
+        <List>
+          {
+            profile.stack.map((item) => (
+              <figure
+                  key={nextId()}
+                  className="
+                      relative
+                      flex
+                      flex-col
+                      items-center
+                      justify-center
+                      gap-2
+                      w-[100px]
+                      h-[100px]
+                  "
+              >
+                <img 
+                    src={ item.imageUrl } 
+                    alt="" 
+                    className='
+                        z-[2]
+                    '
+                />
+                <img 
+                    src={ item.imageUrl } 
+                    alt="" 
+                    className='
+                       absolute
+                       top-2
+                       blur-sm
+                       z-[1]
+                       animate-pulse
+                    '
+                />
+                <figcaption>
+                  <h1>
+                    { item.label }
+                  </h1>
+                </figcaption>
+              </figure>
+            ))
+          }
+        </List>
       </Card>
       <Card
           id="certificados"
@@ -149,6 +195,8 @@ export function App() {
               flex-col
               items-center
               justify-center
+              bg-neutral-900
+              text-white
           '
       >
         <h1
@@ -160,6 +208,7 @@ export function App() {
           {
             profile.skills.map((item) => (
               <figure
+                  key={nextId()}
                   className='
                       relative 
                       flex 
