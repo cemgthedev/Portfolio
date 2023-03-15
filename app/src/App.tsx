@@ -8,6 +8,7 @@ import { MyProfile } from './profile/MyProfile';
 import { Header } from './components/Header';
 import { Banner } from './components/Banner';
 import { Card } from './components/Card';
+import { List } from './components/List';
 
 import { useState } from 'react';
 
@@ -155,6 +156,50 @@ export function App() {
         >
           Habilidades
         </h1>
+        <List>
+          {
+            profile.skills.map((item) => (
+              <figure
+                  className='
+                      relative 
+                      flex 
+                      items-center 
+                      justify-center 
+                      w-[200px] 
+                      h-[200px] 
+                      rounded-full 
+                      overflow-hidden
+                      bg-gradient-to-b
+                      from-neutral-300/30
+                      via-neutral-600/60
+                      to-neutral-800/80
+                  '
+              >
+                <img 
+                    src={ item.imageUrl } 
+                    alt="" 
+                    className='
+                        absolute 
+                        bottom-0
+                        z-[1]
+                    '
+                />
+                <figcaption
+                    className='
+                        z-[2]
+                        text-white
+                        font-inter
+                        text-xl
+                    '
+                >
+                  <h1>
+                    { item.label }
+                  </h1>
+                </figcaption>
+              </figure>
+            ))
+          }
+        </List>
       </Card>
       <Card
           id="feedback"
