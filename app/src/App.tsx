@@ -4,6 +4,7 @@ import './styles/global.css'
 
 import { Profile } from './profile/Profile';
 import { MyProfile } from './profile/MyProfile';
+import { sendMessage } from './functions/sendMessage';
 
 import { Header } from './components/Header';
 import { Banner } from './components/Banner';
@@ -18,114 +19,275 @@ export function App() {
 
   return (
     <div 
-      className='fixed top-0 w-screen h-screen bg-gradient-to-r from-indigo-600 via-violet-600 to-purple-600 overflow-auto scroll-smooth scrollbar-hide select-none'
+      className="
+          fixed 
+          top-0 
+          w-screen 
+          h-screen 
+          bg-gradient-to-r 
+          from-indigo-600 
+          via-violet-600 
+          to-purple-600 
+          overflow-auto 
+          scroll-smooth 
+          scrollbar-hide 
+          select-none
+      "
     >
       <Header/>
       <Banner
           id="home"
       >
         <div
-            className='font-inter text-2xl font-semibold flex flex-col items-center'
+            className="
+                text-2xl 
+                font-semibold 
+                flex 
+                flex-col 
+                items-center
+            "
         >
           <span>
             Eu sou&nbsp;
           </span>
           <TypeAnimation
             sequence={[
-              'Desenvolvedor Front End',
+              "Desenvolvedor Front End",
               2000,
-              'Universitário',
+              "Universitário",
               2000
             ]}
             speed={50}
-            wrapper='span'
+          wrapper="span"
             repeat={Infinity}
             className='text-purple-500 uppercase'
           />
         </div>
         <div
-            className='
+            className="
                 flex
                 justify-center
                 min-w-[250px]
                 min-h-[250px]
                 relative
-            '
+            "
         >
             <img 
                 src={profile.imageUrl} 
                 alt="" 
-                className='z-[3] absolute bottom-0'
+                className="
+                    z-[3] 
+                    absolute 
+                    bottom-0
+                "
             />
             <img 
                 src="/assets/profile/banner/Blob.svg" 
                 alt="" 
-                className='z-[2] absolute top-0'
+                className="
+                    z-[2] 
+                    absolute 
+                    top-0
+                "
             />
             <img 
                 src="/assets/profile/banner/Blob.svg" 
                 alt="" 
-                className='z-[1] absolute top-0 blur-sm'
+                className="
+                    z-[1] 
+                    absolute 
+                    top-0 
+                    blur-sm
+                "
             />
         </div>
         <figcaption
-            className='
-                font-inter
+            className="
                 text-md
                 w-[80vw]
                 text-center
-            '
+            "
         >
           {
             profile.bio.map((item) => (
-              <p>{ item }</p>
+              <p
+                  key={nextId()}
+              >
+                { item }
+              </p>
             ))
           }
         </figcaption>
       </Banner>
       <Card
           id="projetos"
-          className='
-              flex
-              flex-col
-              items-center
-              justify-start
-          '
       >
         <h1
-            className="font-inter text-xl font-semibold text-white"
+            className="
+                text-xl 
+                font-semibold 
+                text-white
+            "
         >
           Projetos
         </h1>
+        <List>
+          {
+            profile.projects.map((item) => (
+              <figure
+                  className="
+                      flex
+                      flex-col
+                      items-center
+                      justify-center
+                      text-center
+                      gap-4
+                      p-4
+                      rounded-lg
+                      w-[50vw]
+                      text-white
+                      bg-gradient-to-b
+                    from-neutral-300/30
+                    via-neutral-600/60 
+                    to-neutral-800/80
+                  "
+              >
+                <h1
+                    className="
+                        text-xl
+                        font-semibold
+                    "
+                >{ item.label }</h1>
+                <img 
+                    src={item.imageUrl} 
+                    alt="" 
+                    className="
+                        rounded-lg
+                    "
+                />
+                <figcaption
+                    className="
+                        flex
+                        flex-col
+                        gap-2
+                        w-full
+                    "
+                >
+                  <h1>{item.description}</h1>
+                  <div
+                      className="
+                          flex
+                          items-center
+                          justify-center
+                          gap-4
+                      "
+                  >
+                    <a 
+                        href={ item.githubProjectUrl }
+                        target="_blank"
+                        className="
+                            flex
+                            items-center
+                            justify-center
+                            h-[32px]
+                            flex-1
+                            bg-violet-600
+                            hover:bg-violet-500
+                        "
+                    >
+                      GitHub
+                    </a>
+                    <a 
+                        href={ item.siteProjectUrl }
+                        target="_blank"
+                        className="
+                            flex
+                            items-center
+                            justify-center
+                            h-[32px]
+                            flex-1
+                            bg-cyan-600
+                            hover:bg-cyan-500
+                        "
+                    >
+                      Site
+                    </a>
+                  </div>
+                </figcaption>
+              </figure>
+            ))
+          }
+        </List>
       </Card>
       <Card
           id="formacao"
-          className='
-              flex
-              flex-col
-              items-center
-              justify-start
-          '
       >
         <h1
-            className="font-inter text-xl font-semibold text-white"
+            className="
+                text-xl 
+                font-semibold 
+                text-white
+            "
         >
           Formação
         </h1>
+        <List>
+          {
+            profile.educational.map((item) => (
+              <div
+                  key={nextId()}
+                  className="
+                      break-words
+                      text-white
+                      rounded-md
+                      p-2
+                      w-[45vw]
+                      bg-gradient-to-b
+                    from-neutral-300/30
+                    via-neutral-600/60 
+                    to-neutral-800/80
+                  "
+              >
+                <h1
+                     className="
+                         text-xl
+                         font-semibold
+                     "
+                >
+                  { item.institution }
+                </h1>
+                <h1
+                    className="
+                        text-base
+                    "
+                >
+                  { item.course }
+                </h1>
+                <h1
+                    className="
+                        text-sm
+                        font-light
+                    "
+                >
+                  { item.period }
+                </h1>
+              </div>
+            ))
+          }
+        </List>
       </Card>
       <Card
           id="stack"
-          className='
-              flex
-              flex-col
-              items-center
-              justify-center
+          className="
               bg-neutral-900
               text-white
-          '
+          "
       >
         <h1
-            className="font-inter text-xl font-semibold"
+            className="
+                text-xl 
+                font-semibold
+            "
         >
           Stack
         </h1>
@@ -148,20 +310,20 @@ export function App() {
                 <img 
                     src={ item.imageUrl } 
                     alt="" 
-                    className='
+                    className="
                         z-[2]
-                    '
+                    "
                 />
                 <img 
                     src={ item.imageUrl } 
                     alt="" 
-                    className='
+                    className="
                        absolute
                        top-2
                        blur-sm
                        z-[1]
                        animate-pulse
-                    '
+                    "
                 />
                 <figcaption>
                   <h1>
@@ -175,32 +337,84 @@ export function App() {
       </Card>
       <Card
           id="certificados"
-          className='
-              flex
-              flex-col
-              items-center
-              justify-start
-          '
+          className="
+            text-white
+          "
       >
         <h1
-            className="font-inter text-xl font-semibold text-white"
+            className="
+                text-xl 
+                font-semibold 
+            "
         >
           Certificados
         </h1>
+        <List>
+          {
+            profile.certificates.map((item) => (
+              <figure
+                  className="
+                      w-[50vw]
+                      flex
+                      flex-col
+                      justify-center
+                      items-center
+                      text-center
+                      gap-2
+                      p-4
+                      rounded-lg
+                      bg-gradient-to-b
+                    from-neutral-300/30
+                    via-neutral-600/60 
+                    to-neutral-800/80
+                  "
+              >
+                <img 
+                    src={ item.imageUrl } 
+                    alt="" 
+                    className="
+                        w-full
+                        rounded-lg
+                    "
+                />
+                <figcaption
+                    className="
+                        w-full
+                        flex
+                        flex-col
+                        gap-2
+                    "
+                >
+                  <h1>{item.label}, da { item.institution }</h1>
+                  <a 
+                      href={ item.imageUrl }
+                      target="_blank"
+                      className="
+                          ring-1
+                          ring-white
+                          w-full
+                          rounded-full
+                          hover:text-cyan-500
+                          hover:ring-cyan-500
+                      "
+                  >
+                    Visualizar
+                  </a>
+                </figcaption>
+              </figure>
+            ))
+          }
+        </List>
       </Card>
       <Card
           id="habilidades"
           className='
-              flex
-              flex-col
-              items-center
-              justify-center
               bg-neutral-900
               text-white
           '
       >
         <h1
-            className="font-inter text-xl font-semibold text-white"
+            className="text-xl font-semibold text-white"
         >
           Habilidades
         </h1>
@@ -237,7 +451,6 @@ export function App() {
                     className='
                         z-[2]
                         text-white
-                        font-inter
                         text-xl
                     '
                 >
@@ -253,21 +466,29 @@ export function App() {
       <Card
           id="feedback"
           className='
-              flex
-              flex-col
-              items-center
-              justify-center
+              text-white
           '
       >
         <form 
-            action=""
-            className='ring-2 ring-white px-8 py-4 rounded-md flex flex-col items-center'    
+            onSubmit={sendMessage}
+            className="
+                w-[80vw]
+                px-8 
+                py-4 
+                rounded-md 
+                flex 
+                flex-col 
+                items-center
+                gap-4
+                bg-gradient-to-b
+              from-neutral-300/30
+              via-neutral-600/60 
+              to-neutral-800/80
+            "    
         >
           <label htmlFor="textarea"
               className='
-                  font-inter
                   text-xl
-                  text-white
               '
           >
               Feedback
@@ -276,9 +497,126 @@ export function App() {
               name="message" 
               id="textarea" 
               required 
-              className='bg-white/0 resize-none ring-2 ring-white'
+              placeholder="Me envie seu feedback 😉"
+              className="
+                  w-full
+                  p-2
+                  bg-white/0 
+                  resize-none 
+                  ring-2 
+                  ring-white
+                  rounded-md
+                  focus:outline-none
+                  focus:ring-cyan-500
+              "
           />
+          <button
+              type="submit"
+              className="
+                  bg-cyan-500
+                  w-full
+                  h-[32px]
+                  rounded-full
+                  hover:bg-cyan-300
+              "
+          >
+            Enviar
+          </button>
         </form>
+      </Card>
+      <Card
+          className='
+              text-white
+              bg-gradient-to-b
+              from-neutral-300/30
+              via-neutral-600/60 
+              to-neutral-800/80
+          '
+      >
+        <h1
+            className='
+                font-semibold
+                text-2xl
+            '
+        >
+          Agradecimentos
+        </h1>
+        <h1
+            className='
+                text-lg
+            '
+        >
+          Se você chegou até aqui obrigado pela atenção
+        </h1>
+      </Card>
+      <Card
+          id="contatos"
+          className="
+              bg-neutral-900
+              text-white
+          "
+      >
+        <div
+            className="
+                w-full
+                flex
+                justify-center
+                items-center
+                gap-2
+            "
+        >
+          <hr 
+              className="
+                  h-[2px]
+                  bg-white
+                  flex-1
+              "
+          />
+          <div
+             className="
+                 flex
+                 gap-2
+                 p-2
+             "
+          >
+            {
+              profile.contacts.map((item) => (
+                  <a 
+                      href={ item.siteUrl }
+                      target="_blank"
+                      className="
+                           rounded-md
+                           hover:bg-cyan-500
+                           bg-gradient-to-b
+                         from-neutral-300/30
+                         via-neutral-600/60
+                         to-neutral-800/80
+                      "
+                  >
+                    <img src={ item.imageUrl } alt="" />
+                  </a>
+              ))
+            }
+          </div>
+          <hr 
+              className="
+                  h-[2px]
+                  bg-white
+                  flex-1
+              "
+          />
+        </div>
+        <h1
+            className="
+                text-2xl
+                font-semibold
+            "
+        >
+          { profile.portifolioName }
+        </h1>
+        <h1>
+          { profile.portifolioLema }
+        </h1>
       </Card>
     </div>
   );

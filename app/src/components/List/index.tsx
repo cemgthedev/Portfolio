@@ -11,7 +11,7 @@ export function List({ children }: ListProps) {
         <div
             className='
                 flex
-                gap-4
+                gap-2
                 items-center
                 justify-center
                 flex-wrap

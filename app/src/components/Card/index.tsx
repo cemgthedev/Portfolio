@@ -3,7 +3,7 @@ import { ReactNode } from 'react'
 import '../../styles/global.css'
 
 export interface CardProps {
-    id: string,
+    id?: string,
     children: ReactNode,
     className?: string
 }
@@ -13,7 +13,16 @@ export function Card({ id, children, className }: CardProps) {
         <div
             id={ id }
             className={clsx(
-                "p-16 w-screen h-screen",
+                `
+                font-inter
+                p-16 
+                w-screen 
+                min-h-[150vh] 
+                flex
+                flex-col
+                items-center
+                gap-2
+                `,
                 className
             )}
         >

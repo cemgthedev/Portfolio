@@ -72,6 +72,7 @@ export function Header() {
                             <a 
                                 key={nextId()}
                                 href={link.href}
+                                type="button"
                                 className='
                                     p-2
                                     transition

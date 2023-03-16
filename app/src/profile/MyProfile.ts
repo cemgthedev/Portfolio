@@ -14,7 +14,7 @@ export const MyProfile: Profile = {
     ],
     projects: [
         {
-            imageUrl: '../../assets/profile/projects/github-stalker.png',
+            imageUrl: '../../assets/profile/projects/github-stalker.svg',
             label: 'GitHub Stalker',
             githubProjectUrl: 'https://github.com/cemgthedev/GitHub-Stalker',
             siteProjectUrl: 'https://github-stalker-gray.vercel.app/',
@@ -26,7 +26,7 @@ export const MyProfile: Profile = {
             institution: 'Universidade Federal do Ceará - Campus de Quixadá',
             course: 'Ciência da Computação',
             period: 'Mar/2019 até o momento (3 anos e 11 meses)'
-        },
+        }
     ],
     stack: [
         {
@@ -78,48 +78,42 @@ export const MyProfile: Profile = {
         {
             imageUrl: '/assets/profile/certificates/html-basico-fundacao-bradesco.png',
             institution: 'Fundação Bradesco',
-            trail: 'Crie um Site Simples',
             label: 'HTML Básico'
         },
         {
             imageUrl: '/assets/profile/certificates/html-avancado-fundacao-bradesco.png',
             institution: 'Fundação Bradesco',
-            trail: 'Crie um Site Simples',
             label: 'HTML Avançado'
         },
         {
             imageUrl: '/assets/profile/certificates/inovando-com-css-fundacao-bradesco.png',
             institution: 'Fundação Bradesco',
-            trail: 'Crie um Site Simples',
             label: 'Inovando com CSS'
         },
         {
             imageUrl: '/assets/profile/certificates/html-e-css-na-pratica-fundacao-bradesco.png',
             institution: 'Fundação Bradesco',
-            trail: 'Crie um Site Simples',
             label: 'HTML e CSS na Prática'
         },
         {
             imageUrl: '/assets/profile/certificates/introducao-ao-javascript-fundacao-bradesco.png',
             institution: 'Fundação Bradesco',
-            trail: 'Crie um Site Simples',
             label: 'Introdução ao JavaScript'
         },
         {
             imageUrl: '/assets/profile/certificates/crie-um-site-simples-fundacao-bradesco.png',
             institution: 'Fundação Bradesco',
-            trail: 'Crie um Site Simples',
             label: 'Crie um Site Simples com HTML, CSS e JavaScript'
         },
         {
             imageUrl: '/assets/profile/certificates/trilha-conectar-do-discover-rocketseat.png',
             institution: 'Rocketseat',
-            trail: 'Conectar',
+            label: 'Conectar',
         },
         {
             imageUrl: '/assets/profile/certificates/trilha-fundamentar-do-discover-rocketseat.png',
             institution: 'Rocketseat',
-            trail: 'Fundamentar',
+            label: 'Fundamentar',
         }
     ],
     skills: [

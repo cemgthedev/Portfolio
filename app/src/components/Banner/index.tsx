@@ -13,7 +13,7 @@ export function Banner({ id, children }: BannerProps) {
             className='
                 font-inter
                 w-screen
-                h-screen
+                min-h-screen
                 flex
                 flex-col
                 items-center
