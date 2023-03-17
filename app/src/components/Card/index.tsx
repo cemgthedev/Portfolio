@@ -17,7 +17,7 @@ export function Card({ id, children, className }: CardProps) {
                 font-inter
                 p-16 
                 w-screen 
-                min-h-[150vh] 
+                min-h-[110vh]
                 flex
                 flex-col
                 items-center

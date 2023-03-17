@@ -1,21 +1,24 @@
 import '../../styles/global.css'
 
 import { ReactNode } from 'react'
+import clsx from 'clsx';
 
 export interface ListProps {
-    children: ReactNode
+    children: ReactNode,
+    className?: string
 }
 
-export function List({ children }: ListProps) {
+export function List({ children, className }: ListProps) {
     return (
         <div
-            className='
+            className={clsx(
+                `w-full
                 flex
-                gap-2
-                items-center
-                justify-center
+                gap-4
                 flex-wrap
-            '
+                `,
+                className
+            )}
         >
             {
                 children

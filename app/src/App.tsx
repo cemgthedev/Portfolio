@@ -118,6 +118,32 @@ export function App() {
             ))
           }
         </figcaption>
+        <div
+             className="
+                 flex
+                 gap-2
+                 p-2
+             "
+          >
+            {
+              profile.contacts.map((item) => (
+                  <a 
+                      href={ item.siteUrl }
+                      target="_blank"
+                      className="
+                           rounded-md
+                           hover:bg-violet-500
+                           bg-gradient-to-b
+                         from-neutral-300/30
+                         via-neutral-600/60
+                         to-neutral-800/80
+                      "
+                  >
+                    <img src={ item.imageUrl } alt="" />
+                  </a>
+              ))
+            }
+          </div>
       </Banner>
       <Card
           id="projetos"
@@ -131,12 +157,17 @@ export function App() {
         >
           Projetos
         </h1>
-        <List>
+        <List
+            className="
+                justify-center
+            "
+        >
           {
             profile.projects.map((item) => (
               <figure
                   className="
                       flex
+                      w-[45vw]
                       flex-col
                       items-center
                       justify-center
@@ -144,7 +175,6 @@ export function App() {
                       gap-4
                       p-4
                       rounded-lg
-                      w-[50vw]
                       text-white
                       bg-gradient-to-b
                     from-neutral-300/30
@@ -163,6 +193,7 @@ export function App() {
                     alt="" 
                     className="
                         rounded-lg
+                        w-full
                     "
                 />
                 <figcaption
@@ -291,7 +322,11 @@ export function App() {
         >
           Stack
         </h1>
-        <List>
+        <List
+            className="
+                justify-center
+            "
+        >
           {
             profile.stack.map((item) => (
               <figure
@@ -349,18 +384,22 @@ export function App() {
         >
           Certificados
         </h1>
-        <List>
+        <List
+            className="
+                justify-center
+            "
+        >
           {
             profile.certificates.map((item) => (
               <figure
                   className="
-                      w-[50vw]
+                      w-[40vw]
                       flex
                       flex-col
-                      justify-center
+                      justify-between
                       items-center
                       text-center
-                      gap-2
+                      gap-4
                       p-4
                       rounded-lg
                       bg-gradient-to-b
@@ -418,7 +457,11 @@ export function App() {
         >
           Habilidades
         </h1>
-        <List>
+        <List
+            className="
+                justify-center
+            "
+        >
           {
             profile.skills.map((item) => (
               <figure
@@ -447,6 +490,16 @@ export function App() {
                         z-[1]
                     '
                 />
+                <img 
+                    src={ item.imageUrl } 
+                    alt="" 
+                    className='
+                        blur-sm
+                        absolute 
+                        bottom-0
+                        z-[1]
+                    '
+                />
                 <figcaption
                     className='
                         z-[2]
@@ -467,6 +520,7 @@ export function App() {
           id="feedback"
           className='
               text-white
+              justify-center
           '
       >
         <form 
@@ -487,9 +541,9 @@ export function App() {
             "    
         >
           <label htmlFor="textarea"
-              className='
+              className="
                   text-xl
-              '
+              "
           >
               Feedback
           </label>
@@ -525,87 +579,25 @@ export function App() {
         </form>
       </Card>
       <Card
-          className='
-              text-white
-              bg-gradient-to-b
-              from-neutral-300/30
-              via-neutral-600/60 
-              to-neutral-800/80
-          '
-      >
-        <h1
-            className='
-                font-semibold
-                text-2xl
-            '
-        >
-          Agradecimentos
-        </h1>
-        <h1
-            className='
-                text-lg
-            '
-        >
-          Se você chegou até aqui obrigado pela atenção
-        </h1>
-      </Card>
-      <Card
-          id="contatos"
           className="
               bg-neutral-900
               text-white
+              text-center
+              justify-center
           "
       >
-        <div
-            className="
-                w-full
-                flex
-                justify-center
-                items-center
-                gap-2
-            "
-        >
-          <hr 
-              className="
-                  h-[2px]
-                  bg-white
-                  flex-1
-              "
-          />
-          <div
-             className="
-                 flex
-                 gap-2
-                 p-2
-             "
-          >
-            {
-              profile.contacts.map((item) => (
-                  <a 
-                      href={ item.siteUrl }
-                      target="_blank"
-                      className="
-                           rounded-md
-                           hover:bg-cyan-500
-                           bg-gradient-to-b
-                         from-neutral-300/30
-                         via-neutral-600/60
-                         to-neutral-800/80
-                      "
-                  >
-                    <img src={ item.imageUrl } alt="" />
-                  </a>
-              ))
-            }
-          </div>
-          <hr 
-              className="
-                  h-[2px]
-                  bg-white
-                  flex-1
-              "
-          />
-        </div>
+        <TypeAnimation
+            sequence={[
+              "Meus Agradecimentos",
+              2000,
+              "Se você chegou até aqui obrigado pela atenção",
+              2000
+            ]}
+            speed={50}
+          wrapper="span"
+            repeat={Infinity}
+            className='text-purple-500 uppercase'
+        />
         <h1
             className="
                 text-2xl

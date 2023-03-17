@@ -25,9 +25,6 @@ const links = [
     },
     {
       href: '#feedback', label: 'Feedback'
-    },
-    {
-      href: '#contatos', label: 'Contatos'
     }
 ]
 
@@ -53,7 +50,7 @@ export function Header() {
                 className='
                     relative
                     bg-neutral-900
-                  text-white
+                    text-white
                     text-lg
                 '
             >
@@ -96,8 +93,6 @@ export function Header() {
                                 right-2 
                                 p-1 
                                 rounded-sm 
-                                transition 
-                                hover:stroke-cyan-500
                             '
                         >
                             { modalOpen ? 
@@ -105,7 +100,7 @@ export function Header() {
                                 <img src="../../assets/icons/List.svg" alt="Fechar"  /> }
                         </Menu.Button>
                         <Menu.Items
-                        className='h-screen w-[90vw] flex flex-col gap-2 pt-16 items-center'
+                        className='h-screen w-full flex flex-col gap-2 pt-16 items-center'
                         >
                             {
                                 links.map((link) => (
