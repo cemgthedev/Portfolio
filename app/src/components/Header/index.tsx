@@ -3,6 +3,7 @@ import '../../styles/global.css'
 import { Fragment, useState } from 'react'
 import nextId from 'react-id-generator'
 import { Menu } from '@headlessui/react'
+import clsx from 'clsx'
 
 const links = [
     {
@@ -28,7 +29,11 @@ const links = [
     }
 ]
 
-export function Header() {
+export interface HeaderProps {
+    className?: string
+}
+
+export function Header({ className }: HeaderProps) {
     const [modalOpen, setModalOpen] = useState(false);
 
     function toggleModal() {
@@ -37,14 +42,17 @@ export function Header() {
 
     return (
         <header
-            className='
+            className={clsx(
+                `
                 font-inter
                 font-semibold
                 w-screen
                 sticky
                 top-0
                 z-[999]
-            '
+                `,
+                className
+            )}
         >
             <nav
                 className='

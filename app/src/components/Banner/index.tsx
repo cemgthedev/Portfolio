@@ -1,16 +1,19 @@
+import clsx from 'clsx';
 import { ReactNode } from 'react';
 import '../../styles/global.css'
 
 export interface BannerProps {
     id: string,
-    children: ReactNode
+    children: ReactNode,
+    className?: string
 }
 
-export function Banner({ id, children }: BannerProps) {
+export function Banner({ id, children, className }: BannerProps) {
     return (
         <figure
             id={ id }
-            className='
+            className={clsx(
+                `
                 font-inter
                 w-screen
                 min-h-screen
@@ -24,7 +27,8 @@ export function Banner({ id, children }: BannerProps) {
                 px-8
                 bg-neutral-900
                 text-white
-            '
+                `
+            )}
         >
             {
                 children

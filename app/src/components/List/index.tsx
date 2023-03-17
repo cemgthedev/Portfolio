@@ -14,6 +14,7 @@ export function List({ children, className }: ListProps) {
             className={clsx(
                 `w-full
                 flex
+                justify-center
                 gap-4
                 flex-wrap
                 `,

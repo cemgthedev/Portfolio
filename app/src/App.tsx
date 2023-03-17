@@ -128,6 +128,7 @@ export function App() {
             {
               profile.contacts.map((item) => (
                   <a 
+                      key={nextId()}
                       href={ item.siteUrl }
                       target="_blank"
                       className="
@@ -157,11 +158,7 @@ export function App() {
         >
           Projetos
         </h1>
-        <List
-            className="
-                justify-center
-            "
-        >
+        <List>
           {
             profile.projects.map((item) => (
               <figure
@@ -322,11 +319,7 @@ export function App() {
         >
           Stack
         </h1>
-        <List
-            className="
-                justify-center
-            "
-        >
+        <List>
           {
             profile.stack.map((item) => (
               <figure
@@ -384,11 +377,7 @@ export function App() {
         >
           Certificados
         </h1>
-        <List
-            className="
-                justify-center
-            "
-        >
+        <List>
           {
             profile.certificates.map((item) => (
               <figure
@@ -447,21 +436,17 @@ export function App() {
       </Card>
       <Card
           id="habilidades"
-          className='
+          className="
               bg-neutral-900
               text-white
-          '
+          "
       >
         <h1
             className="text-xl font-semibold text-white"
         >
           Habilidades
         </h1>
-        <List
-            className="
-                justify-center
-            "
-        >
+        <List>
           {
             profile.skills.map((item) => (
               <figure
@@ -518,10 +503,10 @@ export function App() {
       </Card>
       <Card
           id="feedback"
-          className='
+          className="
               text-white
               justify-center
-          '
+          "
       >
         <form 
             onSubmit={sendMessage}
