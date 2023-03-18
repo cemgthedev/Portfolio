@@ -408,4 +408,4 @@ Error generating stack: `+o.message+`
           `,children:[R("h1",{className:`
                 text-2xl
                 font-semibold
-            `,children:e.portifolioName}),R("h1",{children:e.portifolioLema}),R("h1",{children:"Se você chegou até aqui obrigado pela atenção"})]})]})}function nk(){return R(O0,{children:R(F0,{children:R(Kh,{path:"/",element:R(tk,{})})})})}ml.createRoot(document.getElementById("root")).render(R(tt.StrictMode,{children:R(nk,{})}));
+            `,children:e.portifolioName}),R("h1",{children:e.portifolioLema}),R("h1",{children:"Se você chegou até aqui obrigado pela atenção"})]})]})}function nk(){return R(O0,{children:R(F0,{children:R(Kh,{path:"/Portfolio/",element:R(tk,{})})})})}ml.createRoot(document.getElementById("root")).render(R(tt.StrictMode,{children:R(nk,{})}));
