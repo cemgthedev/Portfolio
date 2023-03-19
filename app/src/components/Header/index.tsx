@@ -69,7 +69,7 @@ export function Header({ className }: HeaderProps) {
                         items-center
                         justify-center
                         border-b-2
-                        border-solid-white
+                        border-white
                     '
                 >
                     {
@@ -104,11 +104,11 @@ export function Header({ className }: HeaderProps) {
                             '
                         >
                             { modalOpen ? 
-                                <img src="/src/assets/icons/Vector.svg" alt="Menu"  /> : 
-                                <img src="/src/assets/icons/List.svg" alt="Fechar"  /> }
+                                <img src="/Portfolio/assets/icons/Vector.svg" alt="Menu"  /> : 
+                                <img src="/Portfolio/assets/icons/List.svg" alt="Fechar"  /> }
                         </Menu.Button>
                         <Menu.Items
-                        className='h-screen w-full flex flex-col gap-2 pt-16 items-center'
+                        className='h-screen w-full flex flex-col gap-4 pt-16 items-center'
                         >
                             {
                                 links.map((link) => (

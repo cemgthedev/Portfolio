@@ -15,7 +15,8 @@ export function Card({ id, children, className }: CardProps) {
             className={clsx(
                 `
                 font-inter
-                p-16 
+                py-16
+                px-8 
                 w-screen 
                 min-h-[110vh]
                 flex

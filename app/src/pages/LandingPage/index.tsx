@@ -40,7 +40,8 @@ export function LandingPage() {
       >
         <div
             className="
-                text-2xl 
+                min-h-[96px]
+                text-xl 
                 font-semibold 
                 flex 
                 flex-col 
@@ -82,7 +83,7 @@ export function LandingPage() {
                 "
             />
             <img 
-                src="/src/assets/profile/banner/Blob.svg" 
+                src="/Portfolio/assets/profile/banner/Blob.svg" 
                 alt="" 
                 className="
                     z-[2] 
@@ -91,7 +92,7 @@ export function LandingPage() {
                 "
             />
             <img 
-                src="/src/assets/profile/banner/Blob.svg" 
+                src="/Portfolio/assets/profile/banner/Blob.svg" 
                 alt="" 
                 className="
                     z-[1] 
@@ -166,8 +167,8 @@ export function LandingPage() {
                   className="
                       relative
                       flex
-                      w-[40vw]
-                      max-md:w-[60vw]
+                      w-[50vw]
+                      max-md:w-[80vw]
                       flex-col
                       items-center
                       justify-center
@@ -220,7 +221,12 @@ export function LandingPage() {
                         w-full
                     "
                 >
-                  <h1>{item.description}</h1>
+                  <h1
+                      className="
+                          text-lg
+                          font-semibold
+                      "
+                  >{item.description}</h1>
                   <div
                       className="
                           flex
@@ -351,8 +357,8 @@ export function LandingPage() {
                       items-center
                       justify-center
                       gap-2
-                      w-[100px]
-                      h-[100px]
+                      w-[80px]
+                      h-[80px]
                   "
               >
                 <img 
@@ -367,7 +373,7 @@ export function LandingPage() {
                     alt="" 
                     className="
                        absolute
-                       top-2
+                       top-1
                        blur-sm
                        z-[1]
                        animate-pulse
@@ -528,7 +534,6 @@ export function LandingPage() {
           id="feedback"
           className="
               text-white
-              justify-center
           "
       >
         <form 
@@ -597,6 +602,14 @@ export function LandingPage() {
       >
         <h1
             className="
+                text-violet-500
+                font-light
+            "
+        >
+        Se você chegou até aqui obrigado pela atenção
+        </h1>
+        <h1
+            className="
                 text-2xl
                 font-semibold
             "
@@ -605,9 +618,6 @@ export function LandingPage() {
         </h1>
         <h1>
           { profile.portifolioLema }
-        </h1>
-        <h1>
-        Se você chegou até aqui obrigado pela atenção
         </h1>
       </Card>
     </div>
