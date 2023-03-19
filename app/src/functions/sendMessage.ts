@@ -1,9 +1,10 @@
 import emailjs from '@emailjs/browser';
+import env from "react-dotenv";
 
 export function sendMessage(e: any) {
     e.preventDefault();
 
-    emailjs.sendForm('service_pz36v8n', 'template_071i4ym', e.target, 'rF28mQHvZFEJCddkr')
+    emailjs.sendForm(env.SERVICEID, env.TEMPLATEID, e.target, env.PUBLICKEY)
       .then((result) => {
           window.alert("Obrigado pelo seu feedback 😉");
       }, (error) => {
