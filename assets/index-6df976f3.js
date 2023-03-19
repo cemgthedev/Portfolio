@@ -88,7 +88,7 @@ Error generating stack: `+o.message+`
                         items-center
                         justify-center
                         border-b-2
-                        border-solid-white
+                        border-white
                     `,children:Ef.map(i=>R("a",{href:i.href,type:"button",className:`
                                     p-2
                                     transition
@@ -99,7 +99,7 @@ Error generating stack: `+o.message+`
                                 right-2 
                                 p-1 
                                 rounded-sm 
-                            `,children:t?R("img",{src:"/Portfolio/assets/icons/Vector.svg",alt:"Menu"}):R("img",{src:"/Portfolio/assets/icons/List.svg",alt:"Fechar"})}),R(bi.Items,{className:"h-screen w-full flex flex-col gap-2 pt-16 items-center",children:Ef.map(i=>R(bi.Item,{as:x.Fragment,children:R("a",{onClick:r,href:i.href,className:"transition hover:text-cyan-500",children:i.label})},ht()))})]})})]})})}function O1({id:e,children:t,className:n}){return R("figure",{id:e,className:hs(`
+                            `,children:t?R("img",{src:"/Portfolio/assets/icons/Vector.svg",alt:"Menu"}):R("img",{src:"/Portfolio/assets/icons/List.svg",alt:"Fechar"})}),R(bi.Items,{className:"h-screen w-full flex flex-col gap-4 pt-16 items-center",children:Ef.map(i=>R(bi.Item,{as:x.Fragment,children:R("a",{onClick:r,href:i.href,className:"transition hover:text-cyan-500",children:i.label})},ht()))})]})})]})})}function O1({id:e,children:t,className:n}){return R("figure",{id:e,className:hs(`
                 font-inter
                 w-screen
                 min-h-screen
@@ -115,7 +115,8 @@ Error generating stack: `+o.message+`
                 text-white
                 `),children:t})}function sn({id:e,children:t,className:n}){return R("div",{id:e,className:hs(`
                 font-inter
-                p-16 
+                py-16
+                px-8 
                 w-screen 
                 min-h-[110vh]
                 flex
@@ -151,7 +152,8 @@ Error generating stack: `+o.message+`
           scrollbar-hide 
           select-none
       `,children:[R(F1,{}),X(O1,{id:"home",children:[X("div",{className:`
-                text-2xl 
+                min-h-[96px]
+                text-xl 
                 font-semibold 
                 flex 
                 flex-col 
@@ -197,8 +199,8 @@ Error generating stack: `+o.message+`
             `,children:"Projetos"}),R(Sr,{children:e.projects.map(n=>X("figure",{className:`
                       relative
                       flex
-                      w-[40vw]
-                      max-md:w-[60vw]
+                      w-[50vw]
+                      max-md:w-[80vw]
                       flex-col
                       items-center
                       justify-center
@@ -233,7 +235,10 @@ Error generating stack: `+o.message+`
                         flex-col
                         gap-2
                         w-full
-                    `,children:[R("h1",{children:n.description}),X("div",{className:`
+                    `,children:[R("h1",{className:`
+                          text-lg
+                          font-semibold
+                      `,children:n.description}),X("div",{className:`
                           flex
                           items-center
                           justify-center
@@ -290,13 +295,13 @@ Error generating stack: `+o.message+`
                       items-center
                       justify-center
                       gap-2
-                      w-[100px]
-                      h-[100px]
+                      w-[80px]
+                      h-[80px]
                   `,children:[R("img",{src:n.imageUrl,alt:"",className:`
                         z-[2]
                     `}),R("img",{src:n.imageUrl,alt:"",className:`
                        absolute
-                       top-2
+                       top-1
                        blur-sm
                        z-[1]
                        animate-pulse
@@ -367,7 +372,6 @@ Error generating stack: `+o.message+`
                         text-xl
                     `,children:R("h1",{children:n.label})})]},ht()))})]}),R(sn,{id:"feedback",className:`
               text-white
-              justify-center
           `,children:X("form",{onSubmit:H0,className:`
                 w-[80vw]
                 px-8 
@@ -406,6 +410,9 @@ Error generating stack: `+o.message+`
               text-center
               justify-center
           `,children:[R("h1",{className:`
+                text-violet-500
+                font-light
+            `,children:"Se você chegou até aqui obrigado pela atenção"}),R("h1",{className:`
                 text-2xl
                 font-semibold
-            `,children:e.portifolioName}),R("h1",{children:e.portifolioLema}),R("h1",{children:"Se você chegou até aqui obrigado pela atenção"})]})]})}function nk(){return R(O0,{children:R(F0,{children:R(Kh,{path:"/Portfolio/",element:R(tk,{})})})})}ml.createRoot(document.getElementById("root")).render(R(tt.StrictMode,{children:R(nk,{})}));
+            `,children:e.portifolioName}),R("h1",{children:e.portifolioLema})]})]})}function nk(){return R(O0,{children:R(F0,{children:R(Kh,{path:"/Portfolio/",element:R(tk,{})})})})}ml.createRoot(document.getElementById("root")).render(R(tt.StrictMode,{children:R(nk,{})}));
