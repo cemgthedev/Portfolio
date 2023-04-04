@@ -10,7 +10,7 @@ export const MyProfile: Profile = {
         nos quais busco aplicar todos os meus conhecimentos.`,
         `Planejo dominar inicialmente tecnologias relacionadas a Front End e UI/UX Design
         e futuramente tecnologias relacionadas a Back End. Devido a rotina da faculdade 
-        busco apenas vagas de estágio remoto com carga horária semanal de até 40 horas.`
+        busco apenas vagas de estágio remoto com carga horária semanal de até 30 horas.`
     ],
     projects: [
         {
