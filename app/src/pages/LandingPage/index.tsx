@@ -192,6 +192,7 @@ export function LandingPage() {
                 <div
                     className="
                         ml-auto
+                        max-sm:mb-auto
                         flex
                         flex-col
                         gap-2
