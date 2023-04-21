@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .btn-primary {
-    @apply rounded-lg p-1 bg-purple-600 min-w-[24px];
+    @apply rounded-lg p-1 bg-purple-600 min-w-[28px];
 }
 
 .btn-primary:hover {

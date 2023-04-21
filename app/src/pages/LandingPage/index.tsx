@@ -1,7 +1,7 @@
 import { TypeAnimation } from 'react-type-animation';
 
 import "../../styles/global.css";
-import { Heading } from "../../components/Heading";
+import { Label } from "../../components/Label";
 import { Text } from '../../components/Text';
 
 export function LandingPage() {
@@ -22,12 +22,14 @@ export function LandingPage() {
                 className="
                     min-h-[96px]
                     font-sans
-                    text-2xl 
+                    text-2xl
+                    max-sm:text-lg
                     text-white
                     font-bold 
                     flex 
                     flex-col 
                     items-center
+                    animate-bottom
                 "
             >
                 <span>
@@ -52,8 +54,7 @@ export function LandingPage() {
                     w-full
                     items-center
                     gap-4
-                    px-8
-                    ring-1 ring-red-600
+                    px-4
                 "
             >
                 <figure
@@ -73,6 +74,7 @@ export function LandingPage() {
                             w-[196px]
                             h-[196px]
                             relative
+                            animate-top
                         "
                     >
                         <img 
@@ -108,6 +110,7 @@ export function LandingPage() {
                         className="
                             text-white
                             text-center
+                            min-h-[250px]
                             w-[70vw]
                             flex
                             flex-col
@@ -115,19 +118,41 @@ export function LandingPage() {
                         "
                     >
                         <Text>
-                            Olá, me chamo Carlos Eduardo de Moura Gomes.
+                            <TypeAnimation
+                                sequence={[
+                                    1000,
+                                    "Olá, me chamo Carlos Eduardo de Moura Gomes."
+                                ]}
+                                speed={40}
+                                repeat={0}
+                                cursor={false}
+                            />
                         </Text>
                         <Text>
-                            Atualmente minha experiência está fundamentada apenas em projetos pessoais 
-                            nos quais busco aplicar todos os meus conhecimentos.
+                            <TypeAnimation
+                                sequence={[
+                                    4500,
+                                "Atualmente minha experiência está fundamentada apenas em projetos pessoais nos quais busco aplicar todos os meus conhecimentos."
+                                ]}
+                                speed={40}
+                                repeat={0}
+                                cursor={false}
+                            />
                         </Text>
                         <Text>
-                            Planejo dominar inicialmente tecnologias relacionadas a Front End e UI/UX Design 
-                            e futuramente tecnologias relacionadas a Back End. Devido a rotina da faculdade 
-                            busco apenas vagas de estágio remoto com carga horária semanal de até 30 horas.
+                            <TypeAnimation
+                                sequence={[
+                                    13000,
+                                "Planejo dominar inicialmente tecnologias relacionadas a Front End e UI/UX Design e futuramente tecnologias relacionadas a Back End. Devido a rotina da faculdade busco apenas vagas de estágio remoto com carga horária semanal de até 30 horas."
+                                ]}
+                                speed={40}
+                                repeat={0}
+                                cursor={false}
+                            />
                         </Text>
                         <div
                             className="
+                                mt-auto
                                 flex
                                 items-center
                                 justify-center
@@ -143,9 +168,10 @@ export function LandingPage() {
                                     transition
                                     bg-purple-600
                                     hover:bg-purple-500
+                                    animate-rigth
                                 "
                             >
-                                Portfólio
+                                <Label size="sm">Portfólio</Label>
                             </a>
                             <a 
                                 href="/Portfolio/curriculo"
@@ -155,9 +181,10 @@ export function LandingPage() {
                                     transition
                                     bg-cyan-600
                                     hover:bg-cyan-500
+                                    animate-left
                                 "
                             >
-                                Currículo
+                                <Label size="sm">Currículo</Label>
                             </a>
                         </div>
                     </figcaption>
@@ -168,6 +195,7 @@ export function LandingPage() {
                         flex
                         flex-col
                         gap-2
+                        animate-left
                     "
                 >
                     <a 
@@ -190,7 +218,9 @@ export function LandingPage() {
                     </a>
                     <a 
                         href="mailto:cemg.the.dev@gmail.com"
-                        className="btn-primary"
+                        className="
+                            btn-primary
+                        "
                     >
                         <img src="/Portfolio/assets/icons/Envelope.svg" alt="" />
                     </a>
