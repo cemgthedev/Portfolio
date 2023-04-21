@@ -201,24 +201,28 @@ export function LandingPage() {
                 >
                     <a 
                         href="https://github.com/cemgthedev"
+                        target="_blank"
                         className="btn-primary"
                     >
                         <img src="/Portfolio/assets/icons/GithubLogo.svg" alt="" />
                     </a>
                     <a 
                         href="https://www.linkedin.com/in/carlos-eduardo-moura-gomes-bb0ab7250/"
+                        target="_blank"
                         className="btn-primary"
                     >
                         <img src="/Portfolio/assets/icons/LinkedinLogo.svg" alt="" />
                     </a>
                     <a 
                         href="https://www.instagram.com/cemg.the.dev/"
+                        target="_blank"
                         className="btn-primary"
                     >
                         <img src="/Portfolio/assets/icons/InstagramLogo.svg" alt="" />
                     </a>
                     <a 
                         href="mailto:cemg.the.dev@gmail.com"
+                        target="_blank"
                         className="
                             btn-primary
                         "
