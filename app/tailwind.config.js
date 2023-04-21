@@ -1,17 +1,13 @@
 /** @type {import('tailwindcss').Config} */
-module.exports = {
+export default {
   content: [
     "./src/**/*.tsx"
   ],
   theme: {
-    extend: {
-      fontFamily: {
-        inter: ['Inter', 'sans']
-      }
-    }
+    extend: {},
   },
   plugins: [
-    require('tailwind-scrollbar-hide'),
     require("daisyui"),
   ],
 }
+

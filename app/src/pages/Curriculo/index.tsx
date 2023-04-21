@@ -1,6 +1,6 @@
 import "../../styles/global.css";
 
-export function Header() {
+export function Curriculo() {
     return (
         <div></div>
     );
