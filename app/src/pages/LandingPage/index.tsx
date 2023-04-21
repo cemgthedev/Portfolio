@@ -2,6 +2,14 @@ import "../../styles/global.css";
 
 export function LandingPage() {
     return (
-        <div>Home</div>
+        <div
+            className="
+                bg-neutral-900
+                w-screen
+                h-screen
+            "
+        >
+            Home
+        </div>
     );
 }
