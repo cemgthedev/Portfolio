@@ -138,7 +138,7 @@ export const MyProfile: Profile = {
         {
             imageUrl: '/Portfolio/assets/icons/InstagramLogo.svg',
             title: 'instagram',
-            siteUrl: 'https://www.instagram.com/_carlos_eduardo_mg/'
+            siteUrl: 'https://www.instagram.com/cemg.the.dev/'
         },
         {
             imageUrl: '/Portfolio/assets/icons/LinkedinLogo.svg',
