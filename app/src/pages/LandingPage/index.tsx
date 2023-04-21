@@ -10,7 +10,7 @@ export function LandingPage() {
             className="
                 bg-neutral-900
                 p-8
-                w-screen
+                max-w-screen
                 min-h-screen
                 flex
                 flex-col
