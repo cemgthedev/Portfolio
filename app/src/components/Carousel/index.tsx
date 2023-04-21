@@ -1,7 +1,23 @@
+import { ReactNode } from "react";
+
 import "../../styles/global.css";
 
-export function Carousel() {
+export interface CarouselProps {
+    children: ReactNode
+}
+
+export function Carousel({ children }: CarouselProps) {
     return (
-        <div></div>
+        <div
+            className="
+                max-h-screen
+                carousel-vertical
+                snap-mandatory
+                snap-y
+                scrollbar-hide
+            "
+        >
+            { children }
+        </div>
     );
 }
