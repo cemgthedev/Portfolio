@@ -49,6 +49,15 @@ export default {
           from: {
             opacity: 0
           }
+        },
+        unlock: {
+          from: {
+            transform: 'translateY(50px)',
+            opacity: 0
+          },
+          to: {
+            opacity: 1
+          }
         }
       },
       animation: {
@@ -57,7 +66,8 @@ export default {
         bottom: 'bottom 450ms ease-in-out',
         left: 'left 750ms ease-in-out',
         rotation: 'rotation 5s linear infinite',
-        found: 'found 2s ease-in-out'
+        found: 'found 2s ease-in-out',
+        unlock: 'unlock 2s ease-in-out 22s forwards',
       }
     }
   },

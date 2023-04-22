@@ -9,13 +9,14 @@ export function LandingPage() {
         <div
             className="
                 bg-neutral-900
-                p-8
+                p-4
                 max-w-screen
                 min-h-screen
                 flex
                 flex-col
                 justify-center
                 items-center
+                max-sm:justify-start
             "
         >
             <div
@@ -110,7 +111,7 @@ export function LandingPage() {
                         className="
                             text-white
                             text-center
-                            min-h-[250px]
+                            min-h-[196px]
                             w-[70vw]
                             flex
                             flex-col
@@ -143,7 +144,7 @@ export function LandingPage() {
                             <TypeAnimation
                                 sequence={[
                                     13000,
-                                "Planejo dominar inicialmente tecnologias relacionadas a Front End e UI/UX Design e futuramente tecnologias relacionadas a Back End. Devido a rotina da faculdade busco apenas vagas de estágio remoto com carga horária semanal de até 30 horas."
+                                "Planejo dominar inicialmente tecnologias relacionadas a Front End e UI/UX Design e futuramente tecnologias relacionadas a Back End."
                                 ]}
                                 speed={40}
                                 repeat={0}
@@ -158,6 +159,8 @@ export function LandingPage() {
                                 justify-center
                                 gap-2
                                 p-2
+                                opacity-0
+                                animate-unlock
                             "
                         >
                             <a 
@@ -168,7 +171,6 @@ export function LandingPage() {
                                     transition
                                     bg-purple-600
                                     hover:bg-purple-500
-                                    animate-rigth
                                 "
                             >
                                 <Label size="sm">Portfólio</Label>
@@ -181,7 +183,6 @@ export function LandingPage() {
                                     transition
                                     bg-cyan-600
                                     hover:bg-cyan-500
-                                    animate-left
                                 "
                             >
                                 <Label size="sm">Currículo</Label>

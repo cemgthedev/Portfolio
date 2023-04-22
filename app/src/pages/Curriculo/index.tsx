@@ -13,15 +13,15 @@ const hrefs: Link[] = [
         title: "Home"
     },
     {
-        href: "#formacao",
+        href: "/curriculo/#formacao",
         title: "Formação"
     },
     {
-        href: "#stack",
+        href: "/curriculo/#stack",
         title: "Stack"
     },
     {
-        href: "#certificados",
+        href: "/curriculo/#certificados",
         title: "Certificados"
     }
 ];
