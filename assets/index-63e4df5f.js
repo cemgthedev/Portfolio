@@ -290,7 +290,6 @@ Error generating stack: `+o.message+`
                         gradient-black
                         p-4
                         rounded-lg
-                        animate-rigth
                     `,children:[f.jsx(tt,{children:"Universidade Federal do Ceará - Campus de Quixadá"}),f.jsx(O,{children:"Ciência da Computação"}),f.jsx(ce,{children:"Mar/2019 até o momento (3 anos e 11 meses)"})]})]}),f.jsxs("div",{id:"stack",className:`
                     gradient-black
                     card
