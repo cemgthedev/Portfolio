@@ -19,7 +19,7 @@
 }
 
 .figure-terciary {
-    @apply w-[40vw] max-lg:w-[60vw] max-md:w-[80vw] flex flex-col gradient-black pb-8 gap-4 rounded-2xl;
+    @apply relative w-[40vw] max-lg:w-[60vw] max-md:w-[80vw] flex flex-col gradient-black pb-8 gap-4 rounded-2xl;
 }
 
 .gradient-black {

@@ -67,7 +67,7 @@ export default {
         left: 'left 750ms ease-in-out',
         rotation: 'rotation 5s linear infinite',
         found: 'found 2s ease-in-out',
-        unlock: 'unlock 2s ease-in-out 22s forwards',
+        unlock: 'unlock 2s ease-in-out 21s forwards',
       }
     }
   },

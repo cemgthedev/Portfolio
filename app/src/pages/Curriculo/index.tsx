@@ -104,7 +104,7 @@ export function Curriculo() {
                                 className="
                                 absolute
                                 top-1
-                                blur-sm
+                                blur-lg
                                 z-[1]
                                 animate-pulse
                                 "
@@ -133,7 +133,7 @@ export function Curriculo() {
                                 className="
                                 absolute
                                 top-1
-                                blur-sm
+                                blur-lg
                                 z-[1]
                                 animate-pulse
                                 "
@@ -162,7 +162,7 @@ export function Curriculo() {
                                 className="
                                 absolute
                                 top-1
-                                blur-sm
+                                blur-lg
                                 z-[1]
                                 animate-pulse
                                 "
@@ -191,7 +191,7 @@ export function Curriculo() {
                                 className="
                                 absolute
                                 top-1
-                                blur-sm
+                                blur-lg
                                 z-[1]
                                 animate-pulse
                                 "
@@ -220,7 +220,7 @@ export function Curriculo() {
                                 className="
                                 absolute
                                 top-1
-                                blur-sm
+                                blur-lg
                                 z-[1]
                                 animate-pulse
                                 "
@@ -249,7 +249,7 @@ export function Curriculo() {
                                 className="
                                 absolute
                                 top-1
-                                blur-sm
+                                blur-lg
                                 z-[1]
                                 animate-pulse
                                 "
@@ -278,7 +278,7 @@ export function Curriculo() {
                                 className="
                                 absolute
                                 top-1
-                                blur-sm
+                                blur-lg
                                 z-[1]
                                 animate-pulse
                                 "
@@ -307,7 +307,7 @@ export function Curriculo() {
                                 className="
                                 absolute
                                 top-1
-                                blur-sm
+                                blur-lg
                                 z-[1]
                                 animate-pulse
                                 "
@@ -336,7 +336,7 @@ export function Curriculo() {
                                 className="
                                 absolute
                                 top-1
-                                blur-sm
+                                blur-lg
                                 z-[1]
                                 animate-pulse
                                 "
@@ -365,7 +365,7 @@ export function Curriculo() {
                                 className="
                                 absolute
                                 top-1
-                                blur-sm
+                                blur-lg
                                 z-[1]
                                 animate-pulse
                                 "
@@ -621,7 +621,6 @@ export function Curriculo() {
                                     h-full
                                     px-8
                                     gap-1
-                                    justify-between
                                 "
                             >
                                 <Label size="lg">Instituição: Fundação Bradesco</Label>
@@ -631,6 +630,7 @@ export function Curriculo() {
                                     target="_blanck"
                                     className="
                                         ml-auto
+                                        mt-auto
                                         p-2
                                         rounded-full
                                         transition
@@ -774,7 +774,6 @@ export function Curriculo() {
                                     h-full
                                     px-8
                                     gap-1
-                                    justify-between
                                 "
                             >
                                 <Label size="lg">Instituição: Rocketseat</Label>
@@ -784,6 +783,7 @@ export function Curriculo() {
                                     target="_blanck"
                                     className="
                                         ml-auto
+                                        mt-auto
                                         p-2
                                         rounded-full
                                         transition
