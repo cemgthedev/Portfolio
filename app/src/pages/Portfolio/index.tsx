@@ -101,7 +101,7 @@ export function Portfolio() {
                                     <Label size="sm">GitHub</Label>
                                 </a>
                                 <a 
-                                    href="https://github-stalker-gray.vercel.app/"
+                                    href="https://bit.ly/github-stalker"
                                     target="_blank"
                                     className="
                                         p-2

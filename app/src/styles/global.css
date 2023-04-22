@@ -15,7 +15,7 @@
 }
 
 .figure-secondary {
-    @apply relative flex flex-col items-center justify-center gap-2 w-[80px] h-[80px];
+    @apply relative flex flex-col items-center justify-center gap-2 w-[96px] h-[96px];
 }
 
 .figure-terciary {

@@ -96,6 +96,7 @@ export function Curriculo() {
                                 alt="" 
                                 className="
                                     z-[2]
+                                    p-2
                                 "
                             />
                             <img 
@@ -103,8 +104,9 @@ export function Curriculo() {
                                 alt="" 
                                 className="
                                 absolute
-                                top-1
-                                blur-lg
+                                top-3
+                                p-2
+                                blur-[8px]
                                 z-[1]
                                 animate-pulse
                                 "
@@ -132,8 +134,8 @@ export function Curriculo() {
                                 alt="" 
                                 className="
                                 absolute
-                                top-1
-                                blur-lg
+                                top-3
+                                blur-[8px]
                                 z-[1]
                                 animate-pulse
                                 "
@@ -161,8 +163,8 @@ export function Curriculo() {
                                 alt="" 
                                 className="
                                 absolute
-                                top-1
-                                blur-lg
+                                top-3
+                                blur-[8px]
                                 z-[1]
                                 animate-pulse
                                 "
@@ -190,8 +192,8 @@ export function Curriculo() {
                                 alt="" 
                                 className="
                                 absolute
-                                top-1
-                                blur-lg
+                                top-3
+                                blur-[8px]
                                 z-[1]
                                 animate-pulse
                                 "
@@ -219,8 +221,8 @@ export function Curriculo() {
                                 alt="" 
                                 className="
                                 absolute
-                                top-1
-                                blur-lg
+                                top-3
+                                blur-[8px]
                                 z-[1]
                                 animate-pulse
                                 "
@@ -248,8 +250,8 @@ export function Curriculo() {
                                 alt="" 
                                 className="
                                 absolute
-                                top-1
-                                blur-lg
+                                top-3
+                                blur-[8px]
                                 z-[1]
                                 animate-pulse
                                 "
@@ -277,8 +279,8 @@ export function Curriculo() {
                                 alt="" 
                                 className="
                                 absolute
-                                top-1
-                                blur-lg
+                                top-3
+                                blur-[8px]
                                 z-[1]
                                 animate-pulse
                                 "
@@ -306,8 +308,8 @@ export function Curriculo() {
                                 alt="" 
                                 className="
                                 absolute
-                                top-1
-                                blur-lg
+                                top-3
+                                blur-[8px]
                                 z-[1]
                                 animate-pulse
                                 "
@@ -335,8 +337,8 @@ export function Curriculo() {
                                 alt="" 
                                 className="
                                 absolute
-                                top-1
-                                blur-lg
+                                top-3
+                                blur-[8px]
                                 z-[1]
                                 animate-pulse
                                 "
@@ -364,8 +366,8 @@ export function Curriculo() {
                                 alt="" 
                                 className="
                                 absolute
-                                top-1
-                                blur-lg
+                                top-3
+                                blur-[8px]
                                 z-[1]
                                 animate-pulse
                                 "
