@@ -31,7 +31,6 @@ export function Portfolio() {
                 <div
                     className="
                         carousel-item 
-                        px-4
                         gradient-black
                         w-screen
                     "
