@@ -8,13 +8,32 @@ import { Text } from "../../components/Text";
 
 export function Portfolio() {
     return (
-        <div>
-            <Carousel>
+        <div
+            className="
+            fixed
+            top-0
+            w-screen
+            h-screen
+            text-white
+            overflow-auto
+            scroll-smooth
+            snap-mandatory
+            snap-y
+            "
+        >
+            <Carousel
+                orientation="vertical"
+                className="
+                    snap-start
+                    w-full
+                "
+            >
                 <div
                     className="
                         carousel-item 
                         px-4
                         gradient-black
+                        w-screen
                     "
                 >
                     <figure

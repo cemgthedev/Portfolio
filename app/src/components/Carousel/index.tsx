@@ -1,21 +1,29 @@
 import { ReactNode } from "react";
+import clsx from "clsx";
 
 import "../../styles/global.css";
 
 export interface CarouselProps {
-    children: ReactNode
+    children: ReactNode,
+    className?: string,
+    orientation: string
 }
 
-export function Carousel({ children }: CarouselProps) {
+export function Carousel({ children, orientation, className }: CarouselProps) {
     return (
         <div
-            className="
+            className={clsx(
+                `
                 max-h-screen
-                carousel-vertical
-                snap-mandatory
-                snap-y
                 scrollbar-hide
-            "
+                snap-mandatory
+                `,
+                {
+                    "carousel-vertical snap-y": orientation === "vertical",
+                    "carousel snap-x": orientation === "horizontal"
+                },
+                className
+            )}
         >
             { children }
         </div>
