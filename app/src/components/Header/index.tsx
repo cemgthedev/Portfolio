@@ -26,6 +26,7 @@ export function Header({ hrefs }: HeaderProps) {
                 sticky
                 top-0
                 z-[999]
+                animate-bottom
             "
         >
             <nav

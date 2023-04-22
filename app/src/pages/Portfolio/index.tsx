@@ -46,6 +46,7 @@ export function Portfolio() {
                             size="lg"
                             className="
                                 text-white
+                                animate-found
                             "
                         >
                             GitHub Stalker
@@ -55,6 +56,7 @@ export function Portfolio() {
                             alt="" 
                             className="
                                 rounded-2xl
+                                animate-top
                             "
                         />
                         <figcaption
@@ -66,7 +68,13 @@ export function Portfolio() {
                                 gap-2
                             "
                         >
-                            <Text>Uma aplicação web para você "stalkear" usuários do github</Text>
+                            <Text
+                                className="
+                                    animate-top
+                                "
+                            >
+                                Uma aplicação web para você "stalkear" usuários do github
+                            </Text>
                             <div
                                 className="
                                     flex
@@ -87,6 +95,7 @@ export function Portfolio() {
                                         transition
                                         bg-purple-600
                                         hover:bg-purple-500
+                                        animate-rigth
                                     "
                                 >
                                     <Label size="sm">GitHub</Label>
@@ -104,6 +113,7 @@ export function Portfolio() {
                                         transition
                                         bg-cyan-600
                                         hover:bg-cyan-500
+                                        animate-left
                                     "
                                 >
                                     <Label size="sm">Site</Label>

@@ -49,7 +49,13 @@ export function Curriculo() {
                     card
                 "
             >
-                <Heading>Formação</Heading>
+                <Heading
+                    className="
+                        animate-found
+                    "
+                >
+                    Formação
+                </Heading>
                 <div
                     className="
                         w-[80vw]

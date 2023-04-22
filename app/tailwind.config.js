@@ -39,13 +39,25 @@ export default {
             transform: 'translateX(100px)',
             opacity: 0
           }
+        },
+        rotation: {
+          to: {
+            transform: 'rotateZ(360deg)',
+          }
+        },
+        found: {
+          from: {
+            opacity: 0
+          }
         }
       },
       animation: {
         top: 'top 450ms ease-in-out',
         rigth: 'rigth 750ms ease-in-out',
         bottom: 'bottom 450ms ease-in-out',
-        left: 'left 750ms ease-in-out'
+        left: 'left 750ms ease-in-out',
+        rotation: 'rotation 5s linear infinite',
+        found: 'found 2s ease-in-out'
       }
     }
   },

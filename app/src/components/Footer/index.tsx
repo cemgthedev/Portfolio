@@ -18,19 +18,45 @@ export function Footer({ title, terms, message }: FooterProps) {
                 h-screen
                 max-w-screen
                 gradient-black
-                text-white
-                text-center
                 flex
-                flex-col
-                gap-4
-                p-4
                 items-center
                 justify-center
+                gap-4
+                p-4
             "
         >
-            <Heading>{title}</Heading>
-            <Label>{terms}</Label>
-            <Text>{message}</Text>
+            <figure
+                className="
+                    flex
+                    items-center
+                    justify-center
+                    relative
+                "
+            >
+                <img 
+                    src="/Portfolio/assets/icons/ReactFooter.svg" 
+                    alt="" 
+                    className="
+                        absolute
+                        animate-rotation
+                    "
+                />
+                <figcaption
+                    className="
+                        text-center
+                        text-white
+                        flex
+                        flex-col
+                        items-center
+                        justify-center
+                        gap-4
+                    "
+                >
+                    <Heading>{title}</Heading>
+                    <Label>{terms}</Label>
+                    <Text>{message}</Text>
+                </figcaption>
+            </figure>
         </footer>
     );
 }
