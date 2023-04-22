@@ -52,7 +52,7 @@ export function Portfolio() {
                             GitHub Stalker
                         </Heading>
                         <img 
-                            src="/Portfolio/assets/profile/projects/github-stalker.svg" 
+                            src="/assets/profile/projects/github-stalker.svg" 
                             alt="" 
                             className="
                                 rounded-2xl

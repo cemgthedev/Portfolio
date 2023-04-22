@@ -92,14 +92,14 @@ export function Curriculo() {
                     >
                         <div>
                             <img 
-                                src="/Portfolio/assets/profile/stack/Figma.svg"
+                                src="/assets/profile/stack/Figma.svg"
                                 alt="" 
                                 className="
                                     z-[2]
                                 "
                             />
                             <img 
-                                src="/Portfolio/assets/profile/stack/Figma.svg"
+                                src="/assets/profile/stack/Figma.svg"
                                 alt="" 
                                 className="
                                 absolute
@@ -121,14 +121,14 @@ export function Curriculo() {
                     >
                         <div>
                             <img 
-                                src="/Portfolio/assets/profile/stack/HTML5.svg"
+                                src="/assets/profile/stack/HTML5.svg"
                                 alt="" 
                                 className="
                                     z-[2]
                                 "
                             />
                             <img 
-                                src="/Portfolio/assets/profile/stack/HTML5.svg"
+                                src="/assets/profile/stack/HTML5.svg"
                                 alt="" 
                                 className="
                                 absolute
@@ -150,14 +150,14 @@ export function Curriculo() {
                     >
                         <div>
                             <img 
-                                src="/Portfolio/assets/profile/stack/CSS3.svg"
+                                src="/assets/profile/stack/CSS3.svg"
                                 alt="" 
                                 className="
                                     z-[2]
                                 "
                             />
                             <img 
-                                src="/Portfolio/assets/profile/stack/CSS3.svg"
+                                src="/assets/profile/stack/CSS3.svg"
                                 alt="" 
                                 className="
                                 absolute
@@ -179,14 +179,14 @@ export function Curriculo() {
                     >
                         <div>
                             <img 
-                                src="/Portfolio/assets/profile/stack/Express.svg"
+                                src="/assets/profile/stack/Express.svg"
                                 alt="" 
                                 className="
                                     z-[2]
                                 "
                             />
                             <img 
-                                src="/Portfolio/assets/profile/stack/Express.svg"
+                                src="/assets/profile/stack/Express.svg"
                                 alt="" 
                                 className="
                                 absolute
@@ -208,14 +208,14 @@ export function Curriculo() {
                     >
                         <div>
                             <img 
-                                src="/Portfolio/assets/profile/stack/Tailwindcss.svg"
+                                src="/assets/profile/stack/Tailwindcss.svg"
                                 alt="" 
                                 className="
                                     z-[2]
                                 "
                             />
                             <img 
-                                src="/Portfolio/assets/profile/stack/Tailwindcss.svg"
+                                src="/assets/profile/stack/Tailwindcss.svg"
                                 alt="" 
                                 className="
                                 absolute
@@ -237,14 +237,14 @@ export function Curriculo() {
                     >
                         <div>
                             <img 
-                                src="/Portfolio/assets/profile/stack/React.svg"
+                                src="/assets/profile/stack/React.svg"
                                 alt="" 
                                 className="
                                     z-[2]
                                 "
                             />
                             <img 
-                                src="/Portfolio/assets/profile/stack/React.svg"
+                                src="/assets/profile/stack/React.svg"
                                 alt="" 
                                 className="
                                 absolute
@@ -266,14 +266,14 @@ export function Curriculo() {
                     >
                         <div>
                             <img 
-                                src="/Portfolio/assets/profile/stack/Python.svg"
+                                src="/assets/profile/stack/Python.svg"
                                 alt="" 
                                 className="
                                     z-[2]
                                 "
                             />
                             <img 
-                                src="/Portfolio/assets/profile/stack/Python.svg"
+                                src="/assets/profile/stack/Python.svg"
                                 alt="" 
                                 className="
                                 absolute
@@ -295,14 +295,14 @@ export function Curriculo() {
                     >
                         <div>
                             <img 
-                                src="/Portfolio/assets/profile/stack/TypeScript.svg"
+                                src="/assets/profile/stack/TypeScript.svg"
                                 alt="" 
                                 className="
                                     z-[2]
                                 "
                             />
                             <img 
-                                src="/Portfolio/assets/profile/stack/TypeScript.svg"
+                                src="/assets/profile/stack/TypeScript.svg"
                                 alt="" 
                                 className="
                                 absolute
@@ -324,14 +324,14 @@ export function Curriculo() {
                     >
                         <div>
                             <img 
-                                src="/Portfolio/assets/profile/stack/Node.svg"
+                                src="/assets/profile/stack/Node.svg"
                                 alt="" 
                                 className="
                                     z-[2]
                                 "
                             />
                             <img 
-                                src="/Portfolio/assets/profile/stack/Node.svg"
+                                src="/assets/profile/stack/Node.svg"
                                 alt="" 
                                 className="
                                 absolute
@@ -353,14 +353,14 @@ export function Curriculo() {
                     >
                         <div>
                             <img 
-                                src="/Portfolio/assets/profile/stack/Git.svg"
+                                src="/assets/profile/stack/Git.svg"
                                 alt="" 
                                 className="
                                     z-[2]
                                 "
                             />
                             <img 
-                                src="/Portfolio/assets/profile/stack/Git.svg"
+                                src="/assets/profile/stack/Git.svg"
                                 alt="" 
                                 className="
                                 absolute
@@ -403,7 +403,7 @@ export function Curriculo() {
                             "
                         >
                             <img 
-                                src="/Portfolio/assets/profile/certificates/html-basico-fundacao-bradesco.png" 
+                                src="/assets/profile/certificates/html-basico-fundacao-bradesco.png" 
                                 alt="" 
                                 className="
                                     w-full
@@ -422,7 +422,7 @@ export function Curriculo() {
                                 <Label size="lg">Instituição: Fundação Bradesco</Label>
                                 <Text>Curso: HTML Básico</Text>
                                 <a 
-                                    href="/Portfolio/assets/profile/certificates/html-basico-fundacao-bradesco.png"
+                                    href="/assets/profile/certificates/html-basico-fundacao-bradesco.png"
                                     target="_blanck"
                                     className="
                                         ml-auto
@@ -453,7 +453,7 @@ export function Curriculo() {
                             "
                         >
                             <img 
-                                src="/Portfolio/assets/profile/certificates/html-avancado-fundacao-bradesco.png" 
+                                src="/assets/profile/certificates/html-avancado-fundacao-bradesco.png" 
                                 alt="" 
                                 className="
                                     w-full
@@ -473,7 +473,7 @@ export function Curriculo() {
                                 <Label size="lg">Instituição: Fundação Bradesco</Label>
                                 <Text>Curso: HTML Avançado</Text>
                                 <a 
-                                    href="/Portfolio/assets/profile/certificates/html-avancado-fundacao-bradesco.png"
+                                    href="/assets/profile/certificates/html-avancado-fundacao-bradesco.png"
                                     target="_blanck"
                                     className="
                                         ml-auto
@@ -504,7 +504,7 @@ export function Curriculo() {
                             "
                         >
                             <img 
-                                src="/Portfolio/assets/profile/certificates/inovando-com-css-fundacao-bradesco.png" 
+                                src="/assets/profile/certificates/inovando-com-css-fundacao-bradesco.png" 
                                 alt="" 
                                 className="
                                     w-full
@@ -524,7 +524,7 @@ export function Curriculo() {
                                 <Label size="lg">Instituição: Fundação Bradesco</Label>
                                 <Text>Curso: Inovando com CSS</Text>
                                 <a 
-                                    href="/Portfolio/assets/profile/certificates/inovando-com-css-fundacao-bradesco.png"
+                                    href="/assets/profile/certificates/inovando-com-css-fundacao-bradesco.png"
                                     target="_blanck"
                                     className="
                                         ml-auto
@@ -555,7 +555,7 @@ export function Curriculo() {
                             "
                         >
                             <img 
-                                src="/Portfolio/assets/profile/certificates/html-e-css-na-pratica-fundacao-bradesco.png" 
+                                src="/assets/profile/certificates/html-e-css-na-pratica-fundacao-bradesco.png" 
                                 alt="" 
                                 className="
                                     w-full
@@ -575,7 +575,7 @@ export function Curriculo() {
                                 <Label size="lg">Instituição: Fundação Bradesco</Label>
                                 <Text>Curso: HTML e CSS na Prática</Text>
                                 <a 
-                                    href="/Portfolio/assets/profile/certificates/html-e-css-na-pratica-fundacao-bradesco.png"
+                                    href="/assets/profile/certificates/html-e-css-na-pratica-fundacao-bradesco.png"
                                     target="_blanck"
                                     className="
                                         ml-auto
@@ -606,7 +606,7 @@ export function Curriculo() {
                             "
                         >
                             <img 
-                                src="/Portfolio/assets/profile/certificates/introducao-ao-javascript-fundacao-bradesco.png" 
+                                src="/assets/profile/certificates/introducao-ao-javascript-fundacao-bradesco.png" 
                                 alt="" 
                                 className="
                                     w-full
@@ -627,7 +627,7 @@ export function Curriculo() {
                                 <Label size="lg">Instituição: Fundação Bradesco</Label>
                                 <Text>Curso: Introdução ao JavaScript</Text>
                                 <a 
-                                    href="/Portfolio/assets/profile/certificates/introducao-ao-javascript-fundacao-bradesco.png"
+                                    href="/assets/profile/certificates/introducao-ao-javascript-fundacao-bradesco.png"
                                     target="_blanck"
                                     className="
                                         ml-auto
@@ -657,7 +657,7 @@ export function Curriculo() {
                             "
                         >
                             <img 
-                                src="/Portfolio/assets/profile/certificates/introducao-ao-javascript-fundacao-bradesco.png" 
+                                src="/assets/profile/certificates/introducao-ao-javascript-fundacao-bradesco.png" 
                                 alt="" 
                                 className="
                                     w-full
@@ -677,7 +677,7 @@ export function Curriculo() {
                                 <Label size="lg">Instituição: Fundação Bradesco</Label>
                                 <Text>Curso: Introdução ao JavaScript</Text>
                                 <a 
-                                    href="/Portfolio/assets/profile/certificates/introducao-ao-javascript-fundacao-bradesco.png"
+                                    href="/assets/profile/certificates/introducao-ao-javascript-fundacao-bradesco.png"
                                     target="_blanck"
                                     className="
                                         ml-auto
@@ -708,7 +708,7 @@ export function Curriculo() {
                             "
                         >
                             <img 
-                                src="/Portfolio/assets/profile/certificates/crie-um-site-simples-fundacao-bradesco.png" 
+                                src="/assets/profile/certificates/crie-um-site-simples-fundacao-bradesco.png" 
                                 alt="" 
                                 className="
                                     w-full
@@ -728,7 +728,7 @@ export function Curriculo() {
                                 <Label size="lg">Instituição: Fundação Bradesco</Label>
                                 <Text>Curso: Crie um Site Simples com HTML, CSS e JavaScript</Text>
                                 <a 
-                                    href="/Portfolio/assets/profile/certificates/crie-um-site-simples-fundacao-bradesco.png"
+                                    href="/assets/profile/certificates/crie-um-site-simples-fundacao-bradesco.png"
                                     target="_blanck"
                                     className="
                                         ml-auto
@@ -759,7 +759,7 @@ export function Curriculo() {
                             "
                         >
                             <img 
-                                src="/Portfolio/assets/profile/certificates/trilha-conectar-do-discover-rocketseat.png" 
+                                src="/assets/profile/certificates/trilha-conectar-do-discover-rocketseat.png" 
                                 alt="" 
                                 className="
                                     w-full
@@ -780,7 +780,7 @@ export function Curriculo() {
                                 <Label size="lg">Instituição: Rocketseat</Label>
                                 <Text>Curso: Conectar</Text>
                                 <a 
-                                    href="/Portfolio/assets/profile/certificates/trilha-conectar-do-discover-rocketseat.png"
+                                    href="/assets/profile/certificates/trilha-conectar-do-discover-rocketseat.png"
                                     target="_blanck"
                                     className="
                                         ml-auto
@@ -810,7 +810,7 @@ export function Curriculo() {
                             "
                         >
                             <img 
-                                src="/Portfolio/assets/profile/certificates/trilha-fundamentar-do-discover-rocketseat.png" 
+                                src="/assets/profile/certificates/trilha-fundamentar-do-discover-rocketseat.png" 
                                 alt="" 
                                 className="
                                     w-full
@@ -830,7 +830,7 @@ export function Curriculo() {
                                 <Label size="lg">Instituição: Rocketseat</Label>
                                 <Text>Curso: Fundamentar</Text>
                                 <a 
-                                    href="/Portfolio/assets/profile/certificates/trilha-fundamentar-do-discover-rocketseat.png"
+                                    href="/assets/profile/certificates/trilha-fundamentar-do-discover-rocketseat.png"
                                     target="_blanck"
                                     className="
                                         ml-auto

@@ -78,7 +78,7 @@ export function LandingPage() {
                         "
                     >
                         <img 
-                            src="/Portfolio/assets/profile/banner/ImageProfile.svg"
+                            src="/assets/profile/banner/ImageProfile.svg"
                             alt="" 
                             className="
                                 z-[3] 
@@ -87,7 +87,7 @@ export function LandingPage() {
                             "
                         />
                         <img 
-                            src="/Portfolio/assets/profile/banner/Blob.svg" 
+                            src="/assets/profile/banner/Blob.svg" 
                             alt="" 
                             className="
                                 z-[2] 
@@ -96,7 +96,7 @@ export function LandingPage() {
                             "
                         />
                         <img 
-                            src="/Portfolio/assets/profile/banner/Blob.svg" 
+                            src="/assets/profile/banner/Blob.svg" 
                             alt="" 
                             className="
                                 z-[1] 
@@ -161,7 +161,7 @@ export function LandingPage() {
                             "
                         >
                             <a 
-                                href="/Portfolio/portfolio"
+                                href="/portfolio"
                                 className="
                                     p-2
                                     rounded-full
@@ -174,7 +174,7 @@ export function LandingPage() {
                                 <Label size="sm">Portfólio</Label>
                             </a>
                             <a 
-                                href="/Portfolio/curriculo"
+                                href="/curriculo"
                                 className="
                                     p-2
                                     rounded-full
@@ -204,21 +204,21 @@ export function LandingPage() {
                         target="_blank"
                         className="btn-primary"
                     >
-                        <img src="/Portfolio/assets/icons/GithubLogo.svg" alt="" />
+                        <img src="/assets/icons/GithubLogo.svg" alt="" />
                     </a>
                     <a 
                         href="https://www.linkedin.com/in/carlos-eduardo-moura-gomes-bb0ab7250/"
                         target="_blank"
                         className="btn-primary"
                     >
-                        <img src="/Portfolio/assets/icons/LinkedinLogo.svg" alt="" />
+                        <img src="/assets/icons/LinkedinLogo.svg" alt="" />
                     </a>
                     <a 
                         href="https://www.instagram.com/cemg.the.dev/"
                         target="_blank"
                         className="btn-primary"
                     >
-                        <img src="/Portfolio/assets/icons/InstagramLogo.svg" alt="" />
+                        <img src="/assets/icons/InstagramLogo.svg" alt="" />
                     </a>
                     <a 
                         href="mailto:cemg.the.dev@gmail.com"
@@ -227,7 +227,7 @@ export function LandingPage() {
                             btn-primary
                         "
                     >
-                        <img src="/Portfolio/assets/icons/Envelope.svg" alt="" />
+                        <img src="/assets/icons/Envelope.svg" alt="" />
                     </a>
                 </div>
             </div>
