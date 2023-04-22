@@ -34,7 +34,7 @@ export function Footer({ title, terms, message }: FooterProps) {
                 "
             >
                 <img 
-                    src="/Portfolio/assets/icons/ReactFooter.svg" 
+                    src="/assets/icons/ReactFooter.svg" 
                     alt="" 
                     className="
                         absolute
