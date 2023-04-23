@@ -1,2 +1,29 @@
 # Portfolio
-Portfólio de projetos. [Ir para o site](https://portfolio-nine-theta-37.vercel.app/)
+Site pessoal com portfólio e currículo. [Ir para o site](https://portfolio-nine-theta-37.vercel.app/)
+
+## Descrição
+Esta aplicação é um Design System desenvolvido do Figma ao React cujo objetivo é a construção
+de uma marca pessoal.
+
+## Aprendizados
+- Planejamento de Design System no Figma
+- Componentização no Figma e no React
+- Estilização com Tailwindcss
+- React Router DOM
+- Deploy com Vercel
+
+## Aplicação feita utilizando:
+- Node
+- React
+- Tailwindcss
+- TypeScript
+
+## Executando aplicação
+- cd app
+- npm i
+- npm run dev
+
+## Executando Storybook
+- cd app
+- npm i
+- npm run storybook
