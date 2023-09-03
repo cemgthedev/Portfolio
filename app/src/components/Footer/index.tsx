@@ -1,62 +1,46 @@
-import "../../styles/global.css";
+import { Heading } from '@/components/Heading'
+import { Label } from '@/components/Label'
+import { Text } from '@/components/Text'
+import Image from 'next/image'
+import { ComponentProps } from 'react'
+import { twMerge } from 'tailwind-merge'
 
-import { Heading } from "../Heading";
-import { Label } from "../Label";
-import { Text } from "../Text";
-
-export interface FooterProps {
-    title: string,
-    terms: string,
-    message: string
+export type FooterProps = ComponentProps<'footer'> & {
+  title: string
+  terms: string
+  message: string
+  className?: string
 }
 
-export function Footer({ title, terms, message }: FooterProps) {
-    return (
-        <footer
-            className="
-                snap-start
-                h-screen
-                max-w-screen
-                gradient-black
-                flex
-                items-center
-                justify-center
-                gap-4
-                p-4
-            "
-        >
-            <figure
-                className="
-                    flex
-                    items-center
-                    justify-center
-                    relative
-                "
-            >
-                <img 
-                    src="/assets/icons/ReactFooter.svg" 
-                    alt="" 
-                    className="
-                        absolute
-                        animate-rotation
-                    "
-                />
-                <figcaption
-                    className="
-                        text-center
-                        text-white
-                        flex
-                        flex-col
-                        items-center
-                        justify-center
-                        gap-4
-                    "
-                >
-                    <Heading>{title}</Heading>
-                    <Label>{terms}</Label>
-                    <Text>{message}</Text>
-                </figcaption>
-            </figure>
-        </footer>
-    );
+export function Footer({
+  title,
+  terms,
+  message,
+  className,
+  ...props
+}: FooterProps) {
+  return (
+    <footer
+      className={twMerge(
+        'flex items-center justify-center gap-4 bg-zinc-950 text-white',
+        className,
+      )}
+      {...props}
+    >
+      <figure className="relative flex items-center justify-center">
+        <Image
+          width={200}
+          height={200}
+          src="/assets/icons/React.svg"
+          alt=""
+          className="absolute animate-rotation"
+        />
+        <figcaption className=" flex flex-col items-center justify-center gap-4 text-center text-white">
+          <Heading size="lg">{title}</Heading>
+          <Label size="lg">{terms}</Label>
+          <Text>{message}</Text>
+        </figcaption>
+      </figure>
+    </footer>
+  )
 }

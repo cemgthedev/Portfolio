@@ -1,28 +1,33 @@
-import { ReactNode } from "react";
-import clsx from "clsx";
+import { ComponentProps } from 'react'
+import { VariantProps, tv } from 'tailwind-variants'
 
-import "../../styles/global.css";
+export const HeadingVariants = tv({
+  base: 'font-bold',
+  variants: {
+    size: {
+      lg: 'text-3xl',
+      md: 'text-2xl',
+      sm: 'text-xl',
+      xs: 'text-lg',
+    },
+  },
+  defaultVariants: {
+    size: 'md',
+  },
+})
 
-export interface HeadingProps {
-    size?: string,
-    children: ReactNode,
-    className?: string
-}
+export type HeadingProps = ComponentProps<'h1'> &
+  VariantProps<typeof HeadingVariants>
 
-export function Heading({ size="md", children, className }: HeadingProps) {
-    return (
-        <h1
-            className={clsx(
-                "font-sans font-bold",
-                {
-                    "text-2xl": size === "lg",
-                    "text-xl": size === "md",
-                    "text-lg": size === "sm",
-                },
-                className
-            )}
-        >
-            { children }
-        </h1>
-    );
+export function Heading({
+  children,
+  className,
+  size = 'md',
+  ...props
+}: HeadingProps) {
+  return (
+    <h1 className={HeadingVariants({ size, className })} {...props}>
+      {children}
+    </h1>
+  )
 }

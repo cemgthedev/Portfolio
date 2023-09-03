@@ -1,28 +1,32 @@
-import { ReactNode } from "react";
-import clsx from "clsx";
+import { ComponentProps } from 'react'
+import { VariantProps, tv } from 'tailwind-variants'
 
-import "../../styles/global.css";
+export const TextVariants = tv({
+  base: 'font-normal',
+  variants: {
+    size: {
+      lg: 'text-lg',
+      md: 'text-md',
+      sm: 'text-sm',
+      xs: 'text-xs',
+    },
+  },
+  defaultVariants: {
+    size: 'md',
+  },
+})
 
-export interface TextProps {
-    size?: string,
-    children: ReactNode,
-    className?: string
-}
+export type TextProps = ComponentProps<'p'> & VariantProps<typeof TextVariants>
 
-export function Text({ size="md", children, className }: TextProps) {
-    return (
-        <p
-            className={clsx(
-                "font-sans font-normal",
-                {
-                    "text-lg": size === "lg",
-                    "text-md": size === "md",
-                    "text-sm": size === "sm"
-                },
-                className
-            )}
-        >
-            { children }
-        </p>
-    );
+export function Text({
+  children,
+  className,
+  size = 'md',
+  ...props
+}: TextProps) {
+  return (
+    <h1 className={TextVariants({ size, className })} {...props}>
+      {children}
+    </h1>
+  )
 }

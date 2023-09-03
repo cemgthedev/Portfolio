@@ -1,28 +1,33 @@
-import { ReactNode } from "react";
-import clsx from "clsx";
+import { ComponentProps } from 'react'
+import { VariantProps, tv } from 'tailwind-variants'
 
-import "../../styles/global.css";
+export const LabelVariants = tv({
+  base: 'font-semibold',
+  variants: {
+    size: {
+      lg: 'text-lg',
+      md: 'text-md',
+      sm: 'text-sm',
+      xs: 'text-xs',
+    },
+  },
+  defaultVariants: {
+    size: 'md',
+  },
+})
 
-export interface LabelProps {
-    size?: string,
-    children: ReactNode,
-    className?: string
-}
+export type LabelProps = ComponentProps<'h1'> &
+  VariantProps<typeof LabelVariants>
 
-export function Label({ size="md", children, className }: LabelProps) {
-    return (
-        <h1
-            className={clsx(
-                "font-sans font-semibold",
-                {
-                    "text-xl": size === "lg",
-                    "text-lg": size === "md",
-                    "text-md": size === "sm"
-                },
-                className
-            )}
-        >
-            { children }
-        </h1>
-    );
+export function Label({
+  children,
+  className,
+  size = 'md',
+  ...props
+}: LabelProps) {
+  return (
+    <h1 className={LabelVariants({ size, className })} {...props}>
+      {children}
+    </h1>
+  )
 }
