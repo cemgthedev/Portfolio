@@ -83,28 +83,28 @@ export default function Home() {
           <CustomLink
             href="https://github.com/cemgthedev"
             next={false}
-            className="animate-surgir opacity-0"
+            className="animate-surgir opacity-0 max-md:h-[40px] max-md:w-[40px]"
           >
             <IconGithub size={32} />
           </CustomLink>
           <CustomLink
             href="https://www.linkedin.com/in/carlos-eduardo-moura-gomes-bb0ab7250/"
             next={false}
-            className="animate-surgirtwo opacity-0"
+            className="animate-surgirtwo opacity-0 max-md:h-[40px] max-md:w-[40px]"
           >
             <IconLinkedin size={32} />
           </CustomLink>
           <CustomLink
             href="https://www.instagram.com/cemg.the.dev/"
             next={false}
-            className="animate-surgirthree opacity-0"
+            className="animate-surgirthree opacity-0 max-md:h-[40px] max-md:w-[40px]"
           >
             <IconInstagram size={32} />
           </CustomLink>
           <CustomLink
             href="mailto:cemg.the.dev@gmail.com"
             next={false}
-            className="animate-surgirfour opacity-0"
+            className="animate-surgirfour opacity-0 max-md:h-[40px] max-md:w-[40px]"
           >
             <IconEmail size={32} />
           </CustomLink>

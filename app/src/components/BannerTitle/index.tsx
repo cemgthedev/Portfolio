@@ -13,7 +13,7 @@ export function BannerTitle({
   className,
 }: BannerTitleProps) {
   return (
-    <Heading className="animate-bottom text-center">
+    <Heading className="animate-bottom text-center max-md:h-[128px]">
       <span className="w-[200px]">{mainText}&nbsp;</span>
       <br />
       <TypeAnimation
