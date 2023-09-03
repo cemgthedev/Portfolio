@@ -9,10 +9,10 @@ de uma marca pessoal.
 - Planejamento de Design System no Figma
 - Componentização no Figma e no React
 - Estilização com Tailwindcss
-- React Router DOM
 - Deploy com Vercel
 
 ## Aplicação feita utilizando:
+- Next
 - Node
 - React
 - Tailwindcss
@@ -22,8 +22,3 @@ de uma marca pessoal.
 - cd app
 - npm i
 - npm run dev
-
-## Executando Storybook
-- cd app
-- npm i
-- npm run storybook
