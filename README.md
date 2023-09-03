@@ -1,5 +1,5 @@
 # Portfolio
-Site pessoal com portfólio e currículo. [Ir para o site](https://portfolio-nine-theta-37.vercel.app/)
+Site pessoal com portfólio e currículo. [Ir para o site](https://bit.ly/cemg-the-dev)
 
 ## Descrição
 Esta aplicação é um Design System desenvolvido do Figma ao React cujo objetivo é a construção
@@ -9,10 +9,10 @@ de uma marca pessoal.
 - Planejamento de Design System no Figma
 - Componentização no Figma e no React
 - Estilização com Tailwindcss
-- React Router DOM
 - Deploy com Vercel
 
 ## Aplicação feita utilizando:
+- Next
 - Node
 - React
 - Tailwindcss
@@ -22,8 +22,3 @@ de uma marca pessoal.
 - cd app
 - npm i
 - npm run dev
-
-## Executando Storybook
-- cd app
-- npm i
-- npm run storybook
