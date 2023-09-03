@@ -5,8 +5,8 @@ export const FigureVariants = tv({
   base: 'flex h-fit w-fit items-center justify-center gap-4',
   variants: {
     flexible: {
-      true: 'flex-col',
-      false: 'md:flex-col',
+      false: 'flex-col',
+      true: 'md:flex-col',
     },
   },
   defaultVariants: {

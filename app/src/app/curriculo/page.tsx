@@ -45,11 +45,7 @@ export default function Curriculo() {
         <Heading>Stack</Heading>
         <div className="flex flex-wrap justify-center gap-4">
           {stack.map((item) => (
-            <Figure
-              key={Math.random()}
-              className="w-[100px] py-2"
-              flexible={true}
-            >
+            <Figure key={Math.random()} className="w-[100px] py-2">
               <div className="relative flex h-[48px] w-[48px] items-center justify-center">
                 <Image
                   src={item.imageUrl}
@@ -84,6 +80,7 @@ export default function Curriculo() {
             <Figure
               key={Math.random()}
               className="max-h-[200px] min-w-[300px] max-md:min-h-[200px] max-md:max-w-[300px]"
+              flexible={true}
             >
               <div className="flex w-full items-center max-md:h-full max-md:w-fit max-md:flex-col">
                 <div className="flex items-center justify-center rounded-full p-2 ring-2 ring-cyan-500">
