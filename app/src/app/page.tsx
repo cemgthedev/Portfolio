@@ -23,7 +23,7 @@ export default function Home() {
         listOfText={['Desenvolvedor Front End', 2000, 'Universitário', 2000]}
         className="uppercase text-violet-500"
       />
-      <aside className="flex w-full gap-4 py-4  sm:items-center">
+      <aside className="flex w-full gap-4 py-4 max-md:gap-2 max-md:py-2  sm:items-center">
         <Figure className="m-auto animate-top opacity-0">
           <div className="relative flex h-[220px] w-[220px] items-center justify-center">
             <Image
@@ -48,7 +48,7 @@ export default function Home() {
               className="absolute top-0 z-[1] blur-sm"
             />
           </div>
-          <figcaption className="flex w-[60vw] flex-col text-center">
+          <figcaption className="flex w-[60vw] flex-col text-center max-md:w-[75vw]">
             <Text>Olá, me chamo Carlos Eduardo de Moura Gomes.</Text>
             <Text>
               Desenvolvo o front end de aplicação web e mobile tendo dominio de
