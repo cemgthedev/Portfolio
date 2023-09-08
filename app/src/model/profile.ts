@@ -21,8 +21,12 @@ export const stack: Skill[] = [
     imageUrl: '/assets/profile/stack/Express.svg',
   },
   {
-    name: 'Taildcss',
+    name: 'Tailwindcss',
     imageUrl: '/assets/profile/stack/Tailwindcss.svg',
+  },
+  {
+    name: 'React',
+    imageUrl: '/assets/profile/stack/React.svg',
   },
   {
     name: 'Python',

@@ -18,14 +18,14 @@ export default function Curriculo() {
       <Header className="bg-zinc-950" />
       <Card
         id="formacao"
-        className="h-screen w-screen snap-start px-8 py-[112px]"
+        className="h-screen w-screen snap-start px-8 py-[96px]"
         center={false}
       >
         <Heading>Formação</Heading>
         <Figure className="m-auto flex flex-col items-center justify-center rounded-lg bg-violet-500 p-8 text-white shadow-default">
           <Image
-            width={200}
-            height={250}
+            width={128}
+            height={176}
             src="/assets/profile/training/UFC.svg"
             alt=""
           />
@@ -38,12 +38,12 @@ export default function Curriculo() {
       </Card>
       <Card
         id="stack"
-        className="h-screen w-screen snap-start px-8 py-[112px]"
+        className="h-screen w-screen snap-start px-8 py-[96px]"
         center={false}
         dark
       >
         <Heading>Stack</Heading>
-        <div className="flex flex-wrap justify-center gap-4">
+        <div className="flex flex-wrap justify-center gap-2">
           {stack.map((item) => (
             <Figure key={Math.random()} className="w-[100px] py-2">
               <div className="relative flex h-[48px] w-[48px] items-center justify-center">
@@ -71,7 +71,7 @@ export default function Curriculo() {
       </Card>
       <Card
         id="certificados"
-        className="h-screen w-screen snap-start px-8 py-[112px]"
+        className="h-screen w-screen snap-start px-8 py-[96px]"
         center={false}
       >
         <Heading>Certificados</Heading>
