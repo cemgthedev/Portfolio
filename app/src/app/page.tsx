@@ -51,8 +51,8 @@ export default function Home() {
           <figcaption className="flex w-[60vw] flex-col text-center max-md:w-[75vw]">
             <Text>Olá, me chamo Carlos Eduardo de Moura Gomes.</Text>
             <Text>
-              Desenvolvo o front end de aplicação web e mobile tendo dominio de
-              UI/UX Design na criação de protótipos, implementação e manutenção
+              Desenvolvo o front end de aplicações web tendo dominio de UI/UX
+              Design na criação de protótipos, implementação e manutenção
               utilizando tecnologias como Figma, React, Tailwindcss, TypeScript
               e Jest. E prezo pelo código limpo através da aplicação dos
               conceitos SOLID e padronização com ferramentas como ESLint.
