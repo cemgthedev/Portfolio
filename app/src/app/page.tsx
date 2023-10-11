@@ -53,10 +53,9 @@ export default function Home() {
             <Text>
               Desenvolvo o front end de aplicação web e mobile tendo dominio de
               UI/UX Design na criação de protótipos, implementação e manutenção
-              utilizando tecnologias como Figma, React, React Native,
-              Tailwindcss, TypeScript e Jest. E prezo pelo código limpo através
-              da aplicação dos conceitos SOLID e padronização com ferramentas
-              como ESLint.
+              utilizando tecnologias como Figma, React, Tailwindcss, TypeScript
+              e Jest. E prezo pelo código limpo através da aplicação dos
+              conceitos SOLID e padronização com ferramentas como ESLint.
             </Text>
           </figcaption>
           <div className="flex w-fit gap-4">
