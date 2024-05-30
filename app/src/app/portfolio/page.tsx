@@ -45,7 +45,7 @@ export default function Portfolio() {
                 <Label>Github</Label>
               </CustomLink>
               <CustomLink
-                href={'https://bit.ly/github-stalker'}
+                href={'https://bit.ly/GitHubStalker'}
                 next={false}
                 style="secundary"
                 rounded="full"
