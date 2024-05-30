@@ -86,28 +86,28 @@ export default function Home() {
           <CustomLink
             href={`https://github.com/${contacts.github}`}
             next={false}
-            className="h-[32px] w-[32px] animate-surgir opacity-0"
+            className="animate-surgir opacity-0 h-[32px] w-[32px]"
           >
             <IconGithub size={28} />
           </CustomLink>
           <CustomLink
             href={`https://www.linkedin.com/in/${contacts.linkedin}`}
             next={false}
-            className="h-[32px] w-[32px] animate-surgirtwo opacity-0"
+            className="animate-surgirtwo opacity-0 h-[32px] w-[32px]"
           >
             <IconLinkedin size={28} />
           </CustomLink>
           <CustomLink
             href={`mailto:${contacts.email}`}
             next={false}
-            className="h-[32px] w-[32px] animate-surgirthree opacity-0"
+            className="animate-surgirthree opacity-0 h-[32px] w-[32px]"
           >
             <IconEmail size={28} />
           </CustomLink>
           <CustomLink
             href={`http://api.whatsapp.com/send?phone=${contacts.whatsapp}`}
             next={false}
-            className="h-[32px] w-[32px] animate-surgirfour opacity-0"
+            className="animate-surgirfour opacity-0 h-[32px] w-[32px]"
           >
             <IconWhatsapp size={28} />
           </CustomLink>
