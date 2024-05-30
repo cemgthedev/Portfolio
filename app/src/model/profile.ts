@@ -122,4 +122,9 @@ export const certificates: Certificate[] = [
     name: 'Next e React',
     ImageUrl: '/assets/profile/certificates/next-e-react-da-udemy.png',
   },
+  {
+    institution: 'Udemy',
+    name: 'Complete Web & Mobile Designer: UI/UX, Figma, +more',
+    ImageUrl: '/assets/profile/certificates/complete-web-and-mobile-design-udemy.png',
+  },
 ]

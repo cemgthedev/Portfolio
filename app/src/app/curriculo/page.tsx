@@ -21,6 +21,15 @@ export default function Curriculo() {
         center={false}
       >
         <Heading>Formação</Heading>
+        <Text className='indent-4'>
+          Estou completando o Ensino Superior na Universidade Federal do Ceará e já tive diversos aprendizados como
+          <span className='px-1 font-semibold text-violet-800 animate-pulse'>Estrutura de Dados Avançadas</span>e
+          <span className='px-1 font-semibold text-violet-800 animate-pulse'>Engenharia de Software</span>além de cadeiras optativas derivadas.
+          Também fiz diversas cadeiras de programação como
+          <span className='px-1 font-semibold text-violet-800 animate-pulse'>Programação Orientada a Objetos</span>,
+          <span className='px-1 font-semibold text-violet-800 animate-pulse'>Desenvolvimento de Software para Web</span>e
+          <span className='px-1 font-semibold text-violet-800 animate-pulse'>Desenvolvimento de Software para Dispositivos Móveis</span>.
+        </Text>
         <Figure className="m-auto flex flex-col items-center justify-center">
           <Image
             width={128}
@@ -42,6 +51,15 @@ export default function Curriculo() {
         dark
       >
         <Heading>Stack</Heading>
+        <Text className='indent-4'>
+          Esta é minha Stack de
+          <span className='px-1 font-semibold text-cyan-400 animate-pulse'>Front End</span>e aspirante a
+          <span className='px-1 font-semibold text-cyan-400 animate-pulse'>UI/UX Design</span>. Depois de uma boa prototipagem com
+          <span className='px-1 font-semibold text-cyan-400 animate-pulse'>Figma</span>parto para a implementação com
+          <span className='px-1 font-semibold text-cyan-400 animate-pulse'>React</span>
+          em conjunto com diversas outras tecnologias para desenvolver interfaces escaláveis, responsivas e casadas com a
+          <span className='px-1 font-semibold text-cyan-400 animate-pulse'>usabilidade</span>.
+        </Text>
         <div className="flex flex-wrap justify-center gap-2">
           {stack.map((item) => (
             <Figure key={Math.random()} className="w-[100px] py-2">
@@ -74,11 +92,18 @@ export default function Curriculo() {
         center={false}
       >
         <Heading>Certificados</Heading>
-        <div className="mx-auto flex w-full flex-wrap gap-4 overflow-auto p-2 scrollbar-hide max-md:flex-col max-md:items-center">
+        <Text className='indent-4'>
+          Já foram
+          <span className='px-1 font-semibold text-violet-800 animate-pulse'>{certificates.length}</span>
+          certificados concluídos totalizando
+          <span className='px-1 font-semibold text-violet-800 animate-pulse'>185</span>
+          horas aprendendo novas tecnologias e aprimorando habilidades
+        </Text>
+        <div className="flex w-full flex-wrap gap-4 overflow-auto p-2 scrollbar-hide max-md:flex-col max-md:items-center">
           {certificates.map((item) => (
             <Figure
               key={Math.random()}
-              className="max-h-[200px] w-[300px] max-md:min-h-[200px] max-md:w-[300px]"
+              className="max-h-[200px] w-[300px] max-md:min-h-[200px] max-md:w-[300px] gap-0"
             >
               <div className="flex w-full items-center">
                 <div className="flex items-center justify-center rounded-full p-2 border-2 border-cyan-500">
@@ -86,8 +111,8 @@ export default function Curriculo() {
                 </div>
                 <div className="h-[2px] w-full bg-cyan-500"></div>
               </div>
-              <figcaption className="flex w-full flex-col gap-1 px-4">
-                <Heading size="sm">{item.institution}</Heading>
+              <figcaption className="flex w-full flex-col gap-1 px-6">
+                <Label size="lg">{item.institution}</Label>
                 <Label className="max-h-[32px] w-full overflow-hidden truncate">
                   {item.name}
                 </Label>

@@ -1,5 +1,5 @@
 'use client'
-import { IconGithub, IconRocket } from '@/assets/icons'
+import { IconGithub, IconHome, IconRocket } from '@/assets/icons'
 import { Card } from '@/components/Card'
 import { Content } from '@/components/Content'
 import { CustomLink } from '@/components/CustomLink'
@@ -11,8 +11,11 @@ import Image from 'next/image'
 
 export default function Portfolio() {
   return (
-    <Content className="h-screen w-screen overflow-auto bg-zinc-950 scrollbar-hide">
-      <Card className="min-h-full w-full animate-top p-4 sm:p-8" dark>
+    <Content className="relative h-screen w-screen snap-y snap-mandatory overflow-auto bg-zinc-950 scrollbar-hide">
+      <CustomLink href={'/'} className='absolute top-4 right-4 z-[999]'>
+        <IconHome size={28} />
+      </CustomLink>
+      <Card className="min-h-full snap-start w-full animate-top p-4 sm:p-8" dark>
         <Heading size="lg">Github Stalker</Heading>
         <Figure>
           <Image
