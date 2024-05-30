@@ -2,7 +2,7 @@ export const contacts = {
   github: 'cemgthedev',
   linkedin: 'carlos-eduardo-moura-gomes-bb0ab7250',
   email: 'cemg.the.dev@gmail.com',
-  whatsapp: '5585997981087'
+  whatsapp: '5585997981087',
 }
 
 export type Skill = {

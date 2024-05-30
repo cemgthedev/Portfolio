@@ -11,8 +11,8 @@ import Image from 'next/image'
 
 export default function Portfolio() {
   return (
-    <Content className="h-screen w-screen overflow-auto scrollbar-hide bg-zinc-950">
-      <Card className="min-h-full w-full p-4 sm:p-8 animate-top" dark>
+    <Content className="h-screen w-screen overflow-auto bg-zinc-950 scrollbar-hide">
+      <Card className="min-h-full w-full animate-top p-4 sm:p-8" dark>
         <Heading size="lg">Github Stalker</Heading>
         <Figure>
           <Image

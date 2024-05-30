@@ -10,7 +10,7 @@ import {
   Scroll,
   Stack,
   Student,
-  WhatsappLogo
+  WhatsappLogo,
 } from '@phosphor-icons/react'
 
 export type IconProps = {

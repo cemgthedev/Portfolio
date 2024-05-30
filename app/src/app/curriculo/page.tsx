@@ -74,7 +74,7 @@ export default function Curriculo() {
         center={false}
       >
         <Heading>Certificados</Heading>
-        <div className="mx-auto flex flex-wrap w-full overflow-auto p-2 gap-4 scrollbar-hide max-md:flex-col max-md:items-center">
+        <div className="mx-auto flex w-full flex-wrap gap-4 overflow-auto p-2 scrollbar-hide max-md:flex-col max-md:items-center">
           {certificates.map((item) => (
             <Figure
               key={Math.random()}
@@ -86,7 +86,7 @@ export default function Curriculo() {
                 </div>
                 <div className="h-[2px] w-full bg-cyan-500"></div>
               </div>
-              <figcaption className="flex flex-col gap-1 w-full px-4">
+              <figcaption className="flex w-full flex-col gap-1 px-4">
                 <Heading size="sm">{item.institution}</Heading>
                 <Label className="max-h-[32px] w-full overflow-hidden truncate">
                   {item.name}

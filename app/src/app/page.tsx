@@ -23,7 +23,12 @@ export default function Home() {
         <Figure className="m-auto animate-top opacity-0">
           <BannerTitle
             mainText="Eu sou"
-            listOfText={['Desenvolvedor Front End', 2000, 'Universitário', 2000]}
+            listOfText={[
+              'Desenvolvedor Front End', 
+              2000, 
+              'Universitário',
+              2000
+            ]}
             className="uppercase text-violet-500"
           />
           <div className="relative flex h-[220px] w-[220px] items-center justify-center">
@@ -81,28 +86,28 @@ export default function Home() {
           <CustomLink
             href={`https://github.com/${contacts.github}`}
             next={false}
-            className="animate-surgir opacity-0 h-[32px] w-[32px]"
+            className="h-[32px] w-[32px] animate-surgir opacity-0"
           >
             <IconGithub size={28} />
           </CustomLink>
           <CustomLink
             href={`https://www.linkedin.com/in/${contacts.linkedin}`}
             next={false}
-            className="animate-surgirtwo opacity-0 h-[32px] w-[32px]"
+            className="h-[32px] w-[32px] animate-surgirtwo opacity-0"
           >
             <IconLinkedin size={28} />
           </CustomLink>
           <CustomLink
             href={`mailto:${contacts.email}`}
             next={false}
-            className="animate-surgirthree opacity-0 h-[32px] w-[32px]"
+            className="h-[32px] w-[32px] animate-surgirthree opacity-0"
           >
             <IconEmail size={28} />
           </CustomLink>
           <CustomLink
             href={`http://api.whatsapp.com/send?phone=${contacts.whatsapp}`}
             next={false}
-            className="animate-surgirfour opacity-0 h-[32px] w-[32px]"
+            className="h-[32px] w-[32px] animate-surgirfour opacity-0"
           >
             <IconWhatsapp size={28} />
           </CustomLink>
