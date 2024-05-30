@@ -19,7 +19,7 @@ import Image from 'next/image'
 export default function Home() {
   return (
     <Card className="min-h-screen w-screen bg-zinc-950 p-4 text-white sm:p-8">
-      <aside className="flex w-full gap-2 py-4">
+      <aside className="flex w-full py-4">
         <Figure className="m-auto animate-top opacity-0">
           <BannerTitle
             mainText="Eu sou"
