@@ -15,7 +15,7 @@ export default function Portfolio() {
       <CustomLink href={'/'} className='absolute top-4 right-4 z-[999]'>
         <IconHome size={28} />
       </CustomLink>
-      <Card className="min-h-full snap-start w-full animate-top p-4 sm:p-8" dark>
+      <Card className="min-h-full snap-start w-full animate-top px-4 py-12" dark>
         <Heading size="lg">Github Stalker</Heading>
         <Figure>
           <Image
