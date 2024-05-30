@@ -1,26 +1,25 @@
 'use client'
+import { IconGithub, IconRocket } from '@/assets/icons'
+import { Card } from '@/components/Card'
+import { Content } from '@/components/Content'
+import { CustomLink } from '@/components/CustomLink'
 import { Figure } from '@/components/Figure'
 import { Heading } from '@/components/Heading'
 import { Label } from '@/components/Label'
 import { Text } from '@/components/Text'
-import { Card } from '@/components/Card'
-import { CustomLink } from '@/components/CustomLink'
 import Image from 'next/image'
-import { IconGithub, IconRocket } from '@/assets/icons'
-import { Footer } from '@/components/Footer'
-import { Content } from '@/components/Content'
 
 export default function Portfolio() {
   return (
-    <Content className="h-screen w-screen snap-y snap-mandatory scrollbar-hide">
-      <Card className="h-screen w-screen snap-start p-4 sm:p-8" dark>
+    <Content className="h-screen w-screen overflow-auto scrollbar-hide bg-zinc-950">
+      <Card className="min-h-full w-full p-4 sm:p-8 animate-top" dark>
         <Heading size="lg">Github Stalker</Heading>
         <Figure>
           <Image
             src={'/assets/profile/projects/GithubStalker.svg'}
             alt="..."
-            width={500}
-            height={500}
+            width={300}
+            height={300}
             className="rounded-lg ring-2 ring-white"
           />
           <figcaption className="flex flex-col items-center justify-center gap-2 text-center">
@@ -40,9 +39,9 @@ export default function Portfolio() {
                 href={'https://github.com/cemgthedev/GitHub-Stalker'}
                 next={false}
                 rounded="full"
-                className="px-8"
+                className="px-6"
               >
-                <IconGithub size={32} />
+                <IconGithub size={28} />
                 <Label>Github</Label>
               </CustomLink>
               <CustomLink
@@ -50,21 +49,15 @@ export default function Portfolio() {
                 next={false}
                 style="secundary"
                 rounded="full"
-                className="px-8"
+                className="px-6"
               >
-                <IconRocket size={32} />
+                <IconRocket size={28} />
                 <Label>Site</Label>
               </CustomLink>
             </div>
           </figcaption>
         </Figure>
       </Card>
-      <Footer
-        title={'Portfólio'}
-        terms={'Copyright (c) 2023 Carlos Eduardo de Moura Gomes'}
-        message={'Se você chegou até aqui obrigado pela atenção'}
-        className="h-screen w-screen snap-start"
-      />
     </Content>
   )
 }

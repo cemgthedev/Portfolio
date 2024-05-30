@@ -3,7 +3,7 @@ import { ReactNode } from 'react'
 import { VariantProps, tv } from 'tailwind-variants'
 
 export const CustomLinkVariants = tv({
-  base: 'flex gap-2 items-center justify-center p-2 w-fit h-fit',
+  base: 'flex gap-2 items-center justify-center p-1 w-fit h-fit',
   variants: {
     style: {
       primary: 'bg-violet-500 text-white hover:bg-violet-300',

@@ -4,13 +4,13 @@ import {
   Envelope,
   GithubLogo,
   House,
-  InstagramLogo,
   Link,
   LinkedinLogo,
   RocketLaunch,
   Scroll,
   Stack,
   Student,
+  WhatsappLogo
 } from '@phosphor-icons/react'
 
 export type IconProps = {
@@ -26,8 +26,8 @@ export const IconScroll = ({ size, className }: IconProps) => (
   <Scroll size={size} className={className} />
 )
 
-export const IconInstagram = ({ size, className }: IconProps) => (
-  <InstagramLogo size={size} className={className} />
+export const IconWhatsapp = ({ size, className }: IconProps) => (
+  <WhatsappLogo size={size} className={className} />
 )
 
 export const IconLinkedin = ({ size, className }: IconProps) => (

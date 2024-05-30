@@ -1,33 +1,32 @@
 'use client'
-import { Content } from '@/components/Content'
-import { Footer } from '@/components/Footer'
+import { IconCertificate, IconLink } from '@/assets/icons'
 import { Card } from '@/components/Card'
+import { Content } from '@/components/Content'
+import { CustomLink } from '@/components/CustomLink'
+import { Figure } from '@/components/Figure'
 import { Header } from '@/components/Header'
 import { Heading } from '@/components/Heading'
-import { Figure } from '@/components/Figure'
-import { Text } from '@/components/Text'
-import Image from 'next/image'
 import { Label } from '@/components/Label'
+import { Text } from '@/components/Text'
 import { certificates, stack } from '@/model/profile'
-import { CustomLink } from '@/components/CustomLink'
-import { IconCertificate, IconLink } from '@/assets/icons'
+import Image from 'next/image'
 
 export default function Curriculo() {
   return (
     <Content className="snap-y snap-mandatory text-zinc-950 scrollbar-hide">
-      <Header className="bg-zinc-950" />
+      <Header />
       <Card
         id="formacao"
         className="h-screen w-screen snap-start px-8 py-[96px]"
         center={false}
       >
         <Heading>Formação</Heading>
-        <Figure className="m-auto flex flex-col items-center justify-center rounded-lg bg-violet-500 p-8 text-white shadow-default">
+        <Figure className="m-auto flex flex-col items-center justify-center">
           <Image
             width={128}
             height={176}
             src="/assets/profile/training/UFC.svg"
-            alt=""
+            alt="..."
           />
           <figcaption className="text-center">
             <Heading>Universidade Federal do Ceará - Campus de Quixadá</Heading>
@@ -71,24 +70,23 @@ export default function Curriculo() {
       </Card>
       <Card
         id="certificados"
-        className="h-screen w-screen snap-start px-8 py-[96px]"
+        className="min-h-full w-screen snap-start px-8 py-[96px]"
         center={false}
       >
         <Heading>Certificados</Heading>
-        <div className="mx-auto flex w-full overflow-auto p-2 scrollbar-hide max-md:flex-col max-md:items-center">
+        <div className="mx-auto flex flex-wrap w-full overflow-auto p-2 gap-4 scrollbar-hide max-md:flex-col max-md:items-center">
           {certificates.map((item) => (
             <Figure
               key={Math.random()}
-              className="max-h-[200px] min-w-[300px] max-md:min-h-[200px] max-md:max-w-[300px]"
-              flexible={true}
+              className="max-h-[200px] w-[300px] max-md:min-h-[200px] max-md:w-[300px]"
             >
-              <div className="flex w-full items-center max-md:h-full max-md:w-fit max-md:flex-col">
-                <div className="flex items-center justify-center rounded-full p-2 ring-2 ring-cyan-500">
+              <div className="flex w-full items-center">
+                <div className="flex items-center justify-center rounded-full p-2 border-2 border-cyan-500">
                   <IconCertificate size={32} className="h-[32px] w-[32px]" />
                 </div>
-                <div className="h-[2px] w-full bg-cyan-500 max-md:h-full max-md:w-[2px]"></div>
+                <div className="h-[2px] w-full bg-cyan-500"></div>
               </div>
-              <figcaption className="w-full overflow-auto px-8">
+              <figcaption className="flex flex-col gap-1 w-full px-4">
                 <Heading size="sm">{item.institution}</Heading>
                 <Label className="max-h-[32px] w-full overflow-hidden truncate">
                   {item.name}
@@ -107,12 +105,6 @@ export default function Curriculo() {
           ))}
         </div>
       </Card>
-      <Footer
-        title={'Currículo'}
-        terms={'Copyright (c) 2023 Carlos Eduardo de Moura Gomes'}
-        message={'Se você chegou até aqui obrigado pela atenção'}
-        className="h-screen w-screen snap-start"
-      />
     </Content>
   )
 }

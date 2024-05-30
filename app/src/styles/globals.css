@@ -1,11 +1,3 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-.navoption {
-    @apply fill-cyan-500
-}
-
-.navoption:hover {
-    @apply fill-cyan-300
-}

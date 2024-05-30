@@ -2,7 +2,7 @@ import { ComponentProps } from 'react'
 import { VariantProps, tv } from 'tailwind-variants'
 
 export const FigureVariants = tv({
-  base: 'flex h-fit w-fit items-center justify-center gap-4',
+  base: 'flex h-fit w-fit items-center justify-center gap-2',
   variants: {
     flexible: {
       false: 'flex-col',

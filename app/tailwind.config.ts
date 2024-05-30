@@ -34,7 +34,7 @@ const config: Config = {
       },
       top: {
         '0%': { transform: 'translateY(96px)', opacity: '0' },
-        '100%': { transform: 'translateX(0px)', opacity: '1' },
+        '100%': { transform: 'translateY(0px)', opacity: '1' },
       },
       left: {
         '0%': { transform: 'translateX(96px)', opacity: '0' },
@@ -60,7 +60,7 @@ const config: Config = {
     },
     animation: {
       bottom: 'bottom 200ms linear',
-      top: 'top 250ms linear 1500ms forwards',
+      top: 'top 250ms linear forwards',
       left: 'left 750ms linear 1750ms forwards',
       right: 'right 750ms linear 1750ms forwards',
       surgir: 'surgir 300ms forwards 200ms',

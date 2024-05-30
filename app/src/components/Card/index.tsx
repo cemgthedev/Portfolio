@@ -2,7 +2,7 @@ import { ComponentProps } from 'react'
 import { VariantProps, tv } from 'tailwind-variants'
 
 export const CardVariants = tv({
-  base: 'flex flex-col gap-6',
+  base: 'flex flex-col gap-2',
   variants: {
     center: {
       true: 'items-center justify-start sm:justify-center',
