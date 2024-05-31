@@ -146,29 +146,29 @@ export default function Curriculo() {
           Estes são os serviços que posso ofereçer através da minha Stack com
           <span className='px-1 font-semibold text-cyan-400 animate-pulse'>Custo e Benefício</span>pensados no cliente.
         </Text>
-        <div className="flex justify-center flex-wrap gap-4 overflow-auto scrollbar-hide py-4">
-          <Figure className='px-16'>
+        <div className="w-full flex flex-wrap justify-center gap-2 overflow-auto p-2 scrollbar-hide">
+          <Figure className='px-4'>
             <Lottie animationData={animationCriacaoDeMarcaPessoal} loop={true} style={{width: 128, height: 128}} />
             <figcaption className='w-[256px] flex flex-col gap-1'>
               <Label className='text-center'>Criação de Marca Pessoal</Label>
               <Text className='text-center'>Criação de logos, vinhetas, publicações e conteúdo de alto impacto</Text>
             </figcaption>
           </Figure>
-          <Figure className='px-16'>
+          <Figure className='px-4'>
             <Lottie animationData={animationUIDesign} loop={true} style={{width: 128, height: 128}} />
             <figcaption className='w-[256px] flex flex-col gap-1'>
               <Label className='text-center'>UI Design</Label>
               <Text className='text-center'>User Interface Design na criação e melhoria de Landing Pages e Web Sites</Text>
             </figcaption>
           </Figure>
-          <Figure className='px-16'>
+          <Figure className='px-4'>
             <Lottie animationData={animationDesenvolvimentoDoFrontEnd} loop={true} style={{width: 128, height: 128}} />
             <figcaption className='w-[256px] flex flex-col gap-1'>
               <Label className='text-center'>Desenvolvimento do Front End</Label>
               <Text className='text-center'>Desenvolvimento do front end de aplicações web utilizando as tecnologias da Stack</Text>
             </figcaption>
           </Figure>
-          <Figure className='px-16'>
+          <Figure className='px-4'>
             <Lottie animationData={animationPadronizacaoDocumentacaoFrontEnd} loop={true} style={{width: 128, height: 128}} />
             <figcaption className='w-[256px] flex flex-col gap-1'>
               <Label className='text-center'>Padronização e Documentação do Front End</Label>
