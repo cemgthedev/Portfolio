@@ -1,5 +1,6 @@
 import {
   AddressBook,
+  CallBell,
   Certificate,
   Envelope,
   GithubLogo,
@@ -60,6 +61,10 @@ export const IconStack = ({ size, className }: IconProps) => (
 
 export const IconCertificate = ({ size, className }: IconProps) => (
   <Certificate size={size} className={className} />
+)
+
+export const IconServices = ({ size, className }: IconProps) => (
+  <CallBell size={size} className={className} />
 )
 
 export const IconLink = ({ size, className }: IconProps) => (

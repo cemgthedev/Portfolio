@@ -1,6 +1,7 @@
 import {
   IconCertificate,
   IconHome,
+  IconServices,
   IconStack,
   IconStudent,
 } from '@/assets/icons'
@@ -21,7 +22,7 @@ export function Header({ className, ...props }: HeaderProps) {
     >
       <nav className="flex gap-2">
         <Link href="/" className="p-2">
-          <IconHome 
+          <IconHome
             size={32} 
             className="text-slate-50 hover:text-cyan-500"
           />
@@ -40,6 +41,12 @@ export function Header({ className, ...props }: HeaderProps) {
         </a>
         <a href="#certificados" className="p-2">
           <IconCertificate 
+            size={32} 
+            className="text-slate-50 hover:text-cyan-500"
+          />
+        </a>
+        <a href="#services" className="p-2">
+          <IconServices 
             size={32} 
             className="text-slate-50 hover:text-cyan-500"
           />

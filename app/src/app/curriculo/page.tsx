@@ -1,4 +1,8 @@
 'use client'
+import animationCriacaoDeMarcaPessoal from '@/assets/animations/AnimationCriacaoDeMarca.json'
+import animationDesenvolvimentoDoFrontEnd from '@/assets/animations/AnimationDesenvolvimentoDoFrontEnd.json'
+import animationPadronizacaoDocumentacaoFrontEnd from '@/assets/animations/AnimationPadronizacaoDocumentacaoFrontEnd.json'
+import animationUIDesign from '@/assets/animations/AnimationUIDesign.json'
 import { IconCertificate, IconLink } from '@/assets/icons'
 import { Card } from '@/components/Card'
 import { Content } from '@/components/Content'
@@ -9,6 +13,7 @@ import { Heading } from '@/components/Heading'
 import { Label } from '@/components/Label'
 import { Text } from '@/components/Text'
 import { certificates, stack } from '@/model/profile'
+import Lottie from 'lottie-react'
 import Image from 'next/image'
 
 export default function Curriculo() {
@@ -17,7 +22,7 @@ export default function Curriculo() {
       <Header />
       <Card
         id="formacao"
-        className="h-screen w-screen snap-start px-8 py-[96px]"
+        className="min-h-full w-screen snap-start px-8 py-[96px]"
         center={false}
       >
         <Heading>Formação</Heading>
@@ -46,7 +51,7 @@ export default function Curriculo() {
       </Card>
       <Card
         id="stack"
-        className="h-screen w-screen snap-start px-8 py-[96px]"
+        className="min-h-full w-screen snap-start px-8 py-[96px]"
         center={false}
         dark
       >
@@ -128,6 +133,48 @@ export default function Curriculo() {
               </figcaption>
             </Figure>
           ))}
+        </div>
+      </Card>
+      <Card
+        id="services"
+        className="min-h-full w-screen snap-start px-8 py-[96px]"
+        center={false}
+        dark
+      >
+        <Heading>Stack</Heading>
+        <Text className='indent-4'>
+          Estes são os serviços que posso ofereçer através da minha Stack com
+          <span className='px-1 font-semibold text-cyan-400 animate-pulse'>Custo e Benefício</span>pensados no cliente.
+        </Text>
+        <div className="flex justify-center flex-wrap gap-4 overflow-auto scrollbar-hide py-4">
+          <Figure className='px-16'>
+            <Lottie animationData={animationCriacaoDeMarcaPessoal} loop={true} style={{width: 128, height: 128}} />
+            <figcaption className='w-[256px] flex flex-col gap-1'>
+              <Label className='text-center'>Criação de Marca Pessoal</Label>
+              <Text className='text-center'>Criação de logos, vinhetas, publicações e conteúdo de alto impacto</Text>
+            </figcaption>
+          </Figure>
+          <Figure className='px-16'>
+            <Lottie animationData={animationUIDesign} loop={true} style={{width: 128, height: 128}} />
+            <figcaption className='w-[256px] flex flex-col gap-1'>
+              <Label className='text-center'>UI Design</Label>
+              <Text className='text-center'>User Interface Design na criação e melhoria de Landing Pages e Web Sites</Text>
+            </figcaption>
+          </Figure>
+          <Figure className='px-16'>
+            <Lottie animationData={animationDesenvolvimentoDoFrontEnd} loop={true} style={{width: 128, height: 128}} />
+            <figcaption className='w-[256px] flex flex-col gap-1'>
+              <Label className='text-center'>Desenvolvimento do Front End</Label>
+              <Text className='text-center'>Desenvolvimento do front end de aplicações web utilizando as tecnologias da Stack</Text>
+            </figcaption>
+          </Figure>
+          <Figure className='px-16'>
+            <Lottie animationData={animationPadronizacaoDocumentacaoFrontEnd} loop={true} style={{width: 128, height: 128}} />
+            <figcaption className='w-[256px] flex flex-col gap-1'>
+              <Label className='text-center'>Padronização e Documentação do Front End</Label>
+              <Text className='text-center'>Implementação de Design System e documentação de aplicações web utilizando tecnologias da Stack como Storybook e ESLint</Text>
+            </figcaption>
+          </Figure>
         </div>
       </Card>
     </Content>
