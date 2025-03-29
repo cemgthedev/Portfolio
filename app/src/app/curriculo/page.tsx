@@ -98,7 +98,7 @@ export default function Curriculo() {
           <span className='px-1 font-semibold text-cyan-400 animate-pulse'>experiências</span> e
           <span className='px-1 font-semibold text-cyan-400 animate-pulse'>práticas</span>.
         </Text>
-        <div className="w-full flex justify-center gap-4 px-6 max-sm:flex-col max-sm:justify-start">
+        <div className="w-full flex justify-center gap-4 max-sm:flex-col max-sm:justify-start">
           <fieldset className='w-full flex flex-wrap justify-center gap-4 border-2 border-collapse rounded-lg p-2'>
             <legend className='bg-zinc-950 p-2 ml-4 text-white'>Front-end</legend>
             {stack.filter((item) => item.type === 'front-end').map((item) => (
