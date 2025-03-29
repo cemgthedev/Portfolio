@@ -6,14 +6,19 @@ export const CustomLinkVariants = tv({
   base: 'flex gap-2 items-center justify-center p-1 w-fit h-fit',
   variants: {
     style: {
-      primary: 'bg-violet-500 text-white hover:bg-violet-300',
-      secundary: 'bg-cyan-500 text-white hover:bg-cyan-300',
+      primary: 'bg-violet-500 text-white hover:bg-violet-400',
+      secondary: 'bg-cyan-500 text-white hover:bg-cyan-400',
       black: 'bg-zinc-950 text-white hover:bg-zinc-800',
     },
     rounded: {
       default: 'rounded-lg',
       full: 'rounded-full',
     },
+    shadow: {
+      default: "",
+      primary: "shadow-primary",
+      secondary: "shadow-secondary"
+    }
   },
   defaultVariants: {
     style: 'primary',
@@ -33,6 +38,7 @@ export function CustomLink({
   href = '/',
   style = 'primary',
   rounded = 'default',
+  shadow = 'default',
   next = true,
   className,
 }: CustomLinkProps) {
@@ -42,7 +48,7 @@ export function CustomLink({
     <Component
       target={Component === 'a' ? '_blank' : ''}
       href={href}
-      className={CustomLinkVariants({ style, rounded, className })}
+      className={CustomLinkVariants({ style, rounded, shadow, className })}
     >
       {children}
     </Component>

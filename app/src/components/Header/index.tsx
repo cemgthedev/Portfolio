@@ -1,5 +1,6 @@
 import {
   IconCertificate,
+  IconExperiences,
   IconHome,
   IconServices,
   IconStack,
@@ -29,6 +30,12 @@ export function Header({ className, ...props }: HeaderProps) {
         </Link>
         <a href="#formacao" className="p-2">
           <IconStudent 
+            size={32} 
+            className="text-slate-50 hover:text-cyan-500"
+          />
+        </a>
+        <a href="#experiencias" className="p-2">
+          <IconExperiences 
             size={32} 
             className="text-slate-50 hover:text-cyan-500"
           />

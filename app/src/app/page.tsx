@@ -20,13 +20,13 @@ export default function Home() {
   return (
     <Card className="min-h-screen w-screen bg-zinc-950 p-4 text-white sm:p-8">
       <aside className="flex w-full py-4">
-        <Figure className="w-full m-auto animate-top opacity-0 px-0">
+        <Figure className="w-full m-auto animate-top opacity-0 px-0 gap-4">
           <BannerTitle
             mainText="Eu sou"
             listOfText={[
               'Desenvolvedor Front End', 
               2000, 
-              'Universitário',
+              'Desenvolvedor Mobile',
               2000
             ]}
             className="uppercase text-violet-500"
@@ -57,16 +57,16 @@ export default function Home() {
           <figcaption className="flex w-[60vw] flex-col text-center max-md:w-[75vw]">
             <Text>Olá, me chamo Carlos Eduardo de Moura Gomes.</Text>
             <Text>
-              Desenvolvo o front end de aplicações web e mobile tendo domínio de UI/UX Design
-              na criação de protótipos, implementação e manutenção utilizando tecnologias como Figma,
-              React, React Native, Tailwindcss e TypeScript.
+              Desenvolvo o Front End de aplicações web e mobile por meio de conhecimentos em UI Design 
+              e tecnologias como Figma, React, TypeScript, Kotlin e Jetpack Compose.
             </Text>
           </figcaption>
           <div className="flex w-fit gap-4">
             <CustomLink
               href="/portfolio"
               rounded="full"
-              className="animate-right opacity-0 px-3 py-2"
+              shadow='secondary'
+              className="animate-right opacity-0 px-6 py-2"
             >
               <IconAddressBook size={28} />
               <Label>Portfólio</Label>
@@ -74,8 +74,9 @@ export default function Home() {
             <CustomLink
               href="/curriculo"
               rounded="full"
-              style="secundary"
-              className="animate-left opacity-0 px-3 py-2"
+              style="secondary"
+              shadow="primary"
+              className="animate-left opacity-0 px-6 py-2"
             >
               <IconScroll size={28} />
               <Label>Currículo</Label>

@@ -37,11 +37,12 @@ export default function Portfolio() {
             <Label>
               ReactJs - NodeJs - TypeScript - Tailwindcss - Storybook - Outros
             </Label>
-            <div className="flex items-center justify-center gap-2">
+            <div className="flex items-center justify-center gap-4">
               <CustomLink
                 href={'https://github.com/cemgthedev/GitHub-Stalker'}
                 next={false}
                 rounded="full"
+                shadow="secondary"
                 className="px-6"
               >
                 <IconGithub size={28} />
@@ -50,7 +51,8 @@ export default function Portfolio() {
               <CustomLink
                 href={'https://bit.ly/GitHubStalker'}
                 next={false}
-                style="secundary"
+                style="secondary"
+                shadow="primary"
                 rounded="full"
                 className="px-6"
               >

@@ -5,53 +5,141 @@ export const contacts = {
   whatsapp: '5585997981087',
 }
 
+export type Experience = {
+  name: string
+  details: string[]
+}
+
+export const experiences: Experience[] = [
+  {
+    name: "2023 - Presente | Desenvolvedor Front End na Startup InovAssessoria",
+    details: [
+      "Desenvolvimento de interfaces web com tecnologias como Vite, React, TypeScript e Tailwindcss",
+      "Manutenções para estilização, responsividade e redesigns"
+    ],
+  },
+  {
+    name: "2024 - Presente | Desenvolvedor Mobile na Startup InovAssessoria",
+    details: [
+      "Desenvolvimento de aplicativos android com tecnologias como Kotlin, Jetpack Compose, Koin, Retrofit e Moshi"
+    ],
+  }
+]
+
 export type Skill = {
+  type: "front-end" | "mobile"
   name: string
   imageUrl: string
 }
 
 export const stack: Skill[] = [
   {
+    type: 'front-end',
     name: 'Figma',
     imageUrl: '/assets/profile/stack/Figma.svg',
   },
   {
+    type: 'front-end',
     name: 'HTML',
     imageUrl: '/assets/profile/stack/HTML.svg',
   },
   {
+    type: 'front-end',
     name: 'CSS',
     imageUrl: '/assets/profile/stack/CSS.svg',
   },
   {
-    name: 'Express',
-    imageUrl: '/assets/profile/stack/Express.svg',
-  },
-  {
+    type: 'front-end',
     name: 'Tailwindcss',
     imageUrl: '/assets/profile/stack/Tailwindcss.svg',
   },
   {
+    type: 'front-end',
     name: 'React',
     imageUrl: '/assets/profile/stack/React.svg',
   },
   {
-    name: 'Python',
-    imageUrl: '/assets/profile/stack/Python.svg',
+    type: 'front-end',
+    name: 'Storybook',
+    imageUrl: '/assets/profile/stack/Storybook.svg',
   },
   {
+    type: 'front-end',
     name: 'Javascript',
     imageUrl: '/assets/profile/stack/Javascript.svg',
   },
   {
+    type: 'front-end',
     name: 'Typescript',
     imageUrl: '/assets/profile/stack/Typescript.svg',
   },
   {
+    type: 'front-end',
     name: 'Node',
     imageUrl: '/assets/profile/stack/Node.svg',
   },
   {
+    type: 'front-end',
+    name: 'Next',
+    imageUrl: '/assets/profile/stack/Next.svg',
+  },
+  {
+    type: 'front-end',
+    name: 'Vite',
+    imageUrl: '/assets/profile/stack/Vite.svg',
+  },
+  {
+    type: 'front-end',
+    name: 'GraphQL',
+    imageUrl: '/assets/profile/stack/GraphQL.svg',
+  },
+  {
+    type: 'front-end',
+    name: 'Firebase',
+    imageUrl: '/assets/profile/stack/Firebase.svg',
+  },
+  {
+    type: 'front-end',
+    name: 'ESLint',
+    imageUrl: '/assets/profile/stack/ESLint.svg',
+  },
+  {
+    type: 'front-end',
+    name: 'Git',
+    imageUrl: '/assets/profile/stack/Git.svg',
+  },
+  {
+    type: 'mobile',
+    name: 'Figma',
+    imageUrl: '/assets/profile/stack/Figma.svg',
+  },
+  {
+    type: 'mobile',
+    name: 'Kotlin',
+    imageUrl: '/assets/profile/stack/Kotlin.svg',
+  },
+  {
+    type: 'mobile',
+    name: 'Jetpack Compose',
+    imageUrl: '/assets/profile/stack/Jetpack-Compose.svg',
+  },
+  {
+    type: 'mobile',
+    name: 'Ktor',
+    imageUrl: '/assets/profile/stack/Ktor.svg',
+  },
+  {
+    type: 'mobile',
+    name: 'GraphQL',
+    imageUrl: '/assets/profile/stack/GraphQL.svg',
+  },
+  {
+    type: 'mobile',
+    name: 'Firebase',
+    imageUrl: '/assets/profile/stack/Firebase.svg',
+  },
+  {
+    type: 'mobile',
     name: 'Git',
     imageUrl: '/assets/profile/stack/Git.svg',
   },

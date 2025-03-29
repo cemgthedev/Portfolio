@@ -1,17 +1,19 @@
 import {
   AddressBook,
+  ArrowSquareOut,
+  Briefcase,
+  CalendarCheck,
   CallBell,
   Certificate,
   Envelope,
   GithubLogo,
   House,
-  Link,
   LinkedinLogo,
   RocketLaunch,
   Scroll,
   Stack,
   Student,
-  WhatsappLogo,
+  WhatsappLogo
 } from '@phosphor-icons/react'
 
 export type IconProps = {
@@ -55,6 +57,14 @@ export const IconStudent = ({ size, className }: IconProps) => (
   <Student size={size} className={className} />
 )
 
+export const IconExperiences = ({ size, className }: IconProps) => (
+  <Briefcase size={size} className={className} />
+)
+
+export const IconCalendar = ({ size, className }: IconProps) => (
+  <CalendarCheck size={size} className={className} />
+)
+
 export const IconStack = ({ size, className }: IconProps) => (
   <Stack size={size} className={className} />
 )
@@ -68,5 +78,5 @@ export const IconServices = ({ size, className }: IconProps) => (
 )
 
 export const IconLink = ({ size, className }: IconProps) => (
-  <Link size={size} className={className} />
+  <ArrowSquareOut size={size} className={className} />
 )

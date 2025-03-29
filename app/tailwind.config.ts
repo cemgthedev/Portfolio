@@ -23,7 +23,9 @@ const config: Config = {
       },
     },
     boxShadow: {
-      default: '0px 5px 15px -5px #000',
+      default: '0px 4px 8px 0px rgba(0, 0, 0, 0.25)',
+      primary: "0px 4px 32px 0px rgba(6, 182, 212, 0.5)",
+      secondary: "0px 4px 32px 0px rgba(146, 92, 246, 0.5)" 
     },
     keyframes: {
       bottom: {
