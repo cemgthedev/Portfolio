@@ -13,7 +13,7 @@ export default function Portfolio() {
   return (
     <Content className="relative h-screen w-screen snap-y snap-mandatory overflow-auto bg-zinc-950 scrollbar-hide">
       <CustomLink href={'/'} className='absolute top-4 right-4 z-[999]'>
-        <IconHome size={28} />
+        <IconHome size={28} className='min-h-[28px] min-w-[28px]' />
       </CustomLink>
       <Card className="min-h-full snap-start w-full animate-top px-4 py-12" dark>
         <Heading size="lg">Github Stalker</Heading>
@@ -45,7 +45,7 @@ export default function Portfolio() {
                 shadow="secondary"
                 className="px-6"
               >
-                <IconGithub size={28} />
+                <IconGithub size={28} className='min-h-[28px] min-w-[28px]'/>
                 <Label>Github</Label>
               </CustomLink>
               <CustomLink
@@ -56,7 +56,7 @@ export default function Portfolio() {
                 rounded="full"
                 className="px-6"
               >
-                <IconRocket size={28} />
+                <IconRocket size={28} className='min-h-[28px] min-w-[28px]' />
                 <Label>Site</Label>
               </CustomLink>
             </div>

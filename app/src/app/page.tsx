@@ -68,7 +68,7 @@ export default function Home() {
               shadow='secondary'
               className="animate-right opacity-0 px-6 py-2"
             >
-              <IconAddressBook size={28} />
+              <IconAddressBook size={28} className='min-h-[28px] min-w-[28px]' />
               <Label>Portfólio</Label>
             </CustomLink>
             <CustomLink
@@ -78,7 +78,7 @@ export default function Home() {
               shadow="primary"
               className="animate-left opacity-0 px-6 py-2"
             >
-              <IconScroll size={28} />
+              <IconScroll size={28} className='min-h-[28px] min-w-[28px]' />
               <Label>Currículo</Label>
             </CustomLink>
           </div>
@@ -89,28 +89,28 @@ export default function Home() {
             next={false}
             className="animate-surgir opacity-0 h-[32px] w-[32px]"
           >
-            <IconGithub size={28} />
+            <IconGithub size={28} className='min-h-[28px] min-w-[28px]' />
           </CustomLink>
           <CustomLink
             href={`https://www.linkedin.com/in/${contacts.linkedin}`}
             next={false}
             className="animate-surgirtwo opacity-0 h-[32px] w-[32px]"
           >
-            <IconLinkedin size={28} />
+            <IconLinkedin size={28} className='min-h-[28px] min-w-[28px]' />
           </CustomLink>
           <CustomLink
             href={`mailto:${contacts.email}`}
             next={false}
             className="animate-surgirthree opacity-0 h-[32px] w-[32px]"
           >
-            <IconEmail size={28} />
+            <IconEmail size={28} className='min-h-[28px] min-w-[28px]' />
           </CustomLink>
           <CustomLink
             href={`http://api.whatsapp.com/send?phone=${contacts.whatsapp}`}
             next={false}
             className="animate-surgirfour opacity-0 h-[32px] w-[32px]"
           >
-            <IconWhatsapp size={28} />
+            <IconWhatsapp size={28} className='min-h-[28px] min-w-[28px]'/>
           </CustomLink>
         </div>
       </aside>

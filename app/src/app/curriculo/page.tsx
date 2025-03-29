@@ -68,7 +68,7 @@ export default function Curriculo() {
             experiences.map((experience) => (
               <div key={Math.random()} className="w-1/2 max-md:w-3/5 max-sm:w-full rounded-lg border-2 border-zinc-950 p-6 shadow-default">
                 <div className='flex items-center gap-2'>
-                  <IconCalendar size={24} className="h-[24px] w-[24px]" />
+                  <IconCalendar size={24} className="min-h-[28px] min-w-[28px]" />
                   <Label size="lg">{experience.name}</Label>
                 </div>
                 <ul className='list-disc list-inside mx-4'>
@@ -174,7 +174,7 @@ export default function Curriculo() {
             >
               <div className="flex w-full items-center">
                 <div className="flex items-center justify-center rounded-full p-2 border-2 border-cyan-500">
-                  <IconCertificate size={32} className="h-[32px] w-[32px]" />
+                  <IconCertificate size={32} className="min-h-[28px] min-w-[28px]" />
                 </div>
                 <div className="h-[2px] w-full bg-cyan-500"></div>
               </div>
