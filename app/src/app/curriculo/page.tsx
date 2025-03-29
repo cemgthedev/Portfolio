@@ -99,7 +99,7 @@ export default function Curriculo() {
           <span className='px-1 font-semibold text-cyan-400 animate-pulse'>práticas</span>.
         </Text>
         <div className="w-full flex justify-center gap-4 max-sm:flex-col max-sm:justify-start">
-          <fieldset className='w-full flex flex-wrap justify-center gap-4 border-2 border-collapse rounded-lg p-2'>
+          <fieldset className='w-full flex flex-wrap justify-center gap-4 border-2 border-collapse rounded-lg'>
             <legend className='bg-zinc-950 p-2 ml-4 text-white'>Front-end</legend>
             {stack.filter((item) => item.type === 'front-end').map((item) => (
               <Figure key={Math.random()} className="w-[100px] py-2">
@@ -125,7 +125,7 @@ export default function Curriculo() {
               </Figure>
             ))}
           </fieldset>
-          <fieldset className='w-full flex flex-wrap justify-center gap-4 border-2 border-collapse rounded-lg p-2'>
+          <fieldset className='w-full flex flex-wrap justify-center gap-4 border-2 border-collapse rounded-lg'>
             <legend className='bg-zinc-950 p-2 ml-4 text-white'>Mobile</legend>
             {stack.filter((item) => item.type === 'mobile').map((item) => (
               <Figure key={Math.random()} className="w-[100px] py-2">
