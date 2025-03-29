@@ -56,7 +56,7 @@ export default function Curriculo() {
         <Heading>Experiências</Heading>
         <Text className='indent-4'>
           Tenho
-          <span className='px-1 font-semibold text-violet-800 animate-pulse'>2</span> de experiência com desenvolvimento
+          <span className='px-1 font-semibold text-violet-800 animate-pulse'>2 anos</span> de experiência com desenvolvimento
           <span className='px-1 font-semibold text-violet-800 animate-pulse'>Front-end</span> e
           <span className='px-1 font-semibold text-violet-800 animate-pulse'>Mobile</span>. Já atuei na implementação de aplicações web e mobile e também manutenção para
           <span className='px-1 font-semibold text-violet-800 animate-pulse'>estilização</span>,
@@ -198,7 +198,7 @@ export default function Curriculo() {
         </div>
       </Card>
       <Card
-        id="services"
+        id="differences"
         className="min-h-full w-screen snap-start px-8 py-[96px]"
         center={false}
         dark

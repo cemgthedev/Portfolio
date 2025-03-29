@@ -52,7 +52,7 @@ export function Header({ className, ...props }: HeaderProps) {
             className="text-slate-50 hover:text-cyan-500"
           />
         </a>
-        <a href="#services" className="p-2">
+        <a href="#differences" className="p-2">
           <IconServices 
             size={32} 
             className="text-slate-50 hover:text-cyan-500"
