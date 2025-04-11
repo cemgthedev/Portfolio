@@ -21,7 +21,7 @@ export const experiences: Experience[] = [
   {
     name: "2024 - Presente | Desenvolvedor Mobile na Startup InovAssessoria",
     details: [
-      "Desenvolvimento de aplicativos android com tecnologias como Kotlin, Jetpack Compose, Koin, Retrofit e Moshi"
+      "Desenvolvimento de aplicativos android com tecnologias como Expo, React Native e StyleSheet"
     ],
   }
 ]
@@ -115,18 +115,8 @@ export const stack: Skill[] = [
   },
   {
     type: 'mobile',
-    name: 'Kotlin',
-    imageUrl: '/assets/profile/stack/Kotlin.svg',
-  },
-  {
-    type: 'mobile',
-    name: 'Jetpack Compose',
-    imageUrl: '/assets/profile/stack/Jetpack-Compose.svg',
-  },
-  {
-    type: 'mobile',
-    name: 'Ktor',
-    imageUrl: '/assets/profile/stack/Ktor.svg',
+    name: 'React Native',
+    imageUrl: '/assets/profile/stack/React.svg',
   },
   {
     type: 'mobile',
