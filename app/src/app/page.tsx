@@ -34,6 +34,7 @@ export default function Home() {
           <div className="relative flex h-[220px] w-[220px] items-center justify-center">
             <Image
               src="/assets/svgs/ImageProfile.svg"
+              loading="lazy"
               width={200}
               height={200}
               alt="avatar"
@@ -41,6 +42,7 @@ export default function Home() {
             />
             <Image
               src="/assets/svgs/Blob.svg"
+              loading="lazy"
               width={220}
               height={220}
               alt="avatar"
@@ -48,6 +50,7 @@ export default function Home() {
             />
             <Image
               src="/assets/svgs/Blob.svg"
+              loading="lazy"
               width={220}
               height={220}
               alt="avatar"

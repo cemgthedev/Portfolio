@@ -130,6 +130,11 @@ export const stack: Skill[] = [
   },
   {
     type: 'mobile',
+    name: 'ESLint',
+    imageUrl: '/assets/profile/stack/ESLint.svg',
+  },
+  {
+    type: 'mobile',
     name: 'Git',
     imageUrl: '/assets/profile/stack/Git.svg',
   },

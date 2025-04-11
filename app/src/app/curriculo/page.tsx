@@ -40,6 +40,7 @@ export default function Curriculo() {
             height={176}
             src="/assets/profile/training/UFC.svg"
             alt="..."
+            loading="lazy"
           />
           <figcaption className="text-center">
             <Heading>Universidade Federal do Ceará - Campus de Quixadá</Heading>
@@ -102,7 +103,7 @@ export default function Curriculo() {
           <fieldset className='w-full flex flex-wrap justify-center gap-4 border-2 border-collapse rounded-lg'>
             <legend className='bg-zinc-950 p-2 ml-4 text-white'>Front-end</legend>
             {stack.filter((item) => item.type === 'front-end').map((item) => (
-              <Figure key={Math.random()} className="w-[100px] py-2">
+              <Figure key={Math.random()} className="w-[80px] py-2">
                 <div className="relative flex h-[48px] w-[48px] items-center justify-center">
                   <Image
                     src={item.imageUrl}
@@ -128,7 +129,7 @@ export default function Curriculo() {
           <fieldset className='w-full flex flex-wrap justify-center gap-4 border-2 border-collapse rounded-lg'>
             <legend className='bg-zinc-950 p-2 ml-4 text-white'>Mobile</legend>
             {stack.filter((item) => item.type === 'mobile').map((item) => (
-              <Figure key={Math.random()} className="w-[100px] py-2">
+              <Figure key={Math.random()} className="w-[80px] py-2">
                 <div className="relative flex h-[48px] w-[48px] items-center justify-center">
                   <Image
                     src={item.imageUrl}
