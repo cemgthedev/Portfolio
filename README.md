@@ -1,5 +1,5 @@
 # Portfolio
-Site pessoal com portfólio e currículo. [Ir para o site](https://bit.ly/cemg-the-dev)
+Site pessoal com portfólio e currículo. [Ir para o site](https://bit.ly/cemg)
 
 ## Descrição
 Esta aplicação é um Design System desenvolvido do Figma ao React cujo objetivo é a construção
