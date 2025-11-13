@@ -18,7 +18,7 @@ import { stack } from "@/mock/stack";
 import Lottie from "lottie-react";
 import Image from "next/image";
 
-export function CurriculumPage() {
+export default function CurriculumPage() {
   return (
     <Content className="snap-y snap-mandatory text-zinc-950 scrollbar-hide">
       <Header />

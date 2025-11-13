@@ -8,7 +8,7 @@ import { Label } from "@/components/Label";
 import { Text } from "@/components/Text";
 import Image from "next/image";
 
-export function PortfolioPage() {
+export default function PortfolioPage() {
   return (
     <Content className="relative h-screen w-screen snap-y snap-mandatory overflow-auto bg-zinc-950 scrollbar-hide">
       <CustomLink

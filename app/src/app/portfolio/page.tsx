@@ -1,5 +1,5 @@
 "use client";
-import { PortfolioPage } from "@/pages/Portfolio";
+import PortfolioPage from "@/pages/Portfolio";
 
 export default function Portfolio() {
   return <PortfolioPage />;

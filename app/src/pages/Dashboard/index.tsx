@@ -15,7 +15,7 @@ import { Text } from "@/components/Text";
 import { contacts } from "@/mock/contacts";
 import Image from "next/image";
 
-export function DashboardPage() {
+export default function DashboardPage() {
   return (
     <Card className="min-h-screen w-screen p-4 sm:p-8" dark>
       <aside className="flex w-full py-4">
