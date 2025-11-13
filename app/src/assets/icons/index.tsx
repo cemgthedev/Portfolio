@@ -1,5 +1,6 @@
 import {
   AddressBook,
+  ArrowLeft,
   ArrowSquareOut,
   Briefcase,
   CalendarCheck,
@@ -79,4 +80,8 @@ export const IconServices = ({ size, className }: IconProps) => (
 
 export const IconLink = ({ size, className }: IconProps) => (
   <ArrowSquareOut size={size} className={className} />
+)
+
+export const IconReturn = ({ size, className }: IconProps) => (
+  <ArrowLeft size={size} className={className} />
 )

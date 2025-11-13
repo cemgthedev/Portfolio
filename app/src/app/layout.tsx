@@ -19,9 +19,6 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <head>
-        <script src="//code.jivosite.com/widget/D2w4SPR7yx" async></script>
-      </head>
       <body className={`${roboto.className}`}>{children}</body>
     </html>
   );
