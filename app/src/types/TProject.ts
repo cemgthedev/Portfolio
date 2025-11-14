@@ -5,4 +5,5 @@ export type TProject = {
   imageUrls: string[];
   githubLink?: string;
   siteLink?: string;
+  type: "front-end" | "mobile";
 };

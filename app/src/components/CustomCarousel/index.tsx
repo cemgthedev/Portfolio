@@ -10,7 +10,12 @@ import {
   CarouselPrevious,
 } from "../ui/carousel";
 
-export function CustomCarousel({ images }: { images: string[] }) {
+export interface CustomCarouselProps {
+  images: string[];
+  className?: string;
+}
+
+export function CustomCarousel({ images, className }: CustomCarouselProps) {
   const plugin = useRef(Autoplay({ delay: 2000, stopOnInteraction: true }));
 
   return (
@@ -19,7 +24,7 @@ export function CustomCarousel({ images }: { images: string[] }) {
         align: "start",
         loop: true,
       }}
-      className="w-[256px] sm:w-[300px]"
+      className={className}
       plugins={[plugin.current]}
       onMouseEnter={plugin.current.stop}
       onMouseLeave={plugin.current.reset}

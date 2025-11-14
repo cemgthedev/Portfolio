@@ -2,31 +2,6 @@ import { TProject } from "@/types/TProject";
 
 export const projects: TProject[] = [
   {
-    name: "Github Stalker",
-    description: `Este projeto foi desenvolvido do Figma ao React utilizando o
-        conceito de Design System. A aplicação trata-se de um stalker de usuários do GitHub; 
-        descubra detalhes como tecnologias, seguidores e repositórios dos devs do seu grupo 
-        de forma prática e rápida.`,
-    stack: [
-      "ReactJs",
-      "NodeJs",
-      "TypeScript",
-      "Tailwindcss",
-      "Storybook",
-      "Outros",
-    ],
-    imageUrls: [
-      "/assets/profile/projects/github-stalker/github-stalker-search-page.svg",
-      "/assets/profile/projects/github-stalker/github-stalker-dashboard-page.svg",
-      "/assets/profile/projects/github-stalker/github-stalker-repository-page.svg",
-      "/assets/profile/projects/github-stalker/github-stalker-repository-details-pop-up.svg",
-      "/assets/profile/projects/github-stalker/github-stalker-followers-page.svg",
-      "/assets/profile/projects/github-stalker/github-stalker-stalked-page.svg",
-    ],
-    githubLink: "https://github.com/cemgthedev/GitHub-Stalker",
-    siteLink: "https://bit.ly/GitHubStalker",
-  },
-  {
     name: "Lojita",
     description: `Este projeto foi desenvolvido do Figma ao React utilizando o conceito
         de Design System. A aplicação trata-se de um marketplace para administrador, vendedores 
@@ -41,6 +16,7 @@ export const projects: TProject[] = [
       "Storybook",
       "Outros",
     ],
+    type: "front-end",
     imageUrls: [
       "/assets/profile/projects/lojita/lojita-login-page.svg",
       "/assets/profile/projects/lojita/lojita-register-user-page.svg",
@@ -54,5 +30,75 @@ export const projects: TProject[] = [
     ],
     githubLink: "https://github.com/cemgthedev/Lojita-web",
     siteLink: "https://bit.ly/Lojita",
+  },
+  {
+    name: "Github Stalker",
+    description: `Este projeto foi desenvolvido do Figma ao React utilizando o
+        conceito de Design System. A aplicação trata-se de um stalker de usuários do GitHub; 
+        descubra detalhes como tecnologias, seguidores e repositórios dos devs do seu grupo 
+        de forma prática e rápida.`,
+    stack: [
+      "ReactJs",
+      "NodeJs",
+      "TypeScript",
+      "Tailwindcss",
+      "Storybook",
+      "Outros",
+    ],
+    type: "front-end",
+    imageUrls: [
+      "/assets/profile/projects/github-stalker/github-stalker-search-page.svg",
+      "/assets/profile/projects/github-stalker/github-stalker-dashboard-page.svg",
+      "/assets/profile/projects/github-stalker/github-stalker-repository-page.svg",
+      "/assets/profile/projects/github-stalker/github-stalker-repository-details-pop-up.svg",
+      "/assets/profile/projects/github-stalker/github-stalker-followers-page.svg",
+      "/assets/profile/projects/github-stalker/github-stalker-stalked-page.svg",
+    ],
+    githubLink: "https://github.com/cemgthedev/GitHub-Stalker",
+    siteLink: "https://bit.ly/GitHubStalker",
+  },
+  {
+    name: "Caidan - InovAssessoria",
+    description: `Este projeto foi desenvolvido na Startup InovAssessoria em conjunto com designers e desenvolvedores back-end.
+        A aplicação trata-se de um sistema de gerenciamento de restaurantes altamente personalizável. Gerencie pratos, categorias,
+        ingredientes, mesas e comandas de forma prática e rápida.`,
+    stack: [
+      "ReactJs",
+      "NodeJs",
+      "TypeScript",
+      "Tailwindcss",
+      "Hero UI",
+      "Outros",
+    ],
+    type: "front-end",
+    imageUrls: [
+      "/assets/profile/projects/caidan/caidan-dishes-page.svg",
+      "/assets/profile/projects/caidan/caidan-dish-details-pop-up.svg",
+      "/assets/profile/projects/caidan/caidan-about-page.svg",
+    ],
+  },
+  {
+    name: "Diário Online - InovAssessoria",
+    description: `Este projeto foi desenvolvido na Startup InovAssessoria em conjunto com designers e desenvolvedores back-end.
+        A aplicação trata-se de um sistema de gerenciamento de escolas de ensino médio e fundamental. Gerencie alunos, turmas,
+        disciplinas, frequência e notas de forma prática e rápida.`,
+    stack: [
+      "ReactJs",
+      "NodeJs",
+      "TypeScript",
+      "Tailwindcss",
+      "Hero UI",
+      "Outros",
+    ],
+    type: "front-end",
+    imageUrls: [
+      "/assets/profile/projects/diario-online/diario-online-login-page.svg",
+      "/assets/profile/projects/diario-online/diario-online-dashboard-page.svg",
+      "/assets/profile/projects/diario-online/diario-online-schools-page.svg",
+      "/assets/profile/projects/diario-online/diario-online-school-details-page.svg",
+      "/assets/profile/projects/diario-online/diario-online-school-register-form.svg",
+      "/assets/profile/projects/diario-online/diario-online-classrooms-page.svg",
+      "/assets/profile/projects/diario-online/diario-online-diario-de-classe-page.svg",
+    ],
   },
 ];

@@ -8,7 +8,7 @@ import { Card } from "@/components/Card";
 import { Content } from "@/components/Content";
 import { CustomLink } from "@/components/CustomLink";
 import { Figure } from "@/components/Figure";
-import { Header } from "@/components/Header";
+import { HeaderCurriculum } from "@/components/HeaderCurriculum";
 import { Heading } from "@/components/Heading";
 import { Label } from "@/components/Label";
 import { Text } from "@/components/Text";
@@ -21,7 +21,7 @@ import Image from "next/image";
 export default function CurriculumPage() {
   return (
     <Content className="snap-y snap-mandatory text-zinc-950 scrollbar-hide">
-      <Header />
+      <HeaderCurriculum />
       <Card
         id="formacao"
         className="min-h-full w-screen snap-start px-8 py-[96px]"
