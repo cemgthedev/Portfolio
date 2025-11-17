@@ -124,6 +124,29 @@ export const projects: TProject[] = [
     ],
   },
   {
+    name: "Caidan - InovAssessoria",
+    description: `Este projeto foi desenvolvido na Startup InovAssessoria em conjunto com designers e desenvolvedores back-end.
+        A aplicação mobile trata-se de um sistema de gerenciamento de restaurantes altamente personalizável. Gerencie pratos, categorias,
+        ingredientes, mesas e comandas de forma prática e rápida.`,
+    stack: [
+      "Expo",
+      "React Native",
+      "NodeJs",
+      "TypeScript",
+      "Nativewind CSS",
+      "React Native Paper",
+      "Outros",
+    ],
+    type: "mobile",
+    imageUrls: [
+      "/assets/profile/projects/caidan-mobile/caidan-mobile-dashboard-view.svg",
+      "/assets/profile/projects/caidan-mobile/caidan-mobile-ingredients-view.svg",
+      "/assets/profile/projects/caidan-mobile/caidan-mobile-dishes-view.svg",
+      "/assets/profile/projects/caidan-mobile/caidan-mobile-tables-view.svg",
+      "/assets/profile/projects/caidan-mobile/caidan-mobile-commands-view.svg",
+    ],
+  },
+  {
     name: "Diário Online - InovAssessoria",
     description: `Este projeto foi desenvolvido na Startup InovAssessoria em conjunto com designers e desenvolvedores back-end.
         A aplicação mobile trata-se de um sistema de gerenciamento de escolas de ensino médio e fundamental. Gerencie alunos, turmas,
