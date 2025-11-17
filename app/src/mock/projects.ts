@@ -78,6 +78,28 @@ export const projects: TProject[] = [
     ],
   },
   {
+    name: "Serra Imóveis - InovAssessoria",
+    description: `Este projeto foi desenvolvido na Startup InovAssessoria em conjunto com designers e desenvolvedores back-end.
+        A aplicação trata-se de um sistema de gerenciamento de imóveis. Gerencie suas propriedades, financiamentos e contratos
+        com uma equipe de especialistas.`,
+    stack: [
+      "ReactJs",
+      "NodeJs",
+      "TypeScript",
+      "Tailwindcss",
+      "Hero UI",
+      "Outros",
+    ],
+    type: "front-end",
+    imageUrls: [
+      "/assets/profile/projects/serra-imoveis/serra-imoveis-dashboard-page.svg",
+      "/assets/profile/projects/serra-imoveis/serra-imoveis-property-details-page.svg",
+      "/assets/profile/projects/serra-imoveis/serra-imoveis-property-images-pop-up.svg",
+      "/assets/profile/projects/serra-imoveis/serra-imoveis-finance-page.svg",
+      "/assets/profile/projects/serra-imoveis/serra-imoveis-about-page.svg",
+    ],
+  },
+  {
     name: "Diário Online - InovAssessoria",
     description: `Este projeto foi desenvolvido na Startup InovAssessoria em conjunto com designers e desenvolvedores back-end.
         A aplicação trata-se de um sistema de gerenciamento de escolas de ensino médio e fundamental. Gerencie alunos, turmas,
