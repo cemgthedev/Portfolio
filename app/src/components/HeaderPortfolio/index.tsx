@@ -21,7 +21,7 @@ export function HeaderPortfolio({ className, ...props }: HeaderPortfolioProps) {
         <a href="#front-end" className="p-2" title="Projetos Front-end">
           <IconSite size={32} className="text-slate-50 hover:text-cyan-500" />
         </a>
-        <a href="#mobile" className="hidden p-2" title="Projetos Mobile">
+        <a href="#mobile" className="p-2" title="Projetos Mobile">
           <IconMobile size={32} className="text-slate-50 hover:text-cyan-500" />
         </a>
       </nav>

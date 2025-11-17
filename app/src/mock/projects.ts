@@ -123,4 +123,27 @@ export const projects: TProject[] = [
       "/assets/profile/projects/diario-online/diario-online-diario-de-classe-page.svg",
     ],
   },
+  {
+    name: "Diário Online - InovAssessoria",
+    description: `Este projeto foi desenvolvido na Startup InovAssessoria em conjunto com designers e desenvolvedores back-end.
+        A aplicação mobile trata-se de um sistema de gerenciamento de escolas de ensino médio e fundamental. Gerencie alunos, turmas,
+        disciplinas, frequência e notas de forma prática e rápida.`,
+    stack: [
+      "Expo",
+      "React Native",
+      "NodeJs",
+      "TypeScript",
+      "Nativewind CSS",
+      "React Native Paper",
+      "Outros",
+    ],
+    type: "mobile",
+    imageUrls: [
+      "/assets/profile/projects/diario-online-mobile/diario-online-mobile-login-view.svg",
+      "/assets/profile/projects/diario-online-mobile/diario-online-mobile-dashboard-view.svg",
+      "/assets/profile/projects/diario-online-mobile/diario-online-mobile-schools-view.svg",
+      "/assets/profile/projects/diario-online-mobile/diario-online-mobile-classrooms-view.svg",
+      "/assets/profile/projects/diario-online-mobile/diario-online-mobile-diario-de-classe-view.svg",
+    ],
+  },
 ];

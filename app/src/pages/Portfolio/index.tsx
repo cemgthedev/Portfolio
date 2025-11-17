@@ -76,6 +76,69 @@ export default function PortfolioPage() {
             );
           })}
       </div>
+
+      <div id="mobile">
+        {projects
+          .filter((project) => project.type === "mobile")
+          .map((project) => {
+            return (
+              <Card
+                key={Math.random()}
+                className="min-h-full w-screen snap-start px-6 py-20"
+                dark
+              >
+                <Heading size="sm" className="mt-2">
+                  {project.name}
+                </Heading>
+                <Figure>
+                  <CustomCarousel
+                    className="w-[128px] sm:w-[112px]"
+                    images={project.imageUrls}
+                  />
+                  <figcaption className="flex flex-col items-center justify-center gap-2 text-center">
+                    <Label size="lg">Descrição</Label>
+                    <Text className="md:w-[50vw]">{project.description}</Text>
+                    <Label size="lg">Stack</Label>
+                    <Label>{project.stack.join(" - ")}</Label>
+                    <div className="flex items-center justify-center gap-4">
+                      {project.githubLink && (
+                        <CustomLink
+                          href={project.githubLink}
+                          next={false}
+                          rounded="full"
+                          shadow="secondary"
+                          className="px-6"
+                        >
+                          <IconGithub
+                            size={28}
+                            className="min-h-[28px] min-w-[28px]"
+                          />
+                          <Label>Github</Label>
+                        </CustomLink>
+                      )}
+                      {project.siteLink && (
+                        <CustomLink
+                          href={project.siteLink}
+                          next={false}
+                          style="secondary"
+                          shadow="primary"
+                          rounded="full"
+                          className="px-6"
+                        >
+                          <IconRocket
+                            size={28}
+                            className="min-h-[28px] min-w-[28px]"
+                          />
+                          <Label>Site</Label>
+                        </CustomLink>
+                      )}
+                    </div>
+                  </figcaption>
+                </Figure>
+              </Card>
+            );
+          })}
+      </div>
     </Content>
   );
 }
