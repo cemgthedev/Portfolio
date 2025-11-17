@@ -92,7 +92,7 @@ export default function PortfolioPage() {
                 </Heading>
                 <Figure>
                   <CustomCarousel
-                    className="w-[128px] sm:w-[112px]"
+                    className="w-[112px]"
                     images={project.imageUrls}
                   />
                   <figcaption className="flex flex-col items-center justify-center gap-2 text-center">
