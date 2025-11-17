@@ -21,10 +21,10 @@ export default function PortfolioPage() {
             return (
               <Card
                 key={Math.random()}
-                className="min-h-full w-screen snap-start px-8 py-20"
+                className="min-h-full w-screen snap-start px-6 py-20"
                 dark
               >
-                <Heading size="md" className="mt-2">
+                <Heading size="sm" className="mt-2">
                   {project.name}
                 </Heading>
                 <Figure>

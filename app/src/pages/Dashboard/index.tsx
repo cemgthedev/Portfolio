@@ -17,7 +17,7 @@ import Image from "next/image";
 
 export default function DashboardPage() {
   return (
-    <Card className="min-h-screen w-screen p-4 sm:p-8" dark>
+    <Card className="min-h-screen w-screen p-6" dark>
       <aside className="flex w-full py-4">
         <Figure className="m-auto w-full animate-top gap-4 px-0 opacity-0">
           <BannerTitle

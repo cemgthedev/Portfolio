@@ -24,7 +24,7 @@ export default function CurriculumPage() {
       <HeaderCurriculum />
       <Card
         id="formacao"
-        className="min-h-full w-screen snap-start px-8 py-[96px]"
+        className="min-h-full w-screen snap-start px-6 py-[96px]"
         center={false}
         dark
       >
@@ -89,7 +89,7 @@ export default function CurriculumPage() {
       </Card>
       <Card
         id="experiencias"
-        className="min-h-full w-screen snap-start px-8 py-[96px]"
+        className="min-h-full w-screen snap-start px-6 py-[96px]"
         center={false}
         dark
       >
@@ -146,7 +146,7 @@ export default function CurriculumPage() {
       </Card>
       <Card
         id="stack"
-        className="min-h-full w-screen snap-start px-8 py-[96px]"
+        className="min-h-full w-screen snap-start px-6 py-[96px]"
         center={false}
         dark
       >
@@ -227,7 +227,7 @@ export default function CurriculumPage() {
       </Card>
       <Card
         id="certificados"
-        className="min-h-full w-screen snap-start px-8 py-[96px]"
+        className="min-h-full w-screen snap-start px-6 py-[96px]"
         center={false}
         dark
       >
@@ -274,7 +274,7 @@ export default function CurriculumPage() {
       </Card>
       <Card
         id="differences"
-        className="min-h-full w-screen snap-start px-8 py-[96px]"
+        className="min-h-full w-screen snap-start px-6 py-[96px]"
         center={false}
         dark
       >
