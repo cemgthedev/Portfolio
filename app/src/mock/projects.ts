@@ -29,7 +29,7 @@ export const projects: TProject[] = [
       "/assets/profile/projects/lojita/lojita-list-view-chats-page.svg",
     ],
     githubLink: "https://github.com/cemgthedev/Lojita-web",
-    siteLink: "https://bit.ly/Lojita",
+    siteLink: "https://bit.ly/4oHRfd7",
   },
   {
     name: "Github Stalker",
