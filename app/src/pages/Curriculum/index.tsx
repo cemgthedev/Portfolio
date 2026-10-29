@@ -47,7 +47,6 @@ export default function CurriculumPage() {
               height={112}
               src="/assets/profile/training/UFC.svg"
               alt="..."
-              loading="lazy"
             />
             <figcaption className="text-center">
               <Heading size="xs">
