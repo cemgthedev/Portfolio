@@ -32,7 +32,7 @@ export default function DashboardPage() {
           />
           <div className="relative flex h-[220px] w-[220px] items-center justify-center">
             <Image
-              src="/assets/svgs/ImageProfile.svg"
+              src="/assets/svgs/ImageProfile.png"
               width={200}
               height={200}
               alt="avatar"
