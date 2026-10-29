@@ -2,60 +2,49 @@ import { TProject } from "@/types/TProject";
 
 export const projects: TProject[] = [
   {
-    name: "Lojita",
-    description: `Este projeto foi desenvolvido do Figma ao React utilizando o conceito
-        de Design System. A aplicação trata-se de um marketplace para administrador, vendedores 
-        e compradores. Gerencie usuários, chats, pedidos, produtos, favoritos e carrinho de forma 
-        prática e rápida.`,
+    name: "Atomic UI",
+    description: `O Atomic UI é um sistema de design (Design System) concebido para oferecer um conjunto completo de componentes simples (atômicos) e personalizáveis.`,
     stack: [
       "ReactJs",
       "NodeJs",
       "TypeScript",
       "Tailwindcss",
-      "Hero UI",
+      "Radix UI",
       "Storybook",
       "Outros",
     ],
     type: "front-end",
     imageUrls: [
-      "/assets/profile/projects/lojita/lojita-login-page.svg",
-      "/assets/profile/projects/lojita/lojita-register-user-page.svg",
-      "/assets/profile/projects/lojita/lojita-dashboard-page.svg",
-      "/assets/profile/projects/lojita/lojita-profile-details-page.svg",
-      "/assets/profile/projects/lojita/lojita-table-view-products-page.svg",
-      "/assets/profile/projects/lojita/lojita-list-view-products-page.svg",
-      "/assets/profile/projects/lojita/lojita-register-product-page.svg",
-      "/assets/profile/projects/lojita/lojita-product-details-page.svg",
-      "/assets/profile/projects/lojita/lojita-list-view-chats-page.svg",
+      "/assets/profile/projects/atomic-ui/dashboard.png",
+      "/assets/profile/projects/atomic-ui/fist-steps.png",
+      "/assets/profile/projects/atomic-ui/components.png",
+      "/assets/profile/projects/atomic-ui/component-button-example.png",
     ],
-    githubLink: "https://github.com/cemgthedev/Lojita-web",
-    siteLink: "https://bit.ly/4oHRfd7",
+    githubLink: "https://github.com/cemgthedev/Atomic-UI",
+    siteLink: "https://atomic-ui.vercel.app/",
   },
   {
-    name: "Github Stalker",
-    description: `Este projeto foi desenvolvido do Figma ao React utilizando o
-        conceito de Design System. A aplicação trata-se de um stalker de usuários do GitHub; 
-        descubra detalhes como tecnologias, seguidores e repositórios dos devs do seu grupo 
-        de forma prática e rápida.`,
+    name: "Lojita",
+    description: `A Lojita é um marketplace com múltiplos vendedores que ajuda pequenos lojistas a estabelecer uma presença online e gerenciar suas lojas, ao mesmo tempo em que permite aos consumidores descobrir e comprar produtos de diferentes vendedores em um só lugar.`,
     stack: [
       "ReactJs",
       "NodeJs",
       "TypeScript",
       "Tailwindcss",
-      "Storybook",
+      "Radix UI",
+      "TanStack Query",
       "Outros",
     ],
     type: "front-end",
     imageUrls: [
-      "/assets/profile/projects/github-stalker/github-stalker-search-page.svg",
-      "/assets/profile/projects/github-stalker/github-stalker-dashboard-page.svg",
-      "/assets/profile/projects/github-stalker/github-stalker-repository-page.svg",
-      "/assets/profile/projects/github-stalker/github-stalker-repository-details-pop-up.svg",
-      "/assets/profile/projects/github-stalker/github-stalker-followers-page.svg",
-      "/assets/profile/projects/github-stalker/github-stalker-stalked-page.svg",
+      "/assets/profile/projects/lojita/public-dashboard.png",
+      "/assets/profile/projects/lojita/products.png",
+      "/assets/profile/projects/lojita/product-details.png",
+      "/assets/profile/projects/lojita/admin-dashboard.png",
+      "/assets/profile/projects/lojita/seller-register-personal-data.png",
     ],
-    githubLink: "https://github.com/cemgthedev/GitHub-Stalker",
-    siteLink: "https://bit.ly/GitHubStalker",
+    githubLink: "https://github.com/cemgthedev/Lojita",
+    siteLink: "https://lojita.vercel.app/",
   },
   {
     name: "Caidan - InovAssessoria",
@@ -75,28 +64,6 @@ export const projects: TProject[] = [
       "/assets/profile/projects/caidan/caidan-dishes-page.svg",
       "/assets/profile/projects/caidan/caidan-dish-details-pop-up.svg",
       "/assets/profile/projects/caidan/caidan-about-page.svg",
-    ],
-  },
-  {
-    name: "Serra Imóveis - InovAssessoria",
-    description: `Este projeto foi desenvolvido na Startup InovAssessoria em conjunto com designers e desenvolvedores back-end.
-        A aplicação trata-se de um sistema de gerenciamento de imóveis. Gerencie suas propriedades, financiamentos e contratos
-        com uma equipe de especialistas.`,
-    stack: [
-      "ReactJs",
-      "NodeJs",
-      "TypeScript",
-      "Tailwindcss",
-      "Hero UI",
-      "Outros",
-    ],
-    type: "front-end",
-    imageUrls: [
-      "/assets/profile/projects/serra-imoveis/serra-imoveis-dashboard-page.svg",
-      "/assets/profile/projects/serra-imoveis/serra-imoveis-property-details-page.svg",
-      "/assets/profile/projects/serra-imoveis/serra-imoveis-property-images-pop-up.svg",
-      "/assets/profile/projects/serra-imoveis/serra-imoveis-finance-page.svg",
-      "/assets/profile/projects/serra-imoveis/serra-imoveis-about-page.svg",
     ],
   },
   {
