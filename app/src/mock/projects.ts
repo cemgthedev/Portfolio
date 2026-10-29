@@ -16,7 +16,7 @@ export const projects: TProject[] = [
     type: "front-end",
     imageUrls: [
       "/assets/profile/projects/atomic-ui/dashboard.png",
-      "/assets/profile/projects/atomic-ui/fist-steps.png",
+      "/assets/profile/projects/atomic-ui/first-steps.png",
       "/assets/profile/projects/atomic-ui/components.png",
       "/assets/profile/projects/atomic-ui/component-button-example.png",
     ],
